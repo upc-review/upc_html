@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)GD1.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD1_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD1_files/starter-template.css" rel="stylesheet">
+    <link href="./GD1_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD1_files/custom.css" rel="stylesheet">
+    <script src="./GD1_files/saved_resource"></script>
+
+    <script src="./GD1_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD1.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD1_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD1.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                      <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Improving Privacy Policy </li>
+	  <li class="breadcrumb-item active" aria-current="page">Improving Privacy Policy Visual Presentation</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-puzzle"></i> GD1 - Implement Interactive Privacy Policy Interfaces</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Traditional privacy policies are often static, making it difficult for users to navigate, understand, and enforce control over their personal data.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                Interactive privacy policies enhance transparency and user engagement. These policies' interfaces allow users to enforce their privacy preferences in real-time, providing a detailed yet comprehensible overview of data processing practices.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                To implement interactive privacy policy interfaces that offer a dynamic approach to presenting privacy policies.
+
+<br><br>
+Drozd and Kirrane <a href="GD1.html#section1">[1]</a> highlighted that privacy policies are the "de facto standard for consent requests" and that several studies show such policies are rarely read. They proposed the CURE prototype as a solution to enhance the effectiveness of privacy consent requests. It addresses the complexities of traditional privacy policies by providing a visually engaging and interactive interface. Through customisable elements like sliders and checkboxes, CURE aims to improve users' understanding and management of their data processing consents. This approach transforms consent requests into a more user-friendly format, thereby enhancing transparency and control for users, targeting the visual and interactive presentation of consent forms within privacy policies. The code for the prototype is available at <a href="https://bit.ly/2GErFC7" target="_blank">https://bit.ly/2GErFC7</a> .
+
+<br><br>
+
+Reinhardt, Borchard, and Hurtienne <a href="GD1.html#section2">[2]</a> presented the Visual Interactive Privacy Policy (VIPP) as a solution to the usability issues of traditional privacy policies. The VIPP incorporates interactive features like mouse-over help icons, expandable rows, and clickable cells to provide optional explanations and further information. This design lets users directly control and enforce their privacy settings within the policy interface,  improving user engagement, comprehension, and transparency compared to standard static privacy policy texts.
+<br><br>
+Both studies acknowledge that the <a href="https://doi.org/10.1145/1572532.1572538" target="_blank">Privacy Nutrition Label</a> does not allow direct manipulation of the privacy policy, such as managing privacy settings/consent directly. Drozd and Kirrane <a href="GD1.html#section1">[1]</a> argue that this approach does not allow users to visualise the data processing activities fully. Reinhardt, Borchard, and Hurtienne <a href="GD1.html#section2">[2]</a> incorporated a Privacy Nutrition Label enriched with control options and interactive elements into their VIPP solution, enhancing user engagement and control.
+<br><br>
+Angulo et al. <a href="GD1.html#section3">[3]</a> presented the "Send Data?" prototype, a browser extension designed to simplify privacy policy management using the PrimeLife Policy Language (PPL). The solution introduces "on the fly" privacy management, allowing users to adjust their privacy settings during online transactions. It features predefined privacy levels (High, Medium, Low) that users can customise, making the initial configuration more accessible. Additionally, the prototype uses visual elements like tables, icons, and colour-coded indicators to clearly present privacy settings and mismatches.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>
+            
+            </p>
+            
+            <p class="card-text">
+                <strong>Related guidelines</strong>:
+                
+                <em><a href="GD2.html">Implement Visual Strategies for Effective Communication of Lengthy Privacy Policies</a></em>
+                
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD1.html#" data-bs-toggle="modal" data-bs-target="#modal_99"> <img src="./GD1_files/privacy-cure.jpg" class="img-fluid" alt="The CURE prototype &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Top: The CURE prototype: (1) Slider and (2) Consent per purpose. Bottom:  Example of a detailed overview of the data processing required for the purpose of “deriving calories burned” <a href="GD1.html#section1">[1]</a>.  <a href="GD1.html#" data-bs-toggle="modal" data-bs-target="#modal_99">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD1.html#" data-bs-toggle="modal" data-bs-target="#modal_100"> <img src="./GD1_files/VIPP-toggle.jpg" class="img-fluid" alt="Interactive capabilities of the Visual Interactive Privacy Policy &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Interactive capabilities of the Visual Interactive Privacy Policy (VIPP): Consent options, explanations and additional information <a href="GD1.html#section2">[2]</a>.  <a href="GD1.html#" data-bs-toggle="modal" data-bs-target="#modal_100">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD1.html#" data-bs-toggle="modal" data-bs-target="#modal_101"> <img src="./GD1_files/send-data.jpg" class="img-fluid" alt="The &quot;Send Data?&quot; prototype  &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The look-and-feel of the seventh iteration cycle of the "Send Data?" prototype <a href="GD1.html#section3">[3]</a>.  <a href="GD1.html#" data-bs-toggle="modal" data-bs-target="#modal_101">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_101" tabindex="-1" aria-labelledby="modalLabel_101" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_101">The "Send Data?" prototype  <a href="GD1.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD1_files/send-data.png" class="img-fluid" alt="The &quot;Send Data?&quot; prototype  &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_100" tabindex="-1" aria-labelledby="modalLabel_100" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_100">Interactive capabilities of the Visual Interactive Privacy Policy <a href="GD1.html#section2">[2]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD1_files/VIPP-toggle.png" class="img-fluid" alt="Interactive capabilities of the Visual Interactive Privacy Policy &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_99" tabindex="-1" aria-labelledby="modalLabel_99" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_99">The CURE prototype <a href="GD1.html#section1">[1]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD1_files/privacy-cure.png" class="img-fluid" alt="The CURE prototype &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Enhancing transparency and user engagement with privacy policies. </li>
+                
+                    <li>Implementing dynamic approach to presenting privacy policies. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>The UI was well received by participants in a usability evaluation, who completed tasks quickly, easily, and with minimal errors. Positive feedback included high comprehension levels of the consented information and better performance in comparison tasks against traditional consent requests and a <a href="https://usercentrics.com/" target="_blank">Usercentrics</a> solution <a href="GD1.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>The Visual Interactive Privacy Policy (VIPP) builds upon the Privacy Nutrition Label proposal to address participants' concerns regarding missed information and direct privacy control options. Additionally, a pre-study indicated a preference for the simple table structure of the Privacy Nutrition Label, forming the foundation for VIPP. User focus is directed through the strategic use of coloured title rows and columns (in orange and blue) to highlight significant elements, such as a ranking of privacy policy terms derived from a user study. At the same time, less crucial aspects are nested within deeper layers <a href="GD1.html#section2">[2]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>The concept of "on the fly" privacy settings is both understood and appreciated by users. Additionally, users found the selection of credentials using a card-based approach, clearly grouped by rows, to be effective <a href="GD1.html#section4">[4]</a>.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>Users initially found the "Send Data?" interface confusing and needed some time to interact with it before fully grasping its purpose and benefits. This initial confusion indicates a learning curve, which may hinder immediate user comprehension and usability <a href="GD1.html#section3">[3]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>Although the VIPP showed improvements over the Long Text in several areas, it did not consistently demonstrate statistically significant advantages over the Nutrition Label, despite some noticeable positive changes in terms of stimulation, novelty, and perceived control <a href="GD1.html#section2">[2]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>A potential limitation of both studies is that the prototypes were evaluated only on personal computers and desktops. This restriction may not fully capture the usability and effectiveness of the interfaces on other devices, such as tablets or smartphones, which are increasingly used for internet access.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Notices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	While its core objective is to enhance how privacy information is communicated to users, the guideline also integrates aspects of privacy choices <a href="GD1.html#section5">[5]</a>, particularly in the control dimension. This includes allowing users to manage and enforce their privacy preferences directly within the notices, thereby adding an element of interactivity to the traditional privacy notice <a href="GD1.html#section4">[4]</a> framework.
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to the channels that can be utilised to deliver privacy notices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It means providing the privacy notice through a secondary channel due to limitations like restricted interaction capabilities.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline encourages using the primary channel for delivering privacy notices within the system context but also supports secondary channels for constrained devices.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It involves presenting the privacy notice within the same platform or device the user is using.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline is primarily intended for the same platform or device the user interacts with.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to showing users privacy notices considering timing, like the task that the user is engaged in, considering the delay between the notice and the privacy decision and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Context-dependent
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing a context-dependent privacy notice, like, for example, in a change of location or other situational parameter.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline supports providing additional notices or controls based on the user’s context, ensuring that privacy decisions are relevant to the situation.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It refers to displaying privacy notices on demand from users, such as providing links to privacy notices and contact information.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline aligns with making privacy notices and controls available on demand through privacy settings interfaces or dashboards.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                At Setup
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing privacy notices at first use of a system or service">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline can be applied by providing clear, interactive privacy notices during system setup, allowing users to make informed decisions before using the service.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing a privacy notice at the moment of a data practice, like when the information is being collected, used or shared">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Interactive interfaces can provide contextual notices when data is being collected or shared, aligning with the just-in-time notice approach.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to different modes of delivering privacy notices, depending on what the privacy notice strives to achieve."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to visual privacy notices that can be text, images, icons or a combination of them">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline uses visual resources such as colours, text, and icons to make a visual notice.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Control
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to privacy notices that include control options (privacy choices).  The authors of the design space for privacy choices consider that this dimension has its merits but fails to cover all the considerations that are needed in order to cover meaningful privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Non-blocking
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="These are non-intrusive privacy notices with controls that do not require immediate action from the user, based on previous decisions.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline provides integrated controls within the notices that can be applied in non-blocking situations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Blocking
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to privacy notices that are delivered via spoken words or sounds.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline provides integrated controls within the notices that can be applied in blocking situations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 The interactive and customisable elements of the proposed solutions are designed to empower users to decide what to share and for which purposes, aligning closely with the core elements of the Control <a href="GD1.html#section6">[6]</a> attribute.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Transparency</h6>
+
+				The interactive interfaces aim to make privacy policies more understandable, helping users obtain clear information about how their data is handled. This aligns with the proactive distribution of information to users, allowing them to make informed decisions.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Accountability</h6>
+
+				By making privacy policies more transparent and interactive, service providers demonstrate their commitment to being held accountable for data practices. The clear presentation of data handling practices and user controls can reinforce trust and accountability.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Purpose</h6>
+
+				The interfaces help clarify the purposes for which data is collected and processed, providing users with a better understanding of the legal bases for data processing and the specific uses of their personal data.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Sharing</h6>
+
+				The guideline addresses data sharing by allowing users to manage and control the extent to which their data is shared with third parties.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Olha Drozd and Sabrina Kirrane (2020). Privacy CURE: Consent Comprehension Made Easy. In: Hölbl, M., Rannenberg, K., Welzer, T. (eds) ICT Systems Security and Privacy Protection. SEC 2020. IFIP Advances in Information and Communication Technology, vol 580. Springer, Cham.
+                
+                    <a href="https://doi.org/10.1007/978-3-030-58201-2_9" target="_blank">https://doi.org/10.1007/978-3-030-58201-2_9</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Daniel Reinhardt, Johannes Borchard, Jörn Hurtienne (2021). Visual Interactive Privacy Policy: The Better Choice? In: Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems. New York, NY, USA: Association for Computing Machinery, 2021. (CHI ’21). ISBN 9781450380966.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445465" target="_blank">https://doi.org/10.1145/3411764.3445465</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Julio Angulo, Simone Fischer-Hübner, Erik Wästlund, Tobias Pulls (2012).Towards Usable Privacy Policy Display &amp; Management. Information Management &amp; Computer Security, Vol. 20 No. 1, pp. 4-17.
+                
+                    <a href="https://doi.org/10.1108/09685221211219155" target="_blank">https://doi.org/10.1108/09685221211219155</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Florian Schaub, Rebecca Balebako,  Adam L Durity, and Lorrie Faith Cranor (2015). A Design Space for Effective Privacy Notices. In: Symposium on Usable Privacy and Security (SOUPS 2015). [S.l.: s.n.], p. 1–17.
+                
+                    <a href="https://www.usenix.org/system/files/conference/soups2015/soups15-paper-schaub.pdf" target="_blank">https://www.usenix.org/system/files/conference/soups2015/soups15-paper-schaub.pdf</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD1_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

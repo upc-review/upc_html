@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)GD4/ -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD4_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD4_files/starter-template.css" rel="stylesheet">
+    <link href="./GD4_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD4_files/custom.css" rel="stylesheet">
+    <script src="./GD4_files/saved_resource"></script>
+
+    <script src="./GD4_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD4.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD4_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD4.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Improving Privacy Policy </li>
+	  <li class="breadcrumb-item active" aria-current="page">Improving Privacy Policy Readability</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-file-earmark-zip"></i> GD4 - Enhance Privacy Policy Communication with Automated Information Extraction</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                The complexity of privacy policies often makes it difficult for users to understand data practices and their implications. 
+Traditional privacy policies are usually lengthy, dense, and filled with legal jargon, leading to a lack of user engagement and comprehension.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                The rationale is that improving the clarity and comprehension of privacy policies for users by simplifying and structuring these policies can help users understand the information more easily, make informed decisions, and reduce the cognitive burden associated with lengthy and complex policies.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                The automation or development of tools that improve the querying and readability of privacy policies, enhancing users' understanding, clarity, and awareness. These tools primarily focus on annotating privacy policies to facilitate subsequent processing. Given the complexity of automating this annotation process, they employ natural language processing (NLP) and machine learning (ML) techniques for automation. The <a href="https://www.usableprivacy.org/data" target="_blank">OPP-115 dataset</a> is predominantly utilised for training the proposed models in the supporting research presented below.
+<br><br>
+Harkous et al. <a href="GD4.html#section1">[1]</a> proposed Polisis, a scalable tool for privacy policy analysis that breaks privacy policies into segments and annotates each for detailed data practices. This allows for both high-level and fine-grained queries.
+Polisis consists of three layers: (a) Application Layer - provides information queried by users; (b) Data Layer - responsible for scraping the policy webpage, extracting, and segmenting the privacy policy; and (c) Machine Learning Layer - utilises word embeddings and neural networks for text classification, trained on the OPP-115 dataset to detect fine-grained labels of privacy policy segments.
+The prototype browser extensions for Chrome and Firefox and the prototype webpage (https://pribot.org/) are no longer operational.
+
+<br><br>
+
+
+Brunotte et al. <a href="GD4.html#section2">[2]</a> proposed the Online Privacy Policy eXplainer (PriX), a web browser extension designed to help users understand privacy policies through visual explanations. PriX performs three key functions: checking if a website has a privacy policy, analysing the privacy policy, and providing visual explanations to enhance user comprehension.
+The tool uses trained classifiers (Naive Bayes and Random Forest) to identify data categories and present them with corresponding privacy icons, facilitating better understanding. The classifiers were trained on the OPP-115. 
+
+<br><br>
+
+Shayegh and Ghanavati <a href="GD4.html#section3">[3]</a> proposed a method for extracting notice and choice statements from privacy policies.
+Privacy policies are annotated with five key labels: #D (definition), #A (action), #F (fact), #NR (non-relevant), and #CR (cross-references). Actions are further detailed with sub-annotations such as #Collect, #Purpose, #Shared, #Permit, and #Information.
+These annotations are used to create graphs from the annotated action sections, establishing connections between different tags. The graphs are then transformed into concise notices and choices regarding data practices.
+This method aims to generate short, understandable notices and choices, improving the readability and usability of privacy policies for users, particularly in IoT devices.
+<br><br>
+
+Alabduljabbar et al. <a href="GD4.html#section4">[4]</a> developed TLDR, a segment-highlighting tool that condenses essential segments in privacy policies related to specific privacy practices. TLDR employs machine learning and deep learning models to extract privacy and data collection practices. The process involves segment preprocessing, extracting deep features from text representation techniques, and using an ensemble of classifiers for multi-label classification. The classifiers were trained using the OPP-115 dataset to detect fine-grained labels of privacy policy segments. Although the work does not include screenshots of the segments' presentation, it provides detailed performance metrics for the classifiers and machine learning algorithms used in TLDR's construction. 
+
+<br><br>
+
+Windl et al. <a href="GD4.html#section5">[5]</a> developed PrivacyInjector, a web browser extension for Google Chrome and Firefox, designed to enhance user privacy awareness by providing contextual privacy policy information. PrivacyInjector operates in five steps: identifying the URL of the site's privacy policy, segmenting and annotating the policy, recognising relevant contexts, and displaying annotated segments as icon bubbles on the webpage. The tool uses domain-specific word embeddings created from unlabelled data and trains text classifiers using convolutional neural networks (CNNs). The segment classification process involves preprocessing, extracting deep features from text representation techniques, and utilising an ensemble of classifiers for multi-label classification. PrivacyInjector leverages the <a href="https://usableprivacy.org/data" target="_blank">MAPS Policies Dataset</a> to form a corpus of privacy-related words and uses <a href="https://fasttext.cc/" target="_blank">fastText</a> for training word embeddings. The contextual privacy policy (CPP) design includes collaboration with design experts, resulting in concise information displayed in sidebars with draggable bubbles appearing in relevant website areas. The extension's client and server-side components are available on <a href="https://github.com/Maxikilliane/CPP-extension-new" target="_blank">GitHub</a>, allowing for further research and development. The PrivacyInjector authors have also made the trained classifiers available in the repository <a href="https://github.com/Maxikilliane/polisis-classifiers" target="_blank"> https://github.com/Maxikilliane/polisis-classifiers</a>, which uses results from the work of Harkous et al. <a href="GD4.html#section1">[1]</a>.
+
+<br><br>
+
+Chang et al. <a href="GD4.html#section6">[6]</a> propose a system that builds a user privacy concern profile using crowdsourced data and interviews. These profiles are grouped using hierarchical clustering to create a system that matches new users to a profile cluster.
+The system employs Convolutional Neural Networks (CNN) and Random Forest models to analyse privacy policies, considering the user's privacy concern profile and related GDPR items. The OPP-115 dataset is used for training and privacy categories, achieving a precision of 0.94 for privacy category classification and an accuracy of 0.81 for policy segment extraction. Although the paper does not provide a link to the new privacy concern profiles dataset or screenshots of the implemented Android app, it demonstrates the system's effectiveness in improving user privacy awareness.
+
+<br><br>
+
+Pontes, Zorzo and Mello <a href="GD4.html#section7">[7]</a> developed PPMark, a prototype tool designed to process privacy policies written in natural language and extract information about data collection and usage, presenting this information in a label format similar to nutrition facts. PPMark aims to make privacy policies more understandable by displaying key data collection practices in a user-friendly manner.
+
+<br><br>
+
+Nejad et al. <a href="GD4.html#section8">[8]</a> introduced KnIGHT (Know your rIGHTs), an automatic semantic text-matching tool that links sentences from privacy policies to relevant GDPR articles and paragraphs, to help end-users understand their data protection rights and a service’s legal compliance more easily. The approach combines a GATE-based pipeline to detect candidate policy sentences with important privacy terms and a two-stage semantic similarity algorithm (using TermRaider tags and word2vec-based compositional similarity) to first select the most related GDPR article and then the most similar paragraph within that article. Evaluation with legal experts and lay users shows that around 70–90% of the automatically generated mappings are at least partially correct, suggesting KnIGHT can substantially support non-experts in navigating lengthy privacy policies with minimal effort, even though it does not replace expert legal review.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>
+            
+            </p>
+            
+            <p class="card-text">
+                <strong>Related guidelines</strong>:
+                
+                <em><a href="GD2.html">Implement Visual Strategies for Effective Communication of Lengthy Privacy Policies</a></em>, 
+                
+                <em><a href="GD3.html">Incorporate Icons to Improve Privacy Policy Communication</a></em>
+                
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD4.html#" data-bs-toggle="modal" data-bs-target="#modal_18"> <img src="./GD4_files/PriX-wayback.jpg" class="img-fluid" alt="The user interface of Privacy Policy eXplainer (PriX) &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The user interface of Privacy Policy eXplainer (PriX)  <a href="GD4.html#section2">[2]</a> from <a href="https://web.archive.org/web/20221020081809/https://prix.se.uni-hannover.de/ui/vp.html" target="_blank"> Wayback Machine</a>.  <a href="GD4.html#" data-bs-toggle="modal" data-bs-target="#modal_18">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD4.html#" data-bs-toggle="modal" data-bs-target="#modal_19"> <img src="./GD4_files/toward-privacy-iot.jpg" class="img-fluid" alt="Generated notice example &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Generated notice example <a href="GD4.html#section4">[4]</a>.  <a href="GD4.html#" data-bs-toggle="modal" data-bs-target="#modal_19">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD4.html#" data-bs-toggle="modal" data-bs-target="#modal_20"> <img src="./GD4_files/privacy-injector.jpg" class="img-fluid" alt="PrivacyInjector overview &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Overview of PrivacyInjector as in Windl et al. <a href="GD4.html#section5">[5]</a>. In the example, a user navigated to the homepage of Webex. PrivacyInjector identified segments related to cookies and tracking elements in the lengthy policy document (c). An information icon (a) appears on the cookie banner, and when selected, a sidebar (b) reveals the extracted info snippets.  <a href="GD4.html#" data-bs-toggle="modal" data-bs-target="#modal_20">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_19" tabindex="-1" aria-labelledby="modalLabel_19" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_19">Generated notice example <a href="GD4.html#section4">[4]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD4_files/toward-privacy-iot.png" class="img-fluid" alt="Generated notice example &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_18" tabindex="-1" aria-labelledby="modalLabel_18" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_18">The user interface of Privacy Policy eXplainer (PriX) <a href="GD4.html#section2">[2]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD4_files/PriX-wayback(1).JPG" class="img-fluid" alt="The user interface of Privacy Policy eXplainer (PriX) &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_20" tabindex="-1" aria-labelledby="modalLabel_20" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_20">PrivacyInjector overview <a href="GD4.html#section5">[5]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD4_files/privacy-injector.png" class="img-fluid" alt="PrivacyInjector overview &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Simplifying complex legal language and structuring privacy policies to enhance user comprehension and readability. </li>
+                
+                    <li>Automatically generating concise notices and choices from longer privacy policies to help users quickly understand key data practices and make informed decisions. </li>
+                
+                    <li>Assisting users in querying privacy policies to address specific privacy concerns, providing clear and relevant information about data handling practices. </li>
+                
+                    <li>Helping websites and organisations comply with data protection regulations (e.g., GDPR) by making privacy policies more transparent, clear, and understandable for users. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>A user study showed that visual explanations are an appropriate way to foster privacy awareness and can help users understand privacy policies <a href="GD4.html#section2">[2]</a>.</li>
+                
+            
+                
+                    <li>TLDR streamlines reading, slashing the average time by 39.14% through condensing information, simplifying the process by reducing paragraphs and words, and lessening the effort required to grasp the service provider's practices <a href="GD4.html#section4">[4]</a>.</li>
+                
+            
+                
+                    <li>PrivacyInjector effectively recognised privacy policies across various websites, earning high functionality ratings from participants and encouraging more thoughtful privacy behaviours. Users found the tool increasingly useful over time, noting that it did not disrupt their browsing experience but provided valuable information beyond the initial exploration phase, particularly during registration/login or when surprising information was revealed <a href="GD4.html#section5">[5]</a>.</li>
+                
+            
+                
+                    <li>A real-world study of the proposed solution showcased its effectiveness, accurately providing users with concerning content at a 0.81 accuracy rate <a href="GD4.html#section6">[6]</a>.</li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li>Extracting notice and choice statements improves the clarity and precision of privacy policy summaries <a href="GD4.html#section3">[3]</a>. Also, PPMark's label format presentation of privacy policy information is user-friendly, making complex privacy terms more understandable, and users felt it reduced the time required to read privacy policies <a href="GD4.html#section7">[7]</a>.</li>
+                
+            
+                
+                    <li>Polisis allows detailed queries on data practices, significantly improving users' ability to understand complex privacy policies through machine learning-driven analysis  <a href="GD4.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>The architecture is designed to be policy- and legislation-independent, so in principle the same approach could be reused for other policies (e.g., cookie policies) and other legal instruments beyond the GDPR <a href="GD4.html#section8">[8]</a>.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li>Needs long term study to test user habituation <a href="GD4.html#section2">[2]</a><a href="GD4.html#section5">[5]</a>.</li>
+                
+            
+                
+                    <li>Service providers need to improve machine accessibility (machine reading) of privacy policies <a href="GD4.html#section6">[6]</a>.</li>
+                
+            
+                
+                    <li>Currently, it only identifies and analyses privacy policies in English, even on multi-language websites, displaying the English version in the context of any language version <a href="GD4.html#section5">[5]</a>. Only English is also the case cited in <a href="GD4.html#section2">[2]</a> and <a href="GD4.html#section3">[3]</a>.</li>
+            
+                
+                    <li>Unusual website interactions, unclear policy URLs, mandatory user interactions, and missing policy links make it challenging to analyse and communicate policy segments systematically <a href="GD4.html#section5">[5]</a>. Additionally, the lack of a standard format in privacy policies leads to ambiguity <a href="GD4.html#section4">[4]</a>. The PPMark tool, for example, relies on structured input formats and may struggle with unstructured or poorly formatted privacy policies, limiting its effectiveness  <a href="GD4.html#section7">[7]</a>.</li>
+                
+                
+                    <li>The technological difficulty regarding explanations about privacy, in general, is to ensure that the texts continue to be legally compliant <a href="GD4.html#section2">[2]</a>.</li>
+                
+            
+                
+                    <li>The experiments use only four privacy policies and a small number of participants, which the authors describe as a “bare minimum” that yields only indicative, not definitive, evidence of effectiveness <a href="GD4.html#section8">[8]</a>.</li>
+                
+            
+                
+            
+                
+            
+                
+                    <li>The proposed method of annotating privacy policies is done manually, so it is necessary to build a tool to automate the steps <a href="GD4.html#section3">[3]</a>. Additionally, the performance of machine learning models in accurately classifying and annotating segments of privacy policies may vary depending on the quality and representativeness of the training data <a href="GD4.html#section1">[1]</a>.</li>
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Notices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	Such solutions aim to communicate personal data handling practices through privacy notices. 
+It can also be integrated with privacy choices <a href="GD4.html#section9">[9]</a>, enabling users to make immediate decisions, which researchers find more effective.
+Considering the design space for privacy notices <a href="GD4.html#section10">[10]</a>, this guideline can be applied to the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to the channels that can be utilised to deliver privacy notices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It means providing the privacy notice through a secondary channel due to limitations like restricted interaction capabilities.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to secondary channels if the primary channel does not have an interface or has a limited one.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It involves presenting the privacy notice within the same platform or device the user is using.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to the same platform or device that the user is interacting with.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Public
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This refers to public channels used to deliver privacy notices to especially secondary or incidental users, like public signs about video surveillance.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline could be applied to public notices. However, public channels may be limited in how much information they can convey, and if privacy choices are necessary, other supporting channels are necessary.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to different modes of delivering privacy notices, depending on what the privacy notice strives to achieve."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to visual privacy notices that can be text, images, icons or a combination of them">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline is for a visual notice, using visual resources such as colours, text and icons.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Machine-readable
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to privacy notices that are machine-readable and can be communicated to other devices or systems where the information can be rendered as a privacy notice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The suggested solutions could be applied to a machine-readable format, but currently, the lack of a standard format for privacy policies limits this potential.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Control
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to privacy notices that include control options (privacy choices).  The authors of the design space for privacy choices consider that this dimension has its merits but fails to cover all the considerations that are needed in order to cover meaningful privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Decoupled
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It refers to privacy notices separate from the system or device, like those found on a website or in a manual.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to privacy notices decoupled from privacy choices.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Non-blocking
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="These are non-intrusive privacy notices with controls that do not require immediate action from the user, based on previous decisions.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be coupled with non-blocking controls (privacy choices), providing control options without forcing user interaction.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Blocking
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to privacy notices that are delivered via spoken words or sounds.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be paired with blocking controls (privacy choices), requiring users to make decisions or give consent based on the information in the notice.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to showing users privacy notices considering timing, like the task that the user is engaged in, considering the delay between the notice and the privacy decision and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It refers to displaying privacy notices on demand from users, such as providing links to privacy notices and contact information.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The proposed guideline, aside from navigating the privacy policy itself, can also be utilised to present a privacy notice to users when they actively seek privacy information, such as in privacy dashboards and settings interfaces.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                At Setup
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing privacy notices at first use of a system or service">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The proposed guideline can be used to present a privacy notice to users when they are using the system for the first time so they can be aware of the data handling practices. It can be integrated with privacy choices, requiring users to make decisions or give consent based on the information in the notice.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-eye"></i> <strong>Transparency</strong></h6>
+		<br>
+		<p class="card-text">
+		 Transparency <a href="GD4.html#section11">[11]</a> is the main privacy attribute since this mechanism involves the proactive distribution of information to users, promoting visually accessible communication of data handling practices, and helping users to make privacy-informed decisions.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Control</h6>
+
+				Providing users with comprehensive and comprehensible insights into data handling practices leverages control by allowing users to make self-determined decisions about the sharing of their personal data.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Purpose</h6>
+
+				This guideline can also improve the understanding of the purpose of data handling practices by enhancing querying and readability.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Collection</h6>
+
+				Esta diretriz também pode melhorar a compreensão das práticas de coleta de dados pessoais, ao aprimorar a consulta e a legibilidade das políticas de privacidade.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Hamza Harkous, Kassem Fawaz, Rémi Lebret, Florian Schaub, Kang G. Shin, and Karl Aberer. Polisis: Automated analysis and presentation of privacy policies using deep learning. In 27th USENIX Security Symposium (USENIX Security 18), 2018, pp. 531-548
+                
+                    <a href="https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-harkous.pdf" target="_blank">https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-harkous.pdf</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Wasja Brunotte, Larissa Chazette, Lukas Kohler, Jil Klunder, and Kurt Schneider. What About My Privacy?Helping Users Understand Online Privacy Policies. In Proceedings of the International Conference on Software and System Processes and International Conference on Global Software Engineering (ICSSP'22). Association for Computing Machinery, New York, NY, USA, 2022, 56–65.
+                
+                    <a href="https://doi.org/10.1145/3529320.3529327" target="_blank">https://doi.org/10.1145/3529320.3529327</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Parvaneh Shayegh and Sepideh Ghanavati. Toward an Approach to Privacy Notices in IoT. 2017 IEEE 25th International Requirements Engineering Conference Workshops (REW), Lisbon, Portugal, 2017, pp. 104-110.
+                
+                    <a href="https://doi.org/10.1109/REW.2017.77" target="_blank">https://doi.org/10.1109/REW.2017.77</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Abdulrahman Alabduljabbar, Ahmed Abusnaina, Ülkü Meteriz-Yildiran, and David Mohaisen. TLDR: Deep Learning-Based Automated Privacy Policy Annotation with Key Policy Highlights. In Proceedings of the 20th Workshop on Workshop on Privacy in the Electronic Society (WPES '21). Association for Computing Machinery, New York, NY, USA, 2021, 103–118.
+                
+                    <a href="https://doi.org/10.1145/3463676.3485608" target="_blank">https://doi.org/10.1145/3463676.3485608</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Maximiliane Windl, Niels Henze, Albrecht Schmidt, and Sebastian S. Feger. Automating Contextual Privacy Policies: Design and Evaluation of a Production Tool for Digital Consumer Privacy Awareness. In Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI '22). Association for Computing Machinery, New York, NY, USA, 2022, Article 34, 1–18
+                
+                    <a href="https://doi.org/10.1145/3491102.3517688" target="_blank">https://doi.org/10.1145/3491102.3517688</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Cheng Chang, Huaxin Li, Yichi Zhang,  Suguo Du, Hui Cao, and Zhu Haogin. Automated and Personalized Privacy Policy Extraction Under GDPR Consideration. In: Biagioni, E., Zheng, Y., Cheng, S. (eds) Wireless Algorithms, Systems, and Applications. WASA 2019. Lecture Notes in Computer Science(), vol 11604. Springer, Cham
+                
+                    <a href="https://doi.org/10.1007/978-3-030-23597-0_4" target="_blank">https://doi.org/10.1007/978-3-030-23597-0_4</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section7">
+                [7] Diego Roberto Gonçalves Pontes, Sergio Donizetti Zorzo, and Jose Santiago Moreira de Mello (2017). Evaluation of the reliability of using the prototype PPMark - a tool to support the computer human interaction in readings the privacy policies - using the GQM and TAM models. AMCIS 2017 Proceedings. 22.
+                
+                    <a href="https://aisel.aisnet.org/amcis2017/InformationSystems/Presentations/22" target="_blank">https://aisel.aisnet.org/amcis2017/InformationSystems/Presentations/22</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section8">
+                [8] Mousavi Nejad, Najmeh, Simon Scerri, and Jens Lehmann (2018). KnIGHT: Mapping Privacy Policies to GDPR. In: Knowledge Engineering and Knowledge Management. EKAW 2018. Lecture Notes in Computer Science(), vol 11313. Springer, Cham. https://doi.org/10.1007/978-3-030-03667-6_17
+                
+                    <a href="https://doi.org/10.1007/978-3-030-03667-6_17" target="_blank">https://doi.org/10.1007/978-3-030-03667-6_17</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section9">
+                [9] Florian Schaub, Rebecca Balebako,  Adam L Durity, and Lorrie Faith Cranor (2015). A Design Space for Effective Privacy Notices. In: Symposium on Usable Privacy and Security (SOUPS 2015). [S.l.: s.n.], p. 1–17.
+                
+                    <a href="https://www.usenix.org/system/files/conference/soups2015/soups15-paper-schaub.pdf" target="_blank">https://www.usenix.org/system/files/conference/soups2015/soups15-paper-schaub.pdf</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section10">
+                [10] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section11">
+                [11] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD4_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

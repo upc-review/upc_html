@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)GD8.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD8_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD8_files/starter-template.css" rel="stylesheet">
+    <link href="./GD8_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD8_files/custom.css" rel="stylesheet">
+    <script src="./GD8_files/saved_resource"></script>
+
+    <script src="./GD8_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD8.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD8_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD8.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                      <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
+	  <li class="breadcrumb-item active" aria-current="page">Managing App Permissions</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-toggles"></i> GD8 - Leverage Automated Decision-Making for Enhanced User Privacy Controls in Mobile Applications</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Users face challenges in managing app permissions effectively and making informed privacy decisions. This issue stems from several factors like limited user understanding, numerous permission requests, lack of contextual awareness, static and binary decisions about permissions. Frequent permission requests and the need for constant decision-making can lead to user fatigue, causing users to either indiscriminately accept permissions or ignore important privacy settings. Finding a balance between protecting user personal data and ensuring a seamless and user-friendly experience is challenging, as overly restrictive or obtrusive privacy controls can hinder app functionality.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                By leveraging automated decision-making, the solutions aim to reduce user burden, enhance privacy protection, and ensure that permission decisions align closely with user preferences and contextual needs. This dynamic and personalised approach to privacy management provides users with better control and understanding of how their data is accessed and shared, fostering a more secure and user-friendly mobile environment.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                Use advanced, user-centric, and context-aware automated decision-making systems to help users manage their app permissions effectively.
+
+<br><br>
+
+Wijesekera et al. <a href="GD8.html#section1">[1]</a> present a novel privacy management system for Android that uses contextual signals to predict user privacy preferences dynamically. This system addresses the limitations of the ask-on-first-use (AOFU) model, which does not account for varying contexts in subsequent permission requests. It balances usability with privacy protection by using infrequent prompts to retrain the ML model, ensuring minimal disruption to the user experience.
+
+
+<br><br>
+
+Rashidi et al. <a href="GD8.html#section2">[2]</a> propose DroidNet, an Android permission control framework that uses crowdsourcing to help users make informed decisions about app permissions. DroidNet operates in a "probation" mode for new apps, where permissions are not granted upfront. Instead, it provides recommendations based on decisions from peer expert users. An expertise ranking algorithm using a transitional Bayesian inference model is used to identify expert users. The system offers real-time recommendations on permission requests, helping inexperienced users make safer decisions. 
+
+
+
+<br><br>
+
+
+
+Gao et al. <a href="GD8.html#section3">[3]</a> present AutoPer+, an autonomous permission recommendation system for Android that leverages natural language processing (NLP) and machine learning to assist users in making permission decisions. AutoPer+ analyses app descriptions to determine the necessity of permissions, using a multi-topic model and deep semi-supervised learning with Long Short-Term Memory (LSTM) networks to identify similar apps and their permission usages. The system provides recommendations (Allow, Deny, Ask) along with explanations to help users understand the rationale behind each decision. 
+
+
+<br><br>
+
+Liu et al. <a href="GD8.html#section4">[4]</a> introduce a Personalized Privacy Assistant (PPA) for mobile app permissions, designed to help users manage the large number of permission decisions they need to make. The PPA predicts privacy preferences by asking users a small number of questions and matching them to privacy profiles derived from real-world data. 
+
+<br><br>
+ 
+Kim, Ko, and Kim <a href="GD8.html#section5">[5]</a> introduce the Quality of Private Information (QoPI) model, designed to provide fine-grained and dynamic privacy controls for mobile applications. The QoPI model defines various types and quality levels of private information and incorporates contextual properties affecting privacy decisions. By using this model, users can manage their privacy settings more precisely according to their needs and the context in which the application is used. The model predicts appropriate privacy controls based on user behaviour, improving the accuracy and efficiency of privacy management compared to traditional binary and static approaches. 
+
+<br><br>
+
+Olejnik et al. <a href="GD8.html#section6">[6]</a> introduce SmarPer, an advanced permission mechanism for Android designed to provide context-aware and automatic runtime permission decisions. SmarPer aims to address the limitations of static permission policies by predicting user decisions using a Bayesian linear regression model. It also includes a data obfuscation feature to offer users a middle ground between allowing and denying permissions. While it does not use crowdsourcing, it employs advanced models to make expert-level privacy recommendations.
+
+<br><br>
+
+
+Wijesekera et al. <a href="GD8.html#section7">[7]</a> investigate the feasibility of dynamically granted permissions on mobile devices, focusing on aligning these permissions with user preferences. The authors conducted a longitudinal field study with 131 participants to analyse contextual privacy decisions and developed a machine-learning model to predict user decisions. The model detects changes in context and infers privacy preferences based on users' past decisions and behaviour. 
+
+
+
+<br><br>
+Liu et al. <a href="GD8.html#section8">[8]</a> present PriVs, an unobtrusive privacy permission recommendation system for mobile apps that balances privacy and usability. PriVs uses crowdsourced data to generate personalised privacy recommendations for users. The system collects users’ privacy settings and feedback to refine recommendations continuously. It employs collaborative filtering methods to make privacy permission recommendations and allows users to approve, reject, or temporarily approve suggested settings.
+
+<br><br>
+Kaur, Echizen and Kumar <a href="GD8.html#section9">[9]</a> proposed an intelligent agent model designed to protect the location privacy of smartphone users. This agent acts as a virtual proxy, managing the release and distortion of location data based on user-defined preferences and contextual information. Utilising neural networks, the agent learns from user behaviour to predict and adjust privacy settings dynamically. By introducing spatial and temporal perturbations, the agent minimises the risk of continuous tracking and unauthorised data inference, ensuring robust privacy protection while maintaining the functionality of location-based services.
+<br><br>
+
+These systems proposed in the supporting research leverage various techniques such as crowdsourcing, machine learning, natural language processing (NLP), and collaborative filtering to provide personalised and dynamic privacy recommendations that align with user preferences and behaviours.
+Frameworks like DroidNet <a href="GD8.html#section2">[2]</a>  and PriVs <a href="GD8.html#section8">[8]</a>  use crowdsourced data to gather expert opinions and user feedback, providing real-time permission recommendations based on collective knowledge and preferences. The systems proposed by Wijesekera et al. <a href="GD8.html#1">[1]</a><a href="GD8.html#7">[7]</a> use contextual signals and machine learning to predict user decisions with high accuracy. AutoPer+ <a href="GD8.html#3">[3]</a> uses LSTM networks and NLP for autonomous permission recommendations. The Personalised Privacy Assistant (PPA) <a href="GD8.html#section4">[4]</a> uses machine learning to develop privacy profiles and offer personalised recommendations. The QoPI model <a href="GD8.html#section5">[5]</a> defines various privacy levels and contextual properties for dynamic privacy management. SmarPer <a href="GD8.html#section6">[6]</a> uses Bayesian linear regression to predict user decisions and offers an obfuscation option. The Smart Data agent <a href="GD8.html#section9">[9]</a> uses neural networks to learn from user behaviour to predict and adjust privacy settings dynamically.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>mobile devices</em>
+            
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_63"> <img src="./GD8_files/droidnet.jpg" class="img-fluid" alt="Droidnet interface &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Left: probation and trusted installation mode; Middle: users select resources to be monitored;  Right: permission grant prompt, with a suggestion from DroidNet <a href="GD8.html#section2">[2]</a>.  <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_63">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_59"> <img src="./GD8_files/autoper.jpg" class="img-fluid" alt="AutoPer+ interface recommendation &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            AutoPer+ interface recommendation <a href="GD8.html#section3">[3]</a>.  <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_59">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_60"> <img src="./GD8_files/follow-my-recommendation.jpg" class="img-fluid" alt="Permission management and daily privacy nudge &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;"></a>
+            </p>
+            <p class="card-text small text-center">
+            Left: permission management; Right:  daily privacy nudge,  which includes the access frequency and purpose information <a href="GD8.html#section4">[4]</a>.  <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_60">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_61"> <img src="./GD8_files/QoPI.jpg" class="img-fluid" alt="Interface QoPI recommender &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Left: an example scenario for obtaining a QoPI recommendation; Right: manually selecting a QoPI level for the locational information <a href="GD8.html#section5">[5]</a>.  <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_61">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_62"> <img src="./GD8_files/smarper.jpg" class="img-fluid" alt="SmarPer permission prompt and details of the effect of decision types  &lt;a href=&quot;#section6&quot;&gt;[6]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Top: SmarPer permission prompt. Bottom: Information about the effect of the different decision types (when the user clicks the question mark in the permission prompt) <a href="GD8.html#section6">[6]</a>.  <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_62">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_64"> <img src="./GD8_files/when-privacy-meets-usabilit_JXS1vfB.jpg" class="img-fluid" alt="PriVs app &lt;a href=&quot;#section8&quot;&gt;[8]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            From left to right: (a) users are presented with statistical results, which can serve as a reference for their privacy preferences; (b) PriVs can receive and implement the recommendations generated by the algorithm; (c) when an app requests various permissions, PriVs will display an interface to collect user feedback on these permissions; (d)A dialogue pops up to remind users when they choose to approve the recommendation temporarily <a href="GD8.html#section8">[8]</a>.  <a href="GD8.html#" data-bs-toggle="modal" data-bs-target="#modal_64">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_64" tabindex="-1" aria-labelledby="modalLabel_64" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_64">PriVs app <a href="GD8.html#section8">[8]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD8_files/when-privacy-meets-usability_i4AeLGI.png" class="img-fluid" alt="PriVs app &lt;a href=&quot;#section8&quot;&gt;[8]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_63" tabindex="-1" aria-labelledby="modalLabel_63" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_63">Droidnet interface <a href="GD8.html#section2">[2]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD8_files/droidnet.png" class="img-fluid" alt="Droidnet interface &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_60" tabindex="-1" aria-labelledby="modalLabel_60" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_60">Permission management and daily privacy nudge <a href="GD8.html#section4">[4]</a></h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD8_files/follow-my-recommendation.png" class="img-fluid" alt="Permission management and daily privacy nudge &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_62" tabindex="-1" aria-labelledby="modalLabel_62" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_62">SmarPer permission prompt and details of the effect of decision types  <a href="GD8.html#section6">[6]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD8_files/smarper.png" class="img-fluid" alt="SmarPer permission prompt and details of the effect of decision types  &lt;a href=&quot;#section6&quot;&gt;[6]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_59" tabindex="-1" aria-labelledby="modalLabel_59" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_59">AutoPer+ interface recommendation <a href="GD8.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD8_files/autoper.png" class="img-fluid" alt="AutoPer+ interface recommendation &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_61" tabindex="-1" aria-labelledby="modalLabel_61" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_61">Interface QoPI recommender <a href="GD8.html#section5">[5]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD8_files/QoPI.png" class="img-fluid" alt="Interface QoPI recommender &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Providing tools and frameworks that leverage crowdsourcing, machine learning, and NLP to improve user privacy and data protection dynamically. </li>
+                
+                    <li>Helping users make informed decisions about app permissions through expert-driven, context-aware, and autonomous recommendations. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>The solutions reduce privacy violations and align closely with user preferences, achieving high recommendation accuracy (up to 96.8%). They use contextual information and collaborative filtering to provide automatic permission decisions, offering partial data sharing and personalised privacy management. These systems also provide explanations for recommendations, improving user understanding and acceptance, with studies showing up to 78.7% user acceptance rates <a href="GD8.html#section1">[1]</a><a href="GD8.html#section3">[3]</a><a href="GD8.html#section4">[4]</a><a href="GD8.html#section5">[5]</a><a href="GD8.html#section6">[6]</a><a href="GD8.html#section7">[7]</a><a href="GD8.html#section8">[8]</a>.</li>
+                
+            
+                
+                    <li>Uses an expertise ranking algorithm for high-quality recommendations and continuously refines recommendations based on user feedback <a href="GD8.html#section2">[2]</a>.</li>
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+            
+                
+                    <li>The quality and reliability of the recommendations heavily depend on the accuracy and volume of crowdsourced data. This reliance introduces potential risks such as false responses intended to mislead the recommendation system, necessitating measures to mitigate these threats and ensure the system’s effectiveness <a href="GD8.html#section2">[2]</a><a href="GD8.html#section8">[8]</a>.</li>
+                
+            
+                
+                    <li>The studies faced some limitations, including a focus on popular apps, which may have introduced bias <a href="GD8.html#section6">[6]</a>, the requirement of root access for manipulating permission settings, limiting the participant pool <a href="GD8.html#section4">[4]</a>, and the lack of real-world consequences for denying permissions, which might not accurately reflect user behaviour in typical app usage scenarios <a href="GD8.html#section7">[7]</a>.</li>
+                
+            
+                
+                    <li>The integration of contextual data and machine learning models can introduce computational overhead and latency in permission decision-making, which may affect the performance of the mobile device <a href="GD8.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Choices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	Privacy choices give people control over certain aspects of data practices. Considering the design space for privacy choices <a href="GD8.html#section10">[10]</a>, this guideline can be applied in the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Modalities are similar to channels and refer to the different modes for the two-way communication of privacy choices between systems and users, considering factors such as the nature of privacy decisions, system capabilities, user engagement and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are typically presented visually, using text, images, icons, or a combination of these elements. Visual privacy choices often include clear descriptions of available options, allowing systems to obtain affirmative privacy decisions from users when necessary.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline supports visual modalities by presenting recommendations in the form of text, images, or icons that are easy for users to understand.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Machine-readable
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this modality, a system&#39;s data practices and available privacy choices are available in a machine-readable format. This allows communication of privacy options to other systems automatically as well as serves as the foundation for software agents.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    It can be applied in a machine-readable format to support automated systems and privacy agents that negotiate privacy choices on behalf of the user.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Various channels can be used to present privacy options to users and effectively communicate their privacy decisions back to systems; for privacy choices, it is a two-way communication between systems and users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Secondary channels are used when there is some limitation with the primary channel. For example, when the primary channel is not available or when has a limited user interface.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    It can also be extended to secondary channels, like mobile apps or websites, providing recommendations through these platforms when primary channels are limited.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline can be applied through primary channels, such as within the app or system, where the user interacts directly with the privacy choices.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Contextualised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category of privacy choices, they are presented in context-specific privacy situations, for example, when a potential privacy violation may happen, such as asking to allow or deny location sharing when it is about to happen">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline is particularly relevant in this case, as it leverages contextual signals to provide recommendations, helping users make privacy decisions based on the specific context (e.g., time, location, purpose).
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Binary choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline can enhance binary choices by providing users with context-aware and personalised recommendations to make more informed decisions.
+                  </p>
+                
+
+                <!-- Options -->
+                
+                  <ul class="ms-3">
+                    
+                      <li>
+                        <strong>Opt-in/out</strong>
+                        
+                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
+                        
+                      </li>
+                    
+                  </ul>
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Functionality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension intends to capture functionalities to support the exercise of privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Feedback
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Timely and accurate feedback is vital for the system to support ongoing privacy choices. When users make privacy decisions that can be immediately implemented, the system should promptly notify them of the updated privacy settings.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline includes providing users with feedback on the status of their privacy choices and ensuring they are aware of the actions taken based on their decisions, including recommended and automated decisions.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Presentation
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This is an indispensable part of the interface. The interface must present the privacy choices for the user and should be designed in a way that users can easily understand what they are sharing and what they are not sharing.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices always have a presentation that involves a system providing clear and easily understandable information to users about potential data practices, available options, and how to communicate privacy decisions, often incorporating multiple components and integrating with related privacy notices, requiring careful consideration of design dimensions such as timing, channel, and modality <a href="GD8.html#section10">[10]</a>.
+<br><br>
+This guideline presents solutions that focus on a clear and understandable presentation of privacy choices. It aims to help users comprehend data practices and effectively communicate their privacy decisions by providing recommendations and explanations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="In this dimension, it is considered the appropriate time to deliver a privacy choice, since it can affect the effectiveness of user engagement in privacy decision-making. This dimension can be also decoupled, integrated or mediated with the dimension Timing of the Privacy Notices since the availability of privacy notices can affect for example the user perception of risk."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are presented to users when they are about to engage in a data practice. This timing approach is commonly integrated with relevant privacy notices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    It supports just-in-time privacy choices by providing context-aware recommendations when the specific data practice is about to happen.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Personalised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Personalised privacy choices can be integrated, decoupled or mediated from privacy notices and involve tailoring the timing mechanisms based on individual preferences.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    It promotes personalised timing of privacy choices, presenting recommendations at the most appropriate times based on individual user preferences.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Context-aware
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Context-aware privacy choices are also often integrated with privacy notices, and they comprise leveraging the context the user is in (temporal, spatial, social) to present the privacy choice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline is relevant for context-aware timing, delivering recommendations tailored to the user’s current context.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 All discussed solutions address the control attribute <a href="GD8.html#section11">[11</a> by providing mechanisms that allow users to make informed decisions, customise their privacy settings, and manage permissions dynamically based on context and preferences.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Security</h6>
+
+				Security involves technical measures taken to protect data from unauthorised or malicious access. While not the primary focus, the discussed solution proposals implicitly address security by ensuring that permission decisions minimise unnecessary data exposure, thereby reducing potential security risks.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Transparency</h6>
+
+				Transparency involves making users aware of how their personal data is handled, providing access to privacy policies, and proactively distributing information.  Many of the presented solution proposals emphasise informing users about permission decisions and providing explanations for recommendations, enhancing transparency.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Primal Wijesekera, Joel Reardon, Irwin Reyes, Lynn Tsai, Jung-Wei Chen, Nathan Good, David Wagner, Konstantin Beznosov, and Serge Egelman (2018). Contextualizing Privacy Decisions for Better Prediction (and Protection). In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (CHI '18). Association for Computing Machinery, New York, NY, USA, Paper 268, 1–13.
+                
+                    <a href="https://doi.org/10.1145/3173574.3173842" target="_blank">https://doi.org/10.1145/3173574.3173842</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Bahman Rashidi, Carol Fung, Anh Nguyen, Tam Vu and Elisa Bertino (2018). Android User Privacy Preserving Through Crowdsourcing. In IEEE Transactions on Information Forensics and Security, vol. 13, no. 3, pp. 773-787, March 2018.
+                
+                    <a href="https://doi.org/10.1109/TIFS.2017.2767019" target="_blank">https://doi.org/10.1109/TIFS.2017.2767019</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Hongcan Gao, Chenkai Guo, Dengrong Huang, Xiaolei Hou, Yanfeng Wu, Jing Xu, Zhen He, and Guangdong Bai (2020). Autonomous Permission Recommendation. In IEEE Access, vol. 8, pp. 76580-76594, 2020.
+                
+                    <a href="https://doi.org/10.1109/ACCESS.2020.2967139" target="_blank">https://doi.org/10.1109/ACCESS.2020.2967139</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Bin Liu, Mads Schaarup Andersen, Florian Schaub, Hazim Almuhimedi, Shikun Zhang, Norman Sadeh, Alessandro Acquisti. and Yuvraj Agarwal (2016). Follow my recommendations: A personalized privacy assistant for mobile app permissions. In Twelfth symposium on usable privacy and security (SOUPS 2016) (pp. 27-41).
+                
+                    <a href="https://www.usenix.org/conference/soups2016/technical-sessions/presentation/liu" target="_blank">https://www.usenix.org/conference/soups2016/technical-sessions/presentation/liu</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Seung-Hyun Kim, In-Young Ko, Soo-Hyung Kim (2017). Quality of Private Information (QoPI) model for effective representation and prediction of privacy controls in mobile computing. Computers &amp; Security, 66, pp.1-19.
+                
+                    <a href="https://doi.org/10.1016/j.cose.2017.01.002" target="_blank">https://doi.org/10.1016/j.cose.2017.01.002</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Katarzyna Olejnik, Italo Dacosta, Joana Soares Machado, Kévin Huguenin, Mohammad Emtiyaz Khan, and Jean-Pierre Hubaux (2017). SmarPer: Context-Aware and Automatic Runtime-Permissions for Mobile Devices. In 2017 IEEE Symposium on Security and Privacy (SP), San Jose, CA, USA, 2017, pp. 1058-1076.
+                
+                    <a href="https://doi.org/10.1109/SP.2017.25" target="_blank">https://doi.org/10.1109/SP.2017.25</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section7">
+                [7] Primal Wijesekera, Arjun Baokar, Lynn Tsai, Joel Reardon, Serge Egelman, David Wagner, and Konstantin Beznosov (2017). The Feasibility of Dynamically Granted Permissions: Aligning Mobile Privacy with User Preferences. In 2017 IEEE Symposium on Security and Privacy (SP), San Jose, CA, USA, 2017, pp. 1077-1093.
+                
+                    <a href="https://doi.org/10.1109/SP.2017.51" target="_blank">https://doi.org/10.1109/SP.2017.51</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section8">
+                [8] Rui Liu, Jiannong Cao, Kehuan Zhang, Wenyu Gao, Junbin Liang and Lei Yang (2018). When Privacy Meets Usability: Unobtrusive Privacy Permission Recommendation System for Mobile Apps Based on Crowdsourcing. In IEEE Transactions on Services Computing, vol. 11, no. 5, pp. 864-878, 1 Sept.-Oct. 2018.
+                
+                    <a href="https://doi.org/10.1109/TSC.2016.2605089" target="_blank">https://doi.org/10.1109/TSC.2016.2605089</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section9">
+                [9] Harkeerat Kaur, Isao Echizen and Rohit Kumar (2020). Smart Data Agent for Preserving Location Privacy. In 2020 IEEE Symposium Series on Computational Intelligence (SSCI), Canberra, ACT, Australia, 2020, pp. 2567-2575.
+                
+                    <a href="https://doi.org/10.1109/SSCI47803.2020.9308396" target="_blank">https://doi.org/10.1109/SSCI47803.2020.9308396</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section10">
+                [10] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section11">
+                [11] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD8_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

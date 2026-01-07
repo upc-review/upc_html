@@ -1,0 +1,162 @@
+#builder {
+    margin-top: 20px;
+}
+#builder h3 {
+    margin-top: 0;
+}
+#builder .panel-body {
+    min-height: 200px;
+    border: 2px dashed #ccc;
+}
+#builder .form-group {
+    margin-bottom: 10px;
+}
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+.modal-dialog {
+    max-width: 600px;
+    margin: 30px auto;
+}
+#sidebar-nav {
+    width: 200px;
+}
+
+
+/* navbar fixed top*/
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+.card-hover {
+    transition: box-shadow .3s;
+}
+.card-hover:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+.modal-dialog {
+    max-width: max-content !important;
+}
+.modal-body {
+    display: flex;
+}
+.modal-body img {
+    object-fit: contain;
+}
+/* Primary deep blue for navbar, accents, active accordion header */
+.bg-primary {
+    background-color: #1976d2 !important;    /* Modern, accessible blue */
+}
+
+/* Neutral gray for muted elements or backgrounds */
+.bg-secondary {
+    background-color: #b0bec5 !important;    /* Softer, cool gray */
+}
+
+/* Success green, more natural */
+.bg-success {
+    background-color: #43a047 !important;    /* Material green */
+}
+
+/* Error/danger, with good contrast */
+.bg-danger {
+    background-color: #e53935 !important;    /* Material red */
+}
+
+/* Warning: a warm, modern gold */
+.bg-warning {
+    background-color: #fbc02d !important;    /* Soft gold */
+}
+
+/* Info: a light, pleasant blue for cards/headers */
+.bg-info {
+    background-color: #e3f2fd !important;    /* Light blue background for accordions/cards */
+}
+
+/* Very light gray for main backgrounds */
+.bg-light {
+    background-color: #f8f9fa !important;    /* Bootstrap's default */
+}
+
+/* Dark blue-gray for occasional contrast */
+.bg-dark {
+    background-color: #263238 !important;    /* Blue-black, less harsh than pure black */
+}
+
+/* .accordion-button {
+  background: #e3f2fd !important;
+  color: #0d47a1 !important;
+}
+.accordion-button:not(.collapsed) {
+  background: #1976d2 !important;
+  color: #fff !important;
+} */
+
+.accordion-button {
+    background-color: #1976d2 !important;
+    color: #fff !important;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #1565c0 !important; /* slightly deeper blue for active */
+    color: #fff !important;
+}
+
+.card-guideline {
+  background: #fff;
+  border-left: 4px solid #0dcaf0;
+  color: #222;
+  margin-bottom: 1rem;
+}
+.card-guideline a {
+  color: #0d47a1;
+  font-weight: 500;
+  text-decoration: none;
+}
+.card-guideline a:hover {
+  text-decoration: underline;
+}
+
+
+.group-section {
+border-left: 4px solid #0d6efd;
+padding-left: 1.5rem;
+margin-left: 0.5rem;
+}
+
+.subgroup-block {
+border-left: 3px solid rgba(13,110,253,0.3);
+padding-left: 1rem;
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+
+.guideline-item {
+border-left: 2px solid rgba(13,110,253,0.2);
+transition: background 0.2s ease;
+}
+
+.guideline-item:hover {
+background-color: #f8f9fa;
+}
+
+.toggle-chevron {
+transition: transform 0.2s ease;
+}
+
+.toggle-chevron[aria-expanded="false"] i {
+transform: rotate(-90deg);
+}
+
+.list-group-item {
+border: none;
+border-bottom: 1px solid #eaeaea;
+}
+
+h4.group-title {
+color: #0d6efd;
+}
+
+h5.subgroup-title {
+color: #495057;
+}

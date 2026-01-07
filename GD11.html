@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)GD11.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD11_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD11_files/starter-template.css" rel="stylesheet">
+    <link href="./GD11_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD11_files/custom.css" rel="stylesheet">
+    <script src="./GD11_files/saved_resource"></script>
+
+    <script src="./GD11_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD11.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD11_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD11.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
+	  <li class="breadcrumb-item active" aria-current="page">Managing Privacy Settings</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-database-check"></i> GD11 - Implement Integrated Personal Data Storage to Allow Users to Store and Manage Their Personal Data</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                In the digital age, users generate vast amounts of personal data across various platforms, leading to scattered and fragmented data storage managed by multiple service providers. This fragmentation poses significant challenges in ensuring data privacy, security, and user control. Users often lack the tools and understanding needed to manage their privacy preferences effectively, resulting in unintended data exposure and insufficient protection of personal information.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                To empower users with control over their personal data by implementing secure, user-centric personal data vaults that support advanced privacy management features and compliance with privacy regulations.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                To implement personal data storages or Personal Data Vaults (PDVs) that give users comprehensive control over their personal data. These mechanisms should be equipped with advanced privacy management tools, automated decision-making capabilities, robust security measures, and compliance features to meet regulatory requirements.
+<br><br>
+Mun et al. <a href="GD11.html#section1">[1]</a> propose the PDVLoc framework, a Personal Data Vault (PDV) designed to control the sharing of location data from mobile devices. The framework allows users to store their location data in a centralised vault and manage data sharing with third parties through fine-grained Access Control Lists (ACLs). It includes tools like a rule recommender to help users make informed privacy decisions and a trace audit feature for evaluating privacy policy adherence over time.  The aim is to ensure that users have control over their location data, provide secure storage and customisable sharing settings, and help maintain transparency and accountability through auditing.
+
+<br><br>
+
+Singh, Carminati and Ferrari <a href="GD11.html#section2">[2]</a> present the Privacy-Aware Personal Data Storage (P-PDS) system, which uses semi-supervised and active learning to automate privacy decisions for user data stored in a centralised repository. The system reduces user burden by learning privacy preferences from both labelled and unlabeled data and adjusts privacy decisions based on user-specific preferences through personalised and history-based active learning. This approach enhances accuracy and efficiency in managing privacy settings. The aim is to provide an intelligent and user-friendly way to manage privacy settings, automating decisions while aligning with individual user preferences and reducing manual configuration efforts.
+
+<br><br>
+
+Sanchez, Torre and Knijnenburg <a href="GD11.html#section3">[3]</a> propose a solution for managing privacy preferences in IoT environments using semantic web technology. They introduce the Privacy Preference for IoT (PPIoT) ontology, which integrates privacy preferences, the W3C Semantic Sensor Network Ontology, Fair Information Practices (FIP) principles, and GDPR compliance. The Personal Data Manager (PDM) component mediates and manages user privacy preferences, allowing users to control data disclosure to third parties. The solution includes an Interactive Privacy Preference Model (PPM) to present privacy policies transparently and gather affirmative user consent. This aim is to empower users to manage their privacy settings effectively in IoT environments, ensuring that data disclosure is controlled and compliant with privacy regulations. The source code for the PDM is available on <a href="https://github.com/OdnanOriginal/PDM" target="_blank">GitHub</a>.
+
+<br><br>
+While specific details vary, the practical implementation of these systems often points towards cloud-based storage due to the need for scalability, accessibility, and integration with diverse devices and platforms. Local storage could be used in certain contexts, but cloud storage is more likely given the complexity and volume of data involved in these systems.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>, 
+            
+                <em>smart devices</em>
+            
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD11.html#" data-bs-toggle="modal" data-bs-target="#modal_71"> <img src="./GD11_files/pdvloc.jpg" class="img-fluid" alt="PDVLoc web interface &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Right: The PDVLoc web user interface displays information inferred from collected user data, provides data-sharing feedback, and allows configuration of spatial boundaries; Left: Traceaudit: Web user interface for reviewing shared data <a href="GD11.html#section1">[1]</a>.  <a href="GD11.html#" data-bs-toggle="modal" data-bs-target="#modal_71">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD11.html#" data-bs-toggle="modal" data-bs-target="#modal_73"> <img src="./GD11_files/PPM-based-interactive-ui_FLiMU46.jpg" class="img-fluid" alt="PPM-based interactive UI &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The Interactive Privacy Preference Model (PPM) interface for Privacy Policy Settings, which conforms to the PPIoT ontology <a href="GD11.html#section3">[3]</a>.  <a href="GD11.html#" data-bs-toggle="modal" data-bs-target="#modal_73">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD11.html#" data-bs-toggle="modal" data-bs-target="#modal_72"> <img src="./GD11_files/PDM.jpg" class="img-fluid" alt="The Personal Data Manager (PDM) confirmation request and recommendation &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The Personal Data Manager (PDM) confirmation request and recommendation <a href="GD11.html#section3">[3]</a>.  <a href="GD11.html#" data-bs-toggle="modal" data-bs-target="#modal_72">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_73" tabindex="-1" aria-labelledby="modalLabel_73" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_73">PPM-based interactive UI <a href="GD11.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD11_files/PPM-based-interactive-ui_FLiMU46.jpeg" class="img-fluid" alt="PPM-based interactive UI &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_72" tabindex="-1" aria-labelledby="modalLabel_72" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_72">The Personal Data Manager (PDM) confirmation request and recommendation <a href="GD11.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD11_files/PDM.png" class="img-fluid" alt="The Personal Data Manager (PDM) confirmation request and recommendation &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_71" tabindex="-1" aria-labelledby="modalLabel_71" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_71">PDVLoc web interface <a href="GD11.html#section1">[1]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD11_files/pdvloc.png" class="img-fluid" alt="PDVLoc web interface &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Supporting users in retaining ownership of their data. </li>
+                
+                    <li>Empowering users to manage their personal data effectively. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>User studies indicate high satisfaction and acceptance of privacy management frameworks incorporating policy management tools, such as rule recommenders and trace audits, which enhance user decision-making <a href="GD11.html#section1">[1]</a>. Additionally, the integration of semantic web technology in privacy frameworks like PPIoT enables interoperability and scalability across diverse IoT devices and platforms <a href="GD11.html#section3">[3]</a>. Combining automation with user consent ensures users maintain control over their privacy settings while benefiting from automated processes, enhancing user experience and regulatory compliance <a href="GD11.html#section3">[3]</a>.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+            
+                
+                    <li>Tools like the PDM can only support negotiation when the third-party policy statement is encoded in PPIoT <a href="GD11.html#section3">[3]</a>.</li>
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Choices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	Privacy choices give people control over certain aspects of data practices. Considering the design space for privacy choices <a href="GD11.html#section4">[4]</a>, this guideline can be applied in the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Modalities are similar to channels and refer to the different modes for the two-way communication of privacy choices between systems and users, considering factors such as the nature of privacy decisions, system capabilities, user engagement and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are typically presented visually, using text, images, icons, or a combination of these elements. Visual privacy choices often include clear descriptions of available options, allowing systems to obtain affirmative privacy decisions from users when necessary.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline includes using visual methods (text, icons, images) to communicate privacy choices clearly.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Machine-readable
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this modality, a system&#39;s data practices and available privacy choices are available in a machine-readable format. This allows communication of privacy options to other systems automatically as well as serves as the foundation for software agents.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Solutions like the one discussed in Singh, Carminati and Ferrari <a href="GD11.html#section2">[2]</a> focus on automating privacy management through machine-readable privacy settings and user preferences, leveraging machine learning and privacy agents.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="In this dimension, it is considered the appropriate time to deliver a privacy choice, since it can affect the effectiveness of user engagement in privacy decision-making. This dimension can be also decoupled, integrated or mediated with the dimension Timing of the Privacy Notices since the availability of privacy notices can affect for example the user perception of risk."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On-demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="On-demand privacy choices can be integrated or decoupled from privacy notices, usually presented when users actively seek available privacy choices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Users can access and change their privacy settings at any time.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                At Setup
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are commonly presented to users when they initially interact with a system, often accompanied by relevant privacy notices. This timing approach is commonly associated with consent-based privacy choices, such as software license agreements during installation or terms of use during account signup.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Users can configure their privacy settings when first interacting with the system.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are presented to users when they are about to engage in a data practice. This timing approach is commonly integrated with relevant privacy notices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices can be presented when specific data practices are about to occur, allowing users to make informed decisions just in time.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Personalised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Personalised privacy choices can be integrated, decoupled or mediated from privacy notices and involve tailoring the timing mechanisms based on individual preferences.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The solution discussed in Sanchez, Torre and Knijnenburg <a href="GD11.html#section3">[3]</a> involves using semantic technologies and interactive models to ensure that privacy choices are personalised and presented at relevant times based on user-defined contexts.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Context-aware
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Context-aware privacy choices are also often integrated with privacy notices, and they comprise leveraging the context the user is in (temporal, spatial, social) to present the privacy choice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline supports providing privacy options based on the user's current context, such as location or activity.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Privacy rights-based choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This case comprises a type of privacy choice that supports privacy rights such as access, erasure, rectification, erasure, portability, etc. These choices are usually beyond the capability of binary or multiple choices and may require additional interactions between the user and the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline supports privacy rights-based choices, advocating for users to manage their data effectively.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Contextualised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category of privacy choices, they are presented in context-specific privacy situations, for example, when a potential privacy violation may happen, such as asking to allow or deny location sharing when it is about to happen">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    It aligns with the concept of providing choices based on specific contexts, such as time, location, or purpose of data use. For example, Sanchez, Torre and Knijnenburg <a href="GD11.html#section3">[3]</a> focus on providing detailed, context-specific privacy settings using semantic web technologies and an interactive model that allows for dynamic adjustment of privacy preferences based on context.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Multiple choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to providing users with more options to choose from, like the sum of multiple binary choices, for example.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline supports providing users with several options for data access and usage, such as setting different levels of data sharing or specifying conditions under which data can be accessed.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Binary choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline allows for basic opt-in/opt-out mechanisms for users to consent to or deny data collection and processing.
+                  </p>
+                
+
+                <!-- Options -->
+                
+                  <ul class="ms-3">
+                    
+                      <li>
+                        <strong>Opt-in/out</strong>
+                        
+                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
+                        
+                      </li>
+                    
+                  </ul>
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Various channels can be used to present privacy options to users and effectively communicate their privacy decisions back to systems; for privacy choices, it is a two-way communication between systems and users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Secondary channels are used when there is some limitation with the primary channel. For example, when the primary channel is not available or when has a limited user interface.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to secondary channels if the primary channel does not have or has a limited user interface.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to the same platform or device the user is interacting with.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Functionality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension intends to capture functionalities to support the exercise of privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Presentation
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This is an indispensable part of the interface. The interface must present the privacy choices for the user and should be designed in a way that users can easily understand what they are sharing and what they are not sharing.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices always have a presentation that involves a system providing clear and easily understandable information to users about potential data practices, available options, and how to communicate privacy decisions, often incorporating multiple components and integrating with related privacy notices, requiring careful consideration of design dimensions such as timing, channel, and modality <a href="GD11.html#section4">[4]</a>. The solutions presented in this guideline resort to displaying privacy options in an understandable manner and user-friendly interfaces.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 The guideline focuses on empowering users to store and manage their personal data, emphasising user consent, control over data sharing, and the ability to configure privacy settings, which aligns closely with the attribute of Control <a href="GD11.html#section5%22">[5]</a>.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Pseudonymisation</h6>
+
+				This guideline can support Pseudonymisation by allowing the replacement of personally identifiable markers with artificial identifiers. This ensures that data can only be traced back to individual users with the help of additional information, providing an added layer of privacy protection.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Correctness</h6>
+
+				This guideline can address the Correctness attribute by enabling users to edit and update their personal data.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Retention</h6>
+
+				The guideline involves setting up systems that allow users to manage how long their data is stored. Users can configure data retention periods according to their preferences, ensuring that data is not kept longer than necessary.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Security</h6>
+
+				Implementing Personal Data Vaults (PDVs) includes robust security measures to protect personal data from unauthorised access and breaches. These measures involve encryption, secure data storage, and controlled access mechanisms.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Min Y. Mun, Donnie H. Kim, Katie Shilton, Deborah Estrin, Mark Hansen, and Ramesh Govindan (2014). PDVLoc: A Personal Data Vault for Controlled Location Data Sharing. ACM Trans. Sen. Netw. 10, 4, Article 58 (June 2014), 29 pages.
+                
+                    <a href="https://doi.org/10.1145/2523820" target="_blank">https://doi.org/10.1145/2523820</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Bikash Chandra Singh, Barbara Carminati, and Elena Ferrari (2019). Privacy-aware personal data storage (p-pds): Learning how to protect user privacy from external applications. IEEE Transactions on Dependable and Secure Computing, 18(2), 889-903.
+                
+                    <a href="https://doi.org/10.1109/TDSC.2019.2903802" target="_blank">https://doi.org/10.1109/TDSC.2019.2903802</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Odnan Ref Sanchez, Ilaria Torre, Bart P. Knijnenburg (2020). Semantic-based privacy settings negotiation and management. Future Generation Computer Systems, 111, 879-898.
+                
+                    <a href="https://doi.org/10.1016/j.future.2019.10.024" target="_blank">https://doi.org/10.1016/j.future.2019.10.024</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD11_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)GD18.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD18_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD18_files/starter-template.css" rel="stylesheet">
+    <link href="./GD18_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD18_files/custom.css" rel="stylesheet">
+    <script src="./GD18_files/saved_resource"></script>
+
+    <script src="./GD18_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD18.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD18_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD18.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
+	  <li class="breadcrumb-item active" aria-current="page">Managing Multiparty Privacy</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-people"></i> GD18 - Implement Collaborative Privacy Management for Shared Data in Social Networks</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Managing multiparty privacy in online social networks (OSNs) is crucial due to the collaborative nature of data sharing. 
+The main challenges stem from multiple users, which may have conflicting privacy preferences.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                Ensuring that all co-owners have a say in how shared content is handled and that diverse privacy preferences are accommodated by addressing the complexities and conflicts that arise from co-owned data.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                To develop systems that enable collaborative privacy settings by leveraging mechanisms such as conflict detection and resolution, consensus-based decision-making or automated conflict resolution, aiming to respect all co-owners privacy needs.
+<br><br>
+Squicciarini, Xu, and Zhang <a href="GD18.html#section1">[1]</a> introduced CoPE, a tool designed to enable collaborative privacy management in Online Social Networks (OSNs). Recognising that users often co-own and co-manage data like photos, the authors extend traditional access control mechanisms to include collaborative content management. CoPE allows content owners to invite tagged users (co-owners) to jointly manage shared content, specifying who can view, modify, or comment on the data. Implemented as a Facebook application, CoPE addresses privacy concerns through features like notifications, co-ownership requests, and access management.
+<br><br>
+Hu, Ahn, and Jorgensen <a href="GD18.html#section2">[2]</a> propose a systematic mechanism to detect and resolve privacy conflicts in collaborative data sharing. Their approach includes specifying multiparty privacy policies, detecting conflicts through accessor space segmentation, and resolving conflicts by balancing privacy risks and sharing losses. They implemented a proof-of-concept prototype, Retinue, as a Facebook application, demonstrating the feasibility and practicality of their approach through system evaluation and a user study.
+<br><br>
+Ratikan and Shikida <a href="GD18.html#section3">[3]</a> propose a Collective Privacy Protection (CPP) approach that balances sharing and privacy through a majority vote system. The owner of shared content creates a privacy policy, and co-owners vote on whether to accept it. If any co-owner rejects, their privacy concerns are prioritised. The system detects and resolves privacy conflicts by considering social relationships and preferences.
+<br><br>
+Such and Criado <a href="GD18.html#section4">[4]</a> proposed a computational mechanism to resolve these conflicts by merging individual privacy preferences into a single policy. The mechanism adapts to different situations by modelling users' willingness to make concessions. It detects conflicts by comparing privacy policies and suggests solutions based on user preferences, item sensitivity, and the importance of the conflicting users.
+
+<br><br>
+
+Fang et al. <a href="GD18.html#section5">[5]</a> introduced the concept of "dislike relation", where users may not want their relationships inferred from shared items. The proposed solution uses a communication-intensity-based scheme to measure social intimacy between visitors and co-owners, enabling more nuanced access control. By calculating social intimacy through factors like effective communication, communication popularity, and emotional tendency, the scheme helps decide which co-owners images should be visible to visitors.
+
+<br><br>
+
+Akkuzu, Aziz, and Adda <a href="GD18.html#section6">[6]</a> proposed a process that uses consensus-reaching and trust values among decision-makers. The framework employs the Extended Induced Ordered Weighted Averaging (EIOWA) technique to incorporate trust values into the decision-making process, ensuring decisions respect the privacy preferences of all co-owners. The authors develop three algorithms for consensus-reaching and implement the framework in a prototype called Trusty. 
+
+<br><br>
+Muhammad and Ahmad <a href="GD18.html#section7">[7]</a> propose a collaborative sharing model for multiparty data in OSNs. The model integrates joint sharing principles, multiparty authorisations, and a joint-ownership policy enforcement mechanism. It features a fine-grained automated conflict resolution method for shared objects. Formal verification is performed through Petri-nets and ontologies, and a Facebook application called “Safe-Sharing” is developed as a proof of concept.
+<br><br>
+Hu, Ahn, and Jorgensen <a href="GD18.html#section8">[8]</a> propose a multiparty access control (MPAC) model. The MPAC model protects shared data associated with multiple users by capturing the core features of multiparty authorisation requirements. The authors introduce a policy specification scheme and a policy enforcement mechanism, along with a logical representation of the access control model that leverages existing logic solvers for analysis. Their approach includes conflict resolution mechanisms, such as voting schemes and sensitivity scores, to handle authorisation and privacy conflicts. The paper provides a proof-of-concept implementation within Facebook and evaluates its feasibility and usability.
+<br><br>
+Mosca and Such <a href="GD18.html#section9">[9]</a> introduced ELVIRA, an agent designed to address multiuser privacy conflicts (MPCs) in OSNs by considering both the utility and moral values of users. ELVIRA's key features include role-agnosticism, adaptability, utility- and value-driven decision-making, and explainability. It supports a collaborative resolution of MPCs by identifying optimal sharing policies that balance individual utility gains and moral values. The agent explains its recommendations using argumentation, ensuring users understand the reasoning behind suggested actions.
+<br><br>
+Squicciarini, Shehab, and Wede <a href="GD18.html#section10">[10]</a> addressed the challenge of managing collective privacy settings for shared content in OSNs using game theory. It proposes a mechanism based on the <a href="https://www.jstor.org/stable/30022651" target="_blank">Clarke-Tax</a> approach to model and enforce collective privacy policies. The proposed solution promotes truthfulness and rewards users who support co-ownership, using automated ways to share images and a simple voting scheme. The framework is integrated with inference techniques to reduce the burden on users for manual privacy preference selection. A proof-of-concept application on Facebook demonstrated the feasibility and minimal overhead of this approach.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>
+            
+            </p>
+            
+            <p class="card-text">
+                <strong>Related guidelines</strong>:
+                
+                <em><a href="GD17.html">Enhance Collaborative Privacy Management in Photo Sharing</a></em>
+                
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD18.html#" data-bs-toggle="modal" data-bs-target="#modal_93"> <img src="./GD18_files/retinue-interface.jpg" class="img-fluid" alt="Retinue prototype &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Retinue prototype - A controller (co-owner) can select trusted groups, assign trust levels, and choose the photo's sensitivity while the interface displays privacy risk and sharing loss <a href="GD18.html#section2">[2]</a>.  <a href="GD18.html#" data-bs-toggle="modal" data-bs-target="#modal_93">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD18.html#" data-bs-toggle="modal" data-bs-target="#modal_94"> <img src="./GD18_files/safe-sharing.jpg" class="img-fluid" alt="Safe-Sharing Facebook application prototype &lt;a href=&quot;#section7&quot;&gt;[7]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Safe-Sharing Facebook application prototype -  posts that are co-owned by a user <a href="GD18.html#section7">[7]</a>.  <a href="GD18.html#" data-bs-toggle="modal" data-bs-target="#modal_94">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_94" tabindex="-1" aria-labelledby="modalLabel_94" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_94">Safe-Sharing Facebook application prototype <a href="GD18.html#section7">[7]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD18_files/safe-sharing.png" class="img-fluid" alt="Safe-Sharing Facebook application prototype &lt;a href=&quot;#section7&quot;&gt;[7]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_93" tabindex="-1" aria-labelledby="modalLabel_93" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_93">Retinue prototype <a href="GD18.html#section2">[2]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD18_files/retinue-interface.png" class="img-fluid" alt="Retinue prototype &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Implementing collaborative privacy management. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>User studies and experimental setups consistently demonstrate positive reception and a high potential for adopting collaborative privacy tools. These studies highlight the effectiveness of the proposed methods in managing privacy conflicts, balancing data sharing with privacy protection, and outperforming existing approaches. Evaluations indicate high user acceptance, feasibility, and practicality in various contexts, with users appreciating the fairness and utility-value trade-offs offered by the systems <a href="GD18.html#section1">[1]</a><a href="GD18.html#section3">[3]</a><a href="GD18.html#section4">[4]</a><a href="GD18.html#section5">[5]</a><a href="GD18.html#section6">[6]</a><a href="GD18.html#section7">[7]</a><a href="GD18.html#section8">[8]</a><a href="GD18.html#section9">[9]</a><a href="GD18.html#section10">[10]</a>.</li>
+                
+            
+                
+            
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>There is potential user collusion in the context of enforcing collective privacy preferences, and the system must include features to account for that <a href="GD18.html#section1">[1]</a><a href="GD18.html#section8">[8]</a><a href="GD18.html#section9">[9]</a><a href="GD18.html#section10">[10]</a>.</li>
+                
+            
+                
+                    <li>Although the method of considering individual privacy preferences, item sensitivity, and the relative importance of the target for resolving multiparty privacy conflicts shows promising accuracy, it does not account for all factors. For example, the strength of relationships among negotiators can also influence their willingness to concede during negotiations. Therefore, future research should explore additional factors that could affect privacy concessions to enhance the effectiveness of the proposed solutions <a href="GD18.html#section4">[4]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>The problems related to collaborative privacy management present long-term challenges that go beyond technical design and implementation. These challenges involve modelling relationships in social networks, understanding user profiles and stakeholders, and developing privacy control mechanisms for all potential cases of collaborative sharing that could arise. This indicates that while technical solutions are crucial, the broader social and relational dynamics within social networks also need to be addressed to manage collaborative privacy​​​​​ <a href="GD18.html#section1%20effectively">[1]</a>.</li>
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Choices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	This guideline discusses solutions aligned with the design space of privacy choices <a href="GD18.html#section11">[11]</a>.
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Modalities are similar to channels and refer to the different modes for the two-way communication of privacy choices between systems and users, considering factors such as the nature of privacy decisions, system capabilities, user engagement and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are typically presented visually, using text, images, icons, or a combination of these elements. Visual privacy choices often include clear descriptions of available options, allowing systems to obtain affirmative privacy decisions from users when necessary.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline supports visual methods for collaboratively setting and managing privacy preferences.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="In this dimension, it is considered the appropriate time to deliver a privacy choice, since it can affect the effectiveness of user engagement in privacy decision-making. This dimension can be also decoupled, integrated or mediated with the dimension Timing of the Privacy Notices since the availability of privacy notices can affect for example the user perception of risk."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On-demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="On-demand privacy choices can be integrated or decoupled from privacy notices, usually presented when users actively seek available privacy choices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The systems discussed in this guideline collectively support the on-demand subdimension by providing mechanisms for users to access and modify their privacy settings at any time. This ensures flexibility and control over shared data in online social networks.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are presented to users when they are about to engage in a data practice. This timing approach is commonly integrated with relevant privacy notices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices are presented at relevant moments, such as when sharing co-owned content.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Various channels can be used to present privacy options to users and effectively communicate their privacy decisions back to systems; for privacy choices, it is a two-way communication between systems and users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Secondary channels are used when there is some limitation with the primary channel. For example, when the primary channel is not available or when has a limited user interface.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to secondary channels if the primary channel does not have or has a limited user interface.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Mechanisms discussed in this guideline can be Integrated directly into the social media platform, allowing users to manage privacy within the primary interface.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Functionality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension intends to capture functionalities to support the exercise of privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Enforcement
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to the enforcement of users&#39; privacy decisions, in the sense that the system must be equipped with the necessary functionalities to enforce privacy decisions that will be submitted by several available privacy choices and potentially several times.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Mechanisms must ensure users' privacy decisions are consistently applied and respected. Such functionality is more "technically challenging for complicated types of privacy choices, such as contextualised choices" <a href="GD18.html#section8">[8]</a>, which is the case of this guideline.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Feedback
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Timely and accurate feedback is vital for the system to support ongoing privacy choices. When users make privacy decisions that can be immediately implemented, the system should promptly notify them of the updated privacy settings.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline aligns with the feedback subdimension, as notifications and updates informing users of changes and conflicts in privacy settings are crucial to accommodate diverse privacy preferences.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Presentation
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This is an indispensable part of the interface. The interface must present the privacy choices for the user and should be designed in a way that users can easily understand what they are sharing and what they are not sharing.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline emphasises presenting intuitive privacy options to users, for example, integrated into the application, like a social network.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Contextualised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category of privacy choices, they are presented in context-specific privacy situations, for example, when a potential privacy violation may happen, such as asking to allow or deny location sharing when it is about to happen">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy settings can be adjusted based on contexts and social situations, such as the nature of the shared content or the relationships among co-owners.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Multiple choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to providing users with more options to choose from, like the sum of multiple binary choices, for example.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline supports users having various options to set privacy preferences collaboratively.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 The guideline focuses on enabling multiple users to jointly manage privacy settings for shared content, ensuring that all co-owners have a say in how their data is shared and protected. This directly aligns with the Control attribute <a href="GD18.html#section12">[12]</a>, as it emphasises users' ability to actively influence how their data is handled.
+		
+		</p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Anna C. Squicciarini, Heng Xu, and Xiaolong Zhang (2011). CoPE: Enabling collaborative privacy management in online social networks. Journal of the American Society for Information Science and Technology 62, no. 3 (2011): 521-534.
+                
+                    <a href="https://doi.org/10.1002/asi.21473" target="_blank">https://doi.org/10.1002/asi.21473</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Hongxin Hu, Gail-Joon Ahn, and Jan Jorgensen (2011). Detecting and resolving privacy conflicts for collaborative data sharing in online social networks. In Proceedings of the 27th Annual Computer Security Applications Conference (ACSAC '11). Association for Computing Machinery, New York, NY, USA, 103–112.
+                
+                    <a href="https://doi.org/10.1145/2076732.2076747" target="_blank">https://doi.org/10.1145/2076732.2076747</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Arunee Ratikan and Mikifumi Shikida (2014). Privacy Protection Based Privacy Conflict Detection and Solution in Online Social Networks. In Human Aspects of Information Security, Privacy, and Trust: Second International Conference, HAS 2014, Held as Part of HCI International 2014, Heraklion, Crete, Greece, June 22-27, 2014. Proceedings 2 (pp. 433-445). Springer International Publishing.
+                
+                    <a href="https://doi.org/10.1007/978-3-319-07620-1_38" target="_blank">https://doi.org/10.1007/978-3-319-07620-1_38</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Jose M. Such and Natalia Criado (2016). Resolving Multi-Party Privacy Conflicts in Social Media. In IEEE Transactions on Knowledge and Data Engineering, vol. 28, no. 7, pp. 1851-1863, 1 July 2016.
+                
+                    <a href="https://doi.org/10.1109/TKDE.2016.2539165" target="_blank">https://doi.org/10.1109/TKDE.2016.2539165</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Liang Fang, Lihua Yin, Qiaoduo Zhang, Fenghua Li, and Binxing Fang (2017). Who Is Visible: Resolving Access Policy Conflicts in Online Social Networks. In GLOBECOM 2017 - 2017 IEEE Global Communications Conference, Singapore, 2017, pp. 1-6.
+                
+                    <a href="https://doi.org/10.1109/GLOCOM.2017.8254015" target="_blank">https://doi.org/10.1109/GLOCOM.2017.8254015</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Gulsum Akkuzu, Benjamin Aziz, and Mo Adda (2020). Towards Consensus-Based Group Decision Making for Co-Owned Data Sharing in Online Social Networks. In IEEE Access, vol. 8, pp. 91311-91325.
+                
+                    <a href="https://doi.org/10.1109/ACCESS.2020.2994408" target="_blank">https://doi.org/10.1109/ACCESS.2020.2994408</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section7">
+                [7] Tahir Muhammad and Adnan Ahmad (2021). A joint sharing approach for online privacy preservation. World Wide Web, 24(3), pp.895-924.
+                
+                    <a href="https://doi.org/10.1007/s11280-021-00876-5" target="_blank">https://doi.org/10.1007/s11280-021-00876-5</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section8">
+                [8] Hongxin Hu, Gail-Joon Ahn, and Jan Jorgensen (2013). Multiparty Access Control for Online Social Networks: Model and Mechanisms. In IEEE Transactions on Knowledge and Data Engineering, vol. 25, no. 7, pp. 1614-1627, July 2013.
+                
+                    <a href="https://doi.org/10.1109/TKDE.2012.97" target="_blank">https://doi.org/10.1109/TKDE.2012.97</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section9">
+                [9] Francesca Mosca and Jose M. Such (2021). ELVIRA: An Explainable Agent for Value and Utility-Driven Multiuser Privacy. In Proceedings of the 20th International Conference on Autonomous Agents and MultiAgent Systems (AAMAS '21). International Foundation for Autonomous Agents and Multiagent Systems, Richland, SC, 916–924.
+                
+                    <a href="https://doi.org/10.5555/3463952.3464061" target="_blank">https://doi.org/10.5555/3463952.3464061</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section10">
+                [10] Anna C. Squicciarini, Mohamed Shehab, and Joshua Wede (2010). Privacy policies for shared content in social network sites. The VLDB Journal, 19, pp.777-796.
+                
+                    <a href="https://doi.org/10.1007/s00778-010-0193-7" target="_blank">https://doi.org/10.1007/s00778-010-0193-7</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section11">
+                [11] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section12">
+                [12] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD18_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

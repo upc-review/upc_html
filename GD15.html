@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)GD15.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD15_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD15_files/starter-template.css" rel="stylesheet">
+    <link href="./GD15_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD15_files/custom.css" rel="stylesheet">
+    <script src="./GD15_files/saved_resource"></script>
+
+    <script src="./GD15_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD15.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD15_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD15.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
+	  <li class="breadcrumb-item active" aria-current="page">Managing Privacy Settings</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-person-gear"></i> GD15 - Provide Users with User-Friendly Tools to Manage Their Privacy Settings</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Due to the complexity and usability of privacy settings in digital environments, users face challenges in understanding and managing them effectively. Existing interfaces are not always user-friendly, requiring significant effort and understanding to configure privacy settings appropriately. Additionally, traditional privacy settings interfaces do not provide real-time or easily interpretable feedback about data exposure.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                There is a need for intuitive, user-friendly tools that provide clear, real-time feedback on data exposure, enhancing user control and confidence in managing their privacy settings.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                The development and implementation of intuitive, user-centred privacy management tools that leverage visual interfaces and feedback mechanisms. These tools are designed to simplify the process of configuring privacy settings by providing users with clear, understandable visual representations of their privacy preferences and the implications of their choices. 
+
+<br><br>
+Watson, Whitney and Lipford <a href="GD15.html#section1">[1]</a> introduced AudienceView, a prototype designed to simplify privacy management on social networks, particularly Facebook. Technical implementation centres around visualising privacy settings as they appear to different audiences (e.g., friends, networks, search) through tabbed panes within the user interface. Each tab presents the user's profile as it would be seen by the selected audience, with controls for showing or hiding information to specific groups. This design provides immediate visual feedback on privacy settings, enhancing users' understanding and control over data sharing. The prototype allows locking categories of information, thereby greying out and collapsing those sections for a clearer visual indication of protected content. Additionally, it features consolidated settings for broad categories like "All My Friends" or "All My Networks," streamlining the privacy configuration process. This approach addresses usability issues by offering an intuitive, interactive way to manage privacy grounded in audience-aware policy management.
+<br><br>
+
+
+Alemerien <a href="GD15.html#section2">[2]</a> presented the Visual Privacy Management Policy (VPMP), a solution designed to enhance privacy management for photo sharing on social networking sites. The VPMP system uses a user-friendly interface with a social graph for visualising connections and photo privacy settings. It operates through two main components, the Social Graph Generator and the Privacy Policy Manager, alongside three data repositories for Photos, Friends, and Privacy Policies. Key functionalities enable users to share photos with specified friends or groups, manage tagging permissions, and control photo redistribution. Privacy preferences are set through an intuitive drag-and-drop interface, with immediate visual feedback provided to show the effect of these settings. The underlying algorithm uses an undirected graph to represent the relationships and actions among users (vertices), their connections (edges), and privacy settings (functions), enabling a clear visualisation and management of privacy preferences for shared photos.
+<br><br>
+
+Wang et al. <a href="GD15.html#section3">[3]</a> introduced VeilMe, designed to assist users in managing privacy settings for their personality portraits derived from social media data. It targets four main design goals: intuitive visualisation of personality traits, awareness of privacy settings, easy control over sharing preferences, and personalised initial privacy settings. The system uses a visual metaphor, "PersonalityGenome," to represent multidimensional and hierarchical personality data, allowing users to explore and understand their personality traits interactively. The interface incorporates a SocialDistance metaphor to adjust the visibility of personality traits to different social groups, using draggable sliders for intuitive control. Based on k-anonymity models, obfuscation techniques are applied to blur personality portraits for certain social distances, with the degree of obfuscation adjustable at a general level and for individual traits. Initial privacy settings strategies include conservative, rule-based, and prediction-based approaches, leveraging regression models to estimate sharing preferences based on personality portraits, aiming to simplify the configuration process for users.
+<br><br> 
+Schlegel, Kapadia, and Lee <a href="GD15.html#section4">[4]</a> proposed an ambient interface using the metaphor of eyes to provide users with real-time feedback on their data exposure. The size of the eyes on the user's smartphone home screen represents the frequency of data access, giving users an intuitive sense of how often their information is being accessed. This interface allows users to quickly assess and manage their privacy without detailed access logs, enabling them to block access temporarily when exposure is high, thus maintaining better control over their personal information.
+<br><br>
+Rathore and Tripathy <a href="GD15.html#section5">[5]</a> proposed AppMonitor, a tool for managing privacy in social networks by controlling and monitoring data shared with third-party apps. It simplifies complex privacy settings and provides real-time feedback on data exposure, helping users manage their privacy settings.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>
+            
+            </p>
+            
+            <p class="card-text">
+                <strong>Related guidelines</strong>:
+                
+                <em><a href="GD14.html">Leverage Personalised Recommendations for Enhanced User Management of Privacy Settings</a></em>
+                
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_53"> <img src="./GD15_files/audience-view.jpg" class="img-fluid" alt="AudienceView prototype resembling Facebook’s profile information and layout as in &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            AudienceView prototype resembling Facebook’s profile information and layout as in <a href="GD15.html#section1">[1]</a>.  <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_53">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_54"> <img src="./GD15_files/veilme.jpg" class="img-fluid" alt="The screenshot of the VeilMe interface &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The screenshot of the VeilMe interface. Panel A &amp; B: user’s Twitter profile and the latest tweets; C: portrait exploration panel; D: privacy setting panel. Users can click to expand to reveal traits with sub-traits. When hovering a social distance knob, the input audience names of that group will be shown for user engagement <a href="GD15.html#section3">[3]</a>.  <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_54">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_70"> <img src="./GD15_files/eyeing-your-exposure.jpg" class="img-fluid" alt="Eying your exposure &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Left: Eye metaphor to signal exposure; Middle: Detailed feedback interface; Right: Interface to define access rules hour-by-hour <a href="GD15.html#section4">[4]</a>.  <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_70">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_104"> <img src="./GD15_files/appmonitor.jpg" class="img-fluid" alt="A simplified prototype of AppMonitor as in &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            A simplified prototype of AppMonitor as in <a href="GD15.html#section5">[5]</a>.  <a href="GD15.html#" data-bs-toggle="modal" data-bs-target="#modal_104">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_54" tabindex="-1" aria-labelledby="modalLabel_54" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_54">The screenshot of the VeilMe interface <a href="GD15.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD15_files/veilme.png" class="img-fluid" alt="The screenshot of the VeilMe interface &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_53" tabindex="-1" aria-labelledby="modalLabel_53" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_53">AudienceView prototype resembling Facebook’s profile information and layout as in <a href="GD15.html#section1">[1]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD15_files/audience-view.png" class="img-fluid" alt="AudienceView prototype resembling Facebook’s profile information and layout as in &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_104" tabindex="-1" aria-labelledby="modalLabel_104" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_104">A simplified prototype of AppMonitor as in <a href="GD15.html#section5">[5]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD15_files/appmonitor(1).jpg" class="img-fluid" alt="A simplified prototype of AppMonitor as in &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_70" tabindex="-1" aria-labelledby="modalLabel_70" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_70">Eying your exposure <a href="GD15.html#section4">[4]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD15_files/eyeing-your-exposure.png" class="img-fluid" alt="Eying your exposure &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Combining UI/UX design principles and data visualisation techniques to enhance privacy control mechanisms. </li>
+                
+                    <li>Implementing user interface as a tool for managing privacy settings visually. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>Studies consistently showed that user-friendly, visually intuitive interfaces significantly improve user confidence, satisfaction, and efficiency in managing privacy settings. Tools like AudienceView<a href="GD15.html#section1">[1]</a>, VPMP<a href="GD15.html#section2">[2]</a>, VeilMe<a href="GD15.html#section3">[3]</a>, and AppMonitor<a href="GD15.html#section5">[5]</a> demonstrate that visual feedback mechanisms, such as visual metaphors and rule-based settings, help users better understand and control their privacy. These interfaces are particularly beneficial for novice users and align with user expectations for simplicity and efficiency. They enhance the overall user experience by reducing cognitive load and providing clear, real-time feedback on privacy implications, thus improving privacy management without compromising functionality <a href="GD15.html#section1">[1]</a><a href="GD15.html#section2">[2]</a><a href="GD15.html#section3">[3]</a><a href="GD15.html#section4">[4]</a><a href="GD15.html#section5">[5]</a>.</li>
+                
+            
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+            
+                
+                    <li>The generalisability of findings is often limited by the specific participant demographics and contexts used in evaluations. Studies frequently involve specific groups, such as college students or workplace settings, which may not represent broader populations <a href="GD15.html#section1">[1]</a><a href="GD15.html#section2">[2]</a><a href="GD15.html#section3">[3]</a><a href="GD15.html#section4">[4]</a>. Additionally, evaluations focus on short-term interactions, failing to account for the long-term and evolving nature of privacy preferences and behaviours <a href="GD15.html#section3">[3]</a>.</li>
+                
+            
+                
+                    <li>Monitoring user data flow between internal and external third-party application modules can place an additional burden on OSN sites. However, this can be mitigated by random checks of data flow <a href="GD15.html#section5">[5]</a>.</li>
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Choices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	This guideline discusses solutions that align with the design space for privacy choices <a href="GD15.html#section6">[6]</a> and can be applied in the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Modalities are similar to channels and refer to the different modes for the two-way communication of privacy choices between systems and users, considering factors such as the nature of privacy decisions, system capabilities, user engagement and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are typically presented visually, using text, images, icons, or a combination of these elements. Visual privacy choices often include clear descriptions of available options, allowing systems to obtain affirmative privacy decisions from users when necessary.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline discusses solutions that leverage visual modality by representing privacy settings using intuitive interfaces, imagery, or icons. These solutions aim to simplify configuring privacy preferences and enhance user understanding of the privacy implications of these configurations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="In this dimension, it is considered the appropriate time to deliver a privacy choice, since it can affect the effectiveness of user engagement in privacy decision-making. This dimension can be also decoupled, integrated or mediated with the dimension Timing of the Privacy Notices since the availability of privacy notices can affect for example the user perception of risk."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On-demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="On-demand privacy choices can be integrated or decoupled from privacy notices, usually presented when users actively seek available privacy choices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline discusses solutions that users can access and modify on demand.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                At Setup
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are commonly presented to users when they initially interact with a system, often accompanied by relevant privacy notices. This timing approach is commonly associated with consent-based privacy choices, such as software license agreements during installation or terms of use during account signup.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Initial privacy settings can be configured during setup, ensuring users have control from the beginning.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are presented to users when they are about to engage in a data practice. This timing approach is commonly integrated with relevant privacy notices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Visual tools can prompt users with privacy choices just in time. This approach allows users to make informed decisions at the moment where their data is about to be used or shared, reducing cognitive load and enhancing the effectiveness of privacy decisions.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Various channels can be used to present privacy options to users and effectively communicate their privacy decisions back to systems; for privacy choices, it is a two-way communication between systems and users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Secondary channels are used when there is some limitation with the primary channel. For example, when the primary channel is not available or when has a limited user interface.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    If primary channels are not feasible, secondary channels (e.g., web portals or mobile apps) can be used to manage privacy settings.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline discusses solutions that integrate privacy settings directly within the platform or device that users are interacting with.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Functionality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension intends to capture functionalities to support the exercise of privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Enforcement
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to the enforcement of users&#39; privacy decisions, in the sense that the system must be equipped with the necessary functionalities to enforce privacy decisions that will be submitted by several available privacy choices and potentially several times.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline presents solutions where enforcement is implicit in the functionality of these solutions. The technical capability to enforce these decisions is crucial for the integrity of privacy choices, ensuring that users' preferences are effectively implemented.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Feedback
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Timely and accurate feedback is vital for the system to support ongoing privacy choices. When users make privacy decisions that can be immediately implemented, the system should promptly notify them of the updated privacy settings.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline discusses solutions that, by providing visual or otherwise immediate feedback on the effect of privacy settings, help users understand the immediate impact of their decisions, enhancing their confidence in the privacy management process.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Presentation
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This is an indispensable part of the interface. The interface must present the privacy choices for the user and should be designed in a way that users can easily understand what they are sharing and what they are not sharing.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices always have a presentation that involves a system providing clear and easily understandable information to users about potential data practices, available options, and how to communicate privacy decisions, often incorporating multiple components and integrating with related privacy notices, requiring careful consideration of design dimensions such as timing, channel, and modality <a href="GD15.html#section5">[5]</a>. 
+<br>
+This guideline discusses solutions that provide visual interfaces that clearly outline available privacy choices, enabling users to make informed decisions regarding their privacy settings.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Contextualised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category of privacy choices, they are presented in context-specific privacy situations, for example, when a potential privacy violation may happen, such as asking to allow or deny location sharing when it is about to happen">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline presents solutions that also touch upon contextualised choices by allowing users to configure privacy settings based on specific contexts, such as different audience views in AudienceView <a href="GD15.html#section1">[1]</a> or visual privacy preferences in the Visual Privacy Advisor <a href="GD15.html#section2">[2]</a>. These tools consider the context of information sharing (e.g., social relationship, content type) to offer tailored privacy settings.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Multiple choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to providing users with more options to choose from, like the sum of multiple binary choices, for example.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline presents solutions that enhance the granularity of privacy settings available to users, moving beyond binary choices (e.g., opt-in/opt-out) to offer a spectrum of options for managing privacy settings.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Binary choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The guideline can incorporate binary choices (e.g., opt-in/opt-out) within the visual tools, ensuring these choices are intuitive and user-friendly.
+                  </p>
+                
+
+                <!-- Options -->
+                
+                  <ul class="ms-3">
+                    
+                      <li>
+                        <strong>Opt-in/out</strong>
+                        
+                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
+                        
+                      </li>
+                    
+                  </ul>
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 This guideline discusses solutions that collectively support the importance of providing intuitive tools that enhance user Control <a href="GD15.html#section7">[7]</a> over privacy settings. By implementing user-centred interfaces and visual feedback mechanisms, users can more easily manage their consent, opt-out options, and overall privacy preferences, better protecting their personal data sharing.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Security</h6>
+
+				While not directly addressed by user control interfaces, the ability to easily manage and update privacy settings can contribute to better security practices by ensuring that users can quickly respond to potential threats or data breaches.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Transparency</h6>
+
+				Visual tools and intuitive interfaces inherently promote transparency by making it clearer to users how their data is being used and shared.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Jason Watson, Michael Whitney, and Heather Richter Lipford (2009). Configuring audience-oriented privacy policies. In Proceedings of the 2nd ACM workshop on Assurable and usable security configuration (SafeConfig '09). Association for Computing Machinery, New York, NY, USA, 2009, 71–78.
+                
+                    <a href="https://doi.org/10.1145/1655062.1655076" target="_blank">https://doi.org/10.1145/1655062.1655076</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Khalid Alemerien (2020). User-Friendly Privacy-Preserving Photo Sharing on Online Social Networks. Journal of Mobile Multimedia, 16(3), 2020, 267–292.
+                
+                    <a href="https://doi.org/10.13052/jmm1550-4646.1631" target="_blank">https://doi.org/10.13052/jmm1550-4646.1631</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Yang Wang, Liang Gou, Anbang Xu, Michelle X. Zhou, Huahai Yang, and Hernan Badenes (2015). VeilMe: An Interactive Visualization Tool for Privacy Configuration of Using Personality Traits. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI '15). Association for Computing Machinery, New York, NY, USA, 2015, 817–826.
+                
+                    <a href="https://doi.org/10.1145/2702123.2702293" target="_blank">https://doi.org/10.1145/2702123.2702293</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Roman Schlegel, Apu Kapadia, and Adam J. Lee (2011). Eyeing your exposure: quantifying and controlling information sharing for improved privacy. In Proceedings of the Seventh Symposium on Usable Privacy and Security (SOUPS '11). Association for Computing Machinery, New York, NY, USA, Article 14, 1–14.
+                
+                    <a href="https://doi.org/10.1145/2078827.207884" target="_blank">https://doi.org/10.1145/2078827.207884</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Nemi Chandra Rathore and  Somanath Tripathy (2020). AppMonitor: restricting information leakage to third-party applications. Soc. Netw. Anal. Min. 10, 49.
+                
+                    <a href="https://doi.org/10.1007/s13278-020-00662-7" target="_blank">https://doi.org/10.1007/s13278-020-00662-7</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section7">
+                [7] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD15_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

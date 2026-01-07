@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)GD22.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD22_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD22_files/starter-template.css" rel="stylesheet">
+    <link href="./GD22_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD22_files/custom.css" rel="stylesheet">
+    <script src="./GD22_files/saved_resource"></script>
+
+    <script src="./GD22_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD22.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD22_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD22.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Raising Privacy Awareness </li>
+	  <li class="breadcrumb-item active" aria-current="page">Assessing Risk and Nudging Privacy Behaviour</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-view-list"></i> GD22 - Implement User-Customisable Multi-View Privacy Notifications</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Single view privacy notification interfaces provide little information to help users understand privacy risks.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                A multi-view privacy notification interface can help users better understand the privacy information,  according to their interests and expertise.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                A user-customisable multi-view privacy notification mechanism that provides customised notification interfaces that help users obtain necessary information about their privacy risk. 
+<br><br>
+ 
+Fung, Rashidi and Motti <a href="GD22.html#section1">[1]</a> introduced a novel multi-view model for permission notifications that enhance user understanding and decision-making regarding app permissions.
+
+The multi-view model incorporates <a href="https://link.springer.com/book/10.1007/978-0-8176-4733-9" target="_blank"> Control Theory </a> to ensure consistency across views tailored to different user knowledge levels. A chain of control units was developed, each responsible for producing one of the multi-view interfaces.  It tailors the presentation of privacy risks based on users' knowledge levels, offering customised interfaces with varying granularity, intricacy, and co-equality. These interfaces range from detailed app activity logs for expert users to simplified risk assessments for novices. Additionally, the model incorporates a user preference system, allowing individuals to select or automatically be assigned views that best match their understanding and comfort level. Beyond information presentation, the solution suggests actionable user recommendations, providing a nuanced approach to app permission management. Actions vary from simple permission denial to app uninstallation, depending on the assessed risk level of the app. This comprehensive approach informs users about potential privacy risks and empowers them with actionable insights to safeguard their privacy effectively.
+<br><br>
+
+When combined with privacy choices <a href="GD22.html#section2">[2]</a>,  which actions (block/deny/uninstall, for instance) to recommend for users in each view is an important aspect to consider on a case basis.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>
+            
+            </p>
+            
+            <p class="card-text">
+                <strong>Related guidelines</strong>:
+                
+                <em><a href="GD21.html">Enhance Privacy Awareness by Communicating Privacy Risks</a></em>
+                
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD22.html#" data-bs-toggle="modal" data-bs-target="#modal_4"> <img src="./GD22_files/h_views_for_privacy_notifications.jpg" class="img-fluid" alt="Privacy notification multi-view details &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Privacy notification view details are reduced from left to bottom right, accounting for different user visualisation choices <a href="GD22.html#section1">[1]</a>.  <a href="GD22.html#" data-bs-toggle="modal" data-bs-target="#modal_4">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_4" tabindex="-1" aria-labelledby="modalLabel_4" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_4">Privacy notification multi-view details <a href="GD22.html#section1">[1]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD22_files/h_views_for_privacy_notifications.png" class="img-fluid" alt="Privacy notification multi-view details &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Implementing privacy risk notification interface for installed apps on devices. </li>
+                
+                    <li>Implementing privacy risk notification interface for different expertise levels. </li>
+                
+                    <li>Implementing user-customisable multi-view privacy notification. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>Consistency among the designed views is critical, so incorporating Control Theory to regulate the consistency of views across different user knowledge levels aims to ensure that despite the diversity in information presentation, the core message remains consistent, aiding in accurate interpretation and informed decision-making. Users can choose the view that they can understand the most and are more comfortable with <a href="GD22.html#section1">[1]</a>.</li>
+                
+            
+                
+                    <li>The solution provides actionable insights by recommending specific actions (like block, deny, uninstall) based on the assessed risk level of an app. This approach not only informs users about potential risks but also guides them on how to mitigate these risks, enhancing user security and privacy protection <a href="GD22.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>The effectiveness of the multi-view model heavily relies on users actively engaging with and understanding the different views and recommended actions. There's a possibility that users might not invest the time to explore and switch between views, reducing the system's overall impact on privacy and security decision-making. Despite the intention to cater to different user expertise levels, there's a risk of information overload, particularly for users who might find multiple views and detailed action recommendations overwhelming. This could lead to decision fatigue, where users may default to simpler but less secure choices <a href="GD22.html#section1">[1]</a>.</li>
+                
+            
+                
+                    <li>The application of Control Theory to ensure view consistency adds a layer of complexity to the system's design and implementation. This could potentially increase development time and resources required, making it challenging to adapt and scale <a href="GD22.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Notices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	The main purpose of a privacy notice is to inform users about personal data handling. Considering the design space for privacy notices <a href="GD22.html#section3">[3]</a>, this guideline can be applied to the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to the channels that can be utilised to deliver privacy notices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It means providing the privacy notice through a secondary channel due to limitations like restricted interaction capabilities.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The same designed interfaces can be used for a companion app or website to provide privacy notice.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It involves presenting the privacy notice within the same platform or device the user is using.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This is the case of the designed interface, as it is a smartphone app. However, it can also be used in other platforms, such as desktops.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to showing users privacy notices considering timing, like the task that the user is engaged in, considering the delay between the notice and the privacy decision and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Context-dependent
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing a context-dependent privacy notice, like, for example, in a change of location or other situational parameter.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be used to present a privacy notice to users when context changes, such as location or data-sharing settings.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It refers to displaying privacy notices on demand from users, such as providing links to privacy notices and contact information.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The proposed guideline can be used to present a privacy notice to users when they actively seek privacy information, for example, in privacy dashboards or privacy settings interfaces.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Periodic
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It refers to showing periodic privacy notices at scheduled intervals, such as reminding users about data collection by a health device.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    According to <a href="GD22.html#section2">[2]</a>, "periodic reminders of data practices can further help users maintain awareness of privacy-sensitive information flows". This recommendation can be used in such scenarios, allowing users to reassess their privacy risks. The frequency of showing such periodic notices is on a use-case basis.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                At Setup
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing privacy notices at first use of a system or service">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The proposed guideline can be used to present a privacy notice to users when they are about to engage in a data-sharing situation, like permission-granting, so they can choose the level of information they want to see to make informed decisions.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to showing a privacy notice at the moment of a data practice, like when the information is being collected, used or shared">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The proposed guideline can be used to present a privacy notice to users when a data practice is active (data being collected, used or shared, for instance). 
+<br>
+According to <a href="GD22.htmlsection2">[2]</a>, just-in-time notices precede data collection, often near input fields or with summary dialogues, reducing user interruptions. 
+<br>
+Another situation is when apps are requesting access to sensitive information, which should be accompanied by a just-in-time privacy notice <a href="GD22.htmlsection2">[2]</a>.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to different modes of delivering privacy notices, depending on what the privacy notice strives to achieve."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to visual privacy notices that can be text, images, icons or a combination of them">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This is the modality of the designed privacy notification view, combining visual resources such as colours, text and icons.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Control
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Refers to privacy notices that include control options (privacy choices).  The authors of the design space for privacy choices consider that this dimension has its merits but fails to cover all the considerations that are needed in order to cover meaningful privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Decoupled
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="It refers to privacy notices separate from the system or device, like those found on a website or in a manual.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be applied to privacy notices decoupled from privacy choices.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Non-blocking
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="These are non-intrusive privacy notices with controls that do not require immediate action from the user, based on previous decisions.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be coupled with non-blocking controls, providing control options (privacy choices) without forcing user interaction.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Blocking
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to privacy notices that are delivered via spoken words or sounds.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline can be paired with blocking controls (privacy choices), requiring users to make decisions or give consent based on the information in the notice.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-eye"></i> <strong>Transparency</strong></h6>
+		<br>
+		<p class="card-text">
+		 Transparency <a href="GD22.html#section3">[3]</a> is the main privacy attribute. The guideline primarily focuses on ensuring that users can obtain clear and accessible information regarding how their personal data is handled. By offering multiple views with varying levels of detail, the guideline aims to provide a proactive distribution of information, enabling users to make informed decisions.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Control</h6>
+
+				Communication of privacy risk level leverages control by allowing users to make self-determined decisions about the sharing of their personal data.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Carol Fung, Bahman Rashidi, and Vivian Genaro Motti (2019). Multi-View Permission Risk Notification for Smartphone System. J. Wirel. Mob. Networks Ubiquitous Comput. Dependable Appl. 10.1 (2019): 42-57.
+                
+                    <a href="https://isyou.info/jowua/papers/jowua-v10n1-3.pdf" target="_blank">https://isyou.info/jowua/papers/jowua-v10n1-3.pdf</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [2] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Florian Schaub, Rebecca Balebako,  Adam L Durity, and Lorrie Faith Cranor (2015). A Design Space for Effective Privacy Notices. In: Symposium on Usable Privacy and Security (SOUPS 2015). [S.l.: s.n.], p. 1–17.
+                
+                    <a href="https://www.usenix.org/system/files/conference/soups2015/soups15-paper-schaub.pdf" target="_blank">https://www.usenix.org/system/files/conference/soups2015/soups15-paper-schaub.pdf</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD22_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

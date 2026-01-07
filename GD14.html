@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)GD14.html -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD14_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD14_files/starter-template.css" rel="stylesheet">
+    <link href="./GD14_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD14_files/custom.css" rel="stylesheet">
+    <script src="./GD14_files/saved_resource"></script>
+
+    <script src="./GD14_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD14.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD14_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD14.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
+	  <li class="breadcrumb-item active" aria-current="page">Managing Privacy Settings</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-person-check"></i> GD14 - Leverage Personalised Recommendations for Enhanced User Management of Privacy Settings</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Users face difficulties in effectively managing their privacy settings when sharing content online, leading to potential privacy breaches. The texts and images shared online often contain sensitive personal information, and default or poorly configured privacy settings can inadvertently expose this information. These difficulties stem from the complexity of privacy settings and the sheer volume of content shared online, necessitating greater user awareness and understanding of privacy implications. Manually configuring privacy settings for each piece of shared content, whether text-based posts or images, is challenging. Current systems are inadequate in providing personalised, dynamic privacy management solutions that align with users' evolving privacy needs and preferences.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                Automating privacy settings recommendations aims to enhance user privacy protection, reduce the risk of accidental data exposure, and alleviate the burden on users to understand and navigate complex privacy settings interfaces.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                The development of advanced, user-friendly systems leveraging machine learning, data mining, and semantic analysis to predict and recommend personalised privacy settings for users.
+
+<br><br>
+Chen et al. <a href="GD14.html#section1">[1]</a> proposed a model to predict and recommend privacy settings for text-based social media posts using a multi-class classifier and crowdsourcing. The solution analyses historical posts, social context, and keywords to recommend privacy settings. For new users or those with insufficient data (cold-start problem), it integrates crowdsourcing with machine learning, utilising data from other users to predict privacy settings. 
+<br><br>
+Nakamura et al. <a href="GD14.html#section2">[2]</a>  proposal is a prediction engine for default privacy settings using Support Vector Machines (SVM) based on minimal user information at registration.
+The solution utilises user attributes like age, gender, and type of mobile phone to predict optimal privacy settings, improving user experience during account setup.
+<br><br>
+Rosni et al. <a href="GD14.html#section3">[3]</a>  proposed a system using Factorization Machines (FMs) to model and predict user consent preferences for LinkedIn accounts. The solution predicts privacy settings based on user attributes and behaviours, reducing consent fatigue and improving privacy management.
+<br><br>
+Orekondy, Schiele, Fritz <a href="GD14.html#section4">[4]</a> proposed a Visual Privacy Advisor, a system to predict privacy risks in images shared on social media using machine learning models. The solution provides privacy risk scores for images based on privacy-sensitive attributes, helping users manage visual content privacy. The solution employs Convolutional Neural Networks (CNNs) like <a href="https://doi.org/10.1145/2647868.2654889" target="_blank">CaffeNet</a>, <a href="https://doi.org/10.1109/CVPR.2015.7298594" target="_blank">GoogleNet</a>, and <a href="https://doi.org/10.1109/CVPR.2016.90" target="_blank">ResNet-50</a> to predict privacy attributes from images, utilising a multi-label classification approach. The approach is validated through a user study that assesses the alignment between users' privacy preferences and the model's privacy risk predictions, aiming to provide personalised privacy risk assessments for images. This technical framework underpins the development of a Visual Privacy Advisor that helps users manage their visual privacy based on personalised privacy preferences. The dataset and other materials are available at <a href="https://tribhuvanesh.github.io/vpa/" target="_blank">https://tribhuvanesh.github.io/vpa/</a>.
+<br><br>
+Lee and Kobsa <a href="GD14.html#section5">[5]</a> focused on privacy preference prediction in IoT, proposing a model for predicting user privacy preferences using contextual factors and clustering.
+The solution utilises factors like location, monitoring entity, and purpose to provide personalised privacy recommendations for IoT devices. 
+
+<br><br>
+Squicciarini et al. <a href="GD14.html#section6">[6]</a> presented an Adaptive Privacy Policy Prediction (A3P) system for images on social media. The system uses image content, metadata, and social context to generate personalised privacy policies automatically. When a user uploads an image, A3P first classifies the image using content and metadata, then predicts a privacy policy using historical data. If the user lacks history or exhibits changes in privacy preferences, A3P consults social context to align recommendations with similar users' practices. This dual approach ensures tailored privacy settings, addressing individual preferences and evolving social dynamics, simplifying privacy management in complex social media environments.
+<br><br>
+Albertini, Carminati and Ferrari <a href="GD14.html#section7">[7]</a> focused on a recommender system for privacy settings in social networks that uses relationship-based Access Control (ReBAC) and association rules mining.
+The system analyses user behaviour and relationship data to recommend personalised access control policies. It dynamically suggests access control policies when new resources are uploaded, using learned associations to predict the most appropriate privacy settings. This model aims to alleviate the complexity of manually setting privacy policies by providing automated, context-sensitive recommendations tailored to individual user habits and preferences.
+
+<br><br>
+
+Squicciarini et al. <a href="GD14.html#section8">[8]</a> presented a tag-driven policy recommender for image sharing on social networks. The solution analyses image tags to correlate with privacy preferences, offering personalised recommendations based on tag semantics and co-presence. For new images with unfamiliar tags, T2P employs a cold-start approach using semantic analysis to recommend privacy settings, ensuring relevance even when historical data is lacking.
+
+<br><br>
+Mondal et al. <a href="GD14.html#section9">[9]</a> proposed a Semi-Automated Privacy Management to update outdated privacy settings on social media, particularly Facebook, using user studies and machine learning.
+The system identifies and corrects potentially incorrect privacy settings based on user interactions and dynamic behaviour. The study considered the longitudinal aspect of privacy management, highlighting the challenges users face in maintaining appropriate privacy settings as their life circumstances and social networks evolve.
+<br><br>
+
+Sanchez et al. <a href="GD14.html#section10">[10]</a> first defined a data model of privacy preferences for the fitness domain using the PPIoT ontology (<a href="https://doi.org/10.1016/j.future.2019.10.024" target="_blank">Privacy Preference for IoT Ontology</a>). This model includes permissions based on the most popular fitness trackers and GDPR requirements. They used a crowdsourced dataset to identify privacy profiles via machine learning clustering algorithms. They also developed a tree-based classifier to recommend privacy profiles based on user traits, such as privacy attitudes, social behaviour, and demographics. The recommendation strategies were integrated into a personal data manager framework, aiming to simplify privacy settings while maintaining GDPR compliance and user control over their preferences.
+<br><br>
+
+Kelley et al. <a href="GD14.html#section11">[11]</a> presented an incremental policy learning approach where users provide feedback to refine privacy settings. The solution uses user feedback to improve privacy policies incrementally, ensuring settings align with user preferences. A key component is the neighbourhood search mechanism, which explores close variations of the current policy to suggest incremental improvements. These suggestions are then presented to the user, who decides which, if any, to accept, ensuring the user's control over the policy evolution. This approach combines machine learning with user insight by allowing users to interact directly with and refine their preferences based on system suggestions, offering a tailored and user-friendly method for managing privacy settings. To demonstrate the approach's effectiveness, they developed a prototype application called PeopleFinder, in which users share their locations with others based on refined privacy configurations.
+<br><br>
+
+Misra and Such <a href="GD14.html#section12">[12]</a> proposed PACMAN, an agent that recommends personalised access control decisions on social media based on social context and network structure.
+The agent analyses relationships and content to make dynamic privacy recommendations, ensuring settings match user interactions.
+<br><br>
+Munemasa and Iwaihara <a href="GD14.html#section13">[13]</a> employed a recommendation system for social networking services using trend analysis and privacy scores.
+The solution uses privacy settings data and user trends to provide personalised privacy recommendations, helping users understand common privacy practices. These recommendations are visualised on the user's SNS privacy settings page, aiding users in adjusting their settings based on the analysis of large-scale user data and specific attribute co-occurrences, ultimately helping users manage their online privacy better.
+<br><br>
+Villarán and Beltrán <a href="GD14.html#section14">[14]</a> proposed a Privacy Advisor for federated identity systems that would provide personalised recommendations to assist users in managing privacy settings.
+The solution provides real-time, personalised privacy advice based on user profiles and service provider practices, ensuring compliance with regulations like GDPR.
+
+<br><br>
+Shanmugarasa et al. <a href="GD14.html#section15">[15]</a> presents a Privacy Preference Recommender System (PPRS) designed for smart home environments, integrating Personal Data Stores (PDSs) to assist users in making data-sharing decisions.
+The PPRS uses machine learning models to recommend privacy settings dynamically based on contextual factors and user preferences. The system operates within the PDS architecture, ensuring that all data processing and analytics remain under the user’s control. It automates privacy decisions by suggesting appropriate actions for data-sharing requests, reducing the burden on users to configure their privacy settings manually.
+<br><br>
+Bernsmed. Tøndel and Nyre <a href="GD14.html#section16">[16]</a> presents the Privacy Advisor, a software tool that uses Case-Based Reasoning (CBR) to assist users in making informed privacy decisions by providing personalised recommendations based on past experiences. The Privacy Advisor retrieves and adapts solutions from similar past cases to recommend privacy settings. It learns from user feedback to improve future recommendations, ensuring that privacy policies align with users' preferences and contexts.
+<br><br>
+Bilogrevic et al <a href="GD14.html#section17">[17]</a> propose the Smart Privacy-aware Information Sharing Mechanism (SPISM), which uses machine-learning techniques to make semi-automatic decisions about whether to share information and at what level of detail. This system adapts to each user's behaviour and predicts the level of detail for each sharing decision based on personal and contextual features.
+By learning from user behaviours and preferences over time, SPISM offers personalised recommendations for information sharing, ensuring that the recommendations align with individual privacy preferences and contexts.
+<br><br>
+Alom et al. <a href="GD14.html#section18">[18]</a> proposed two innovative techniques: Knapsack Privacy Checking (KPC) and Knapsack Graph-Based Privacy Checking (KPC-G). These techniques frame the privacy-checking problem as a knapsack problem, optimising the selection of services based on user-specified privacy preferences and tolerance levels.
+The KPC method matches services to user preferences based on a preset tolerance level. In contrast, the KPC-G method dynamically adjusts these tolerance values by leveraging a similarity graph of user privacy preferences. The latter maximises user satisfaction by suggesting services that balance privacy concerns with benefits. 
+<br><br>
+Couto and Zorzo <a href="GD14.html#section19">[19]</a> present a privacy negotiation mechanism for Internet of Things (IoT) environments. The proposed mechanism mediates the exchange of information between data producers (users) and data consumers (services), allowing users to control their data disclosure more effectively. The mechanism leverages a Multilayer Perceptron (MLP) neural network to predict user privacy preferences, enabling automatic responses to data requests based on learned patterns. Users can set a confidence level for these predictions, ensuring the mechanism's responses align with their privacy expectations.<br><br>
+Filipczuk et al. <a href="GD14.html#section20">[20]</a> propose an innovative agent-based negotiation framework to manage privacy permissions between users and service providers. This framework leverages a multi-issue alternating-offer protocol that accommodates partial and complete offers, aiming to automate privacy negotiations and reduce user burden. The framework uses autonomous agents to negotiate on behalf of users, presenting a potential agreement that the user can accept, override, or continue to negotiate. It introduces methods for implicitly learning user preferences through feedback on offers, either by accepting or rejecting them.
+<br><br>
+VeilMe <a href="GD14.html#section21">[21]</a> aims to reduce user effort in configuring privacy settings by offering initial privacy recommendations based on rule-based and prediction-based approaches. 
+These initial settings aim to reduce the user’s efforts in adjusting the complex privacy configurations by providing a reasonable starting point tailored to the user’s personality and common sharing preferences​.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>personal computers</em>, 
+            
+                <em>mobile devices</em>, 
+            
+                <em>smart devices</em>
+            
+            </p>
+            
+            <p class="card-text">
+                <strong>Related guidelines</strong>:
+                
+                <em><a href="GD15.html">Provide Users with User-Friendly Tools to Manage Their Privacy Settings</a></em>
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_55"> <img src="./GD14_files/people-finder.jpg" class="img-fluid" alt="Screenshot of the PeopleFinder prototype interface for feedback and location &lt;a href=&quot;#section11&quot;&gt;[11]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Screenshot of the PeopleFinder prototype interface for feedback and location <a href="GD14.html#section11">[11]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_55">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_52"> <img src="./GD14_files/trend-analysis.jpg" class="img-fluid" alt="From top to bottom right: (a) dialogue before sending profiles and privacy settings; (b) privacy score diagnosis; (c) recommendation by attribute co-occurrence &lt;a href=#section13&quot;&gt;[13]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            From top to bottom right: (a) dialogue before sending profiles and privacy settings; (b) privacy score diagnosis; (c) recommendation by attribute co-occurrence <a href="GD14.html#section13%22">[13]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_52">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_41"> <img src="./GD14_files/privacy-advisor-gui.jpg" class="img-fluid" alt="Privacy Advisor GUI &lt;a href=&quot;#section16&quot;&gt;[16]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Privacy Advisor GUI <a href="GD14.html#section16">[16]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_41">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_74"> <img src="./GD14_files/SPISM.jpg" class="img-fluid" alt="SPISM mobile application interfaces &lt;a href=&quot;#section17&quot;&gt;[17]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The SPISM mobile application interfaces allow users to register and log in, check other users’ current locations, view nearby devices and their availability, and access features such as past activity records and contacts lists <a href="GD14.html#section17">[17]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_74">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_90"> <img src="./GD14_files/privacy-negotiation.jpg" class="img-fluid" alt="PrivacyApplication interface &lt; a href=&quot;#section19&quot;&gt;[19]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            PrivacyApplication interface <a href="GD14.html#section19">[19]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_90">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_91"> <img src="./GD14_files/automated-privacy-negotiation.jpg" class="img-fluid" alt="Screenshots of the negotiation prototype as in &lt;a href=&quot;#section20&quot;&gt;[20]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Screenshots of the negotiation prototype as in <a href="GD14.html#section20">[20]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_91">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_31"> <img src="./GD14_files/knapsack-set-preferences.jpg" class="img-fluid" alt="Interface for users setting their privacy preferences according to their choices as provided in &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Interface for users setting their privacy preferences according to their choices as provided in <a href="GD14.html#section20">[20]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_31">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_106"> <img src="./GD14_files/veilme_Wuw1KhK.jpg" class="img-fluid" alt="The screenshot of the VeilMe interface &lt;a href=&quot;#section21&quot;&gt;[21]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The screenshot of the VeilMe interface. Panel A &amp; B: user’s Twitter profile and the latest tweets; C: portrait exploration panel; D: privacy setting panel. Users can click to expand to reveal traits with sub-traits. When hovering a social distance knob, the input audience names of that group will be shown for user engagement <a href="GD14.html#section21">[21]</a>.  <a href="GD14.html#" data-bs-toggle="modal" data-bs-target="#modal_106">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_31" tabindex="-1" aria-labelledby="modalLabel_31" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_31">Interface for users setting their privacy preferences according to their choices as provided in <a href="GD14.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/knapsack-set-preferences(1).jpg" class="img-fluid" alt="Interface for users setting their privacy preferences according to their choices as provided in &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_41" tabindex="-1" aria-labelledby="modalLabel_41" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_41">Privacy Advisor GUI <a href="GD14.html#section16">[16]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/privacy-advisor-gui.png" class="img-fluid" alt="Privacy Advisor GUI &lt;a href=&quot;#section16&quot;&gt;[16]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_90" tabindex="-1" aria-labelledby="modalLabel_90" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_90">PrivacyApplication interface &lt; a href="#section19"&gt;[19].</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/privacy-negotiation.png" class="img-fluid" alt="PrivacyApplication interface &lt; a href=&quot;#section19&quot;&gt;[19]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_74" tabindex="-1" aria-labelledby="modalLabel_74" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_74">SPISM mobile application interfaces <a href="GD14.html#section17">[17]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/SPISM.png" class="img-fluid" alt="SPISM mobile application interfaces &lt;a href=&quot;#section17&quot;&gt;[17]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_52" tabindex="-1" aria-labelledby="modalLabel_52" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_52">From top to bottom right: (a) dialogue before sending profiles and privacy settings; (b) privacy score diagnosis; (c) recommendation by attribute co-occurrence <a href="GD14.html#section13%22">[13]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/trend-analysis.png" class="img-fluid" alt="From top to bottom right: (a) dialogue before sending profiles and privacy settings; (b) privacy score diagnosis; (c) recommendation by attribute co-occurrence &lt;a href=#section13&quot;&gt;[13]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_55" tabindex="-1" aria-labelledby="modalLabel_55" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_55">Screenshot of the PeopleFinder prototype interface for feedback and location <a href="GD14.html#section11">[11]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/people-finder.png" class="img-fluid" alt="Screenshot of the PeopleFinder prototype interface for feedback and location &lt;a href=&quot;#section11&quot;&gt;[11]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_91" tabindex="-1" aria-labelledby="modalLabel_91" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_91">Screenshots of the negotiation prototype as in <a href="GD14.html#section20">[20]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/automated-privacy-negotiation.png" class="img-fluid" alt="Screenshots of the negotiation prototype as in &lt;a href=&quot;#section20&quot;&gt;[20]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_106" tabindex="-1" aria-labelledby="modalLabel_106" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_106">The screenshot of the VeilMe interface <a href="GD14.html#section21">[21]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD14_files/veilme_Wuw1KhK.png" class="img-fluid" alt="The screenshot of the VeilMe interface &lt;a href=&quot;#section21&quot;&gt;[21]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Visualising privacy settings distributions among similar users to facilitate informed privacy settings adjustments by users. </li>
+                
+                    <li>Adapting users' privacy settings to changes in their social context or privacy preferences over time. </li>
+                
+                    <li>Offering privacy setting recommendations to users new to a platform, leveraging crowd-sourced data and machine learning. </li>
+                
+                    <li>Helping users automatically configure privacy settings for their social media posts based on content analysis and historical behaviour. </li>
+                
+                    <li>Educating users about the privacy implications of their settings through visual feedback and recommendations, promoting more privacy-aware behaviour online. </li>
+                
+                    <li>Leveraging machine learning and artificial intelligence to create personalised privacy advisors or agents that can automatically configure privacy settings based on the user's past decisions, preferences, and context. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>Systems like the Privacy Advisor <a href="GD14.html#section16">[16]</a> and those employing human-in-the-loop approaches <a href="GD14.html#section9">[9]</a> emphasise the importance of user-centred design by keeping users in control and making privacy decisions less mentally demanding. They effectively communicate privacy settings through visualisations and recommendation messages validated through field studies and user feedback <a href="GD14.html#section13">[13]</a><a href="GD14.html#section14">[14]</a>. Extending privacy settings to visual content <a href="GD14.html#section4">[4]</a> and leveraging AI for scalable, automatic text analysis demonstrate advancements in privacy management tools <a href="GD14.html#section7">[7]</a>, outperforming human judgment in identifying privacy risks. The simplicity and generalisability of privacy profiles <a href="GD14.html#section10">[10]</a> and incremental policy suggestions <a href="GD14.html#section14">[14]</a> facilitate user understanding and decision-making, aligning privacy choices with user preferences and contexts. These approaches underscore the systems' ability to adapt to changing user needs and improve the relevance and effectiveness of privacy policies over time.</li>
+                
+            
+                
+                    <li>Many proposals effectively address the cold start problem by leveraging machine learning, crowdsourcing, and contextual information to recommend privacy policies for new users. These systems, such as T2P <a href="GD14.html#section8">[8]</a> and A3P <a href="GD14.html#section6">[6]</a>, show promising results without prior user data, providing utility across various scenarios. They incorporate user feedback to refine recommendations, enhancing accuracy over time. The use of diverse datasets and human evaluators, as seen in the studies <a href="GD14.html#section4">[4]</a><a href="GD14.html#section7">[7]</a>, adds real-world applicability, demonstrating significant potential for practical implementation in online social networks and other platforms. These systems' adaptability and multifaceted feature selection, combining text, sentiment, and keyword analysis <a href="GD14.html#section1">[1]</a>, enhance their performance and align well with user expectations and privacy preferences.</li>
+                
+            
+                
+            
+                
+                    <li>The various proposed solutions demonstrated high accuracy and effectiveness in predicting and managing user privacy preferences across different contexts and platforms. PACMAN <a href="GD14.html#section12">[12]</a> achieves an average accuracy of 91.8% by considering relationship types and content information and making precise access control recommendations for social media. The consent recommender system <a href="GD14.html#section3">[3]</a> shows an accuracy of 87% for users with no prior data, performing even better for users with existing data. Decision tree models achieve 77% accuracy in predicting privacy decisions for IoT scenarios <a href="GD14.html#section5">[5]</a>, while the PPRS <a href="GD14.html#section15">[15]</a> reaches 92.62% accuracy in data-sharing decisions, effectively addressing the cold start problem. SPISM <a href="GD14.html#section17">[17]</a> outperforms individual privacy policies, achieving up to 90% correct sharing decisions with limited user setup. The KPC-G <a href="GD14.html#section18">[18]</a> model and other mechanisms <a href="GD14.html#section19">[19]</a> show high satisfaction and accuracy rates (up to 88%), validating their effectiveness in aligning user privacy choices with their preferences and reducing the mental demand of decision-making processes.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+            
+                
+            
+                
+            
+                
+                    <li>Several proposals encounter scalability issues and difficulties in accounting for user-specific differences. For example, the A3P-Social <a href="GD14.html#section6">[6]</a> component's complexity and cost pose challenges for efficient implementation, and systems like PACMAN <a href="GD14.html#section12">[12]</a> may not fully represent the complexity of social relationships. Furthermore, one-size-fits-all approaches may not satisfy unique privacy needs <a href="GD14.html#section8">[8]</a>, and reliance on user-supplied content information can limit effectiveness in scenarios lacking sufficient metadata <a href="GD14.html#section12">[12]</a>. Over-reliance on technology for privacy management could lead to user complacency, potentially overlooking non-visual privacy risks <a href="GD14.html#section4">[4]</a> or user's capacity to review suggestions might decrease as the complexity and number of policies and configurations grow <a href="GD14.html#section11">[11]</a>. Additionally, advanced privacy management tools often require significant computational resources and technical knowledge, which could limit accessibility for average users or small-scale platforms <a href="GD14.html#section4">[4]</a>.</li>
+                
+            
+                
+                    <li>Many of the proposals face challenges in model adaptability and user experience. For instance, while combining text, sentiment, and keyword features achieves high prediction accuracy, it may limit adaptability to posts with less indicative features <a href="GD14.html#section1">[1]</a>. Similarly, although effective for new users, global classifiers do not match personalised classifiers' performance, highlighting room for improvement in handling new user data <a href="GD14.html#section1">[1]</a>. Systems also struggle with real-world applicability due to biases in participant demographics and expertise, survey scenarios, assumptions about the availability of dynamic features on mobile phones, and specific web applications scenarios <a href="GD14.html#section3">[3]</a><a href="GD14.html#section5">[5]</a><a href="GD14.html#section9">[9]</a><a href="GD14.html#section10">[10]</a><a href="GD14.html#section11">[11]</a><a href="GD14.html#section13">[13]</a><a href="GD14.html#section14">[14]</a><a href="GD14.html#section15">[15]</a><a href="GD14.html#section16">[16]</a>.</li>
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Choices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	This guideline discusses solutions that contribute to the design space of privacy choices <a href="GD14.html#section22">[22]</a>. They address key aspects of how users interact with privacy settings, make privacy decisions, and manage their personal data across various platforms.
+Considering the design space for privacy choices, this guideline can be applied in the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Modalities are similar to channels and refer to the different modes for the two-way communication of privacy choices between systems and users, considering factors such as the nature of privacy decisions, system capabilities, user engagement and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are typically presented visually, using text, images, icons, or a combination of these elements. Visual privacy choices often include clear descriptions of available options, allowing systems to obtain affirmative privacy decisions from users when necessary.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Personalised privacy recommendations can be presented visually through text, images, or icons, making them easy to understand and act upon.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Auditory
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category, privacy choices are delivered primarily via spoken words and sounds.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    For users who prefer auditory input, recommendations can be delivered via speech or alerts.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Machine-readable
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this modality, a system&#39;s data practices and available privacy choices are available in a machine-readable format. This allows communication of privacy options to other systems automatically as well as serves as the foundation for software agents.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Personalised privacy settings can be encoded in a machine-readable format, enabling software agents to manage privacy settings on behalf of users.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Combined
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category, one can have a combination of modalities, like machine-readable privacy options used by privacy software agents with alerts by haptic or visual notifications for users when they have to make a privacy decision regarding some privacy choice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Utilising multiple modalities ensures that personalised recommendations are accessible and comprehensible through various means, enhancing user engagement and understanding.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="In this dimension, it is considered the appropriate time to deliver a privacy choice, since it can affect the effectiveness of user engagement in privacy decision-making. This dimension can be also decoupled, integrated or mediated with the dimension Timing of the Privacy Notices since the availability of privacy notices can affect for example the user perception of risk."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On-demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="On-demand privacy choices can be integrated or decoupled from privacy notices, usually presented when users actively seek available privacy choices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    With the solutions discussed in this guideline, users can actively seek recommendations for privacy settings or modifications based on their current concerns or changes in their privacy preferences. This empowers users to take control of their privacy settings whenever they need to review or change them.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are presented to users when they are about to engage in a data practice. This timing approach is commonly integrated with relevant privacy notices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The discussed solutions in this guideline provide privacy settings recommendations and adjustments when the user is about to share personal data or when a specific data practice is imminent. This is in line with presenting privacy choices at the moment they are most relevant to the user's current actions, enhancing the decision-making process by making it contextually appropriate.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Personalised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Personalised privacy choices can be integrated, decoupled or mediated from privacy notices and involve tailoring the timing mechanisms based on individual preferences.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The solutions discussed in this guideline offer personalised privacy settings recommendations based on the users' behaviours, preferences, and previous decisions. This approach acknowledges the diversity in users' privacy preferences and provides tailored suggestions that align with individual privacy needs and expectations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Context-aware
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Context-aware privacy choices are also often integrated with privacy notices, and they comprise leveraging the context the user is in (temporal, spatial, social) to present the privacy choice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Recommendations can be tailored to specific contexts, such as location or activity, making privacy choices more relevant and effective.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Privacy rights-based choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This case comprises a type of privacy choice that supports privacy rights such as access, erasure, rectification, erasure, portability, etc. These choices are usually beyond the capability of binary or multiple choices and may require additional interactions between the user and the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Recommendations can assist users in exercising their privacy rights (e.g., access, rectification, erasure) by suggesting appropriate actions based on their data and usage patterns.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Contextualised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category of privacy choices, they are presented in context-specific privacy situations, for example, when a potential privacy violation may happen, such as asking to allow or deny location sharing when it is about to happen">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The discussed solutions in this guideline adopt privacy settings recommendations based on the context of data collection or user activity. These solutions provide contextualised privacy choices by analysing user behaviour or leveraging machine learning to understand user preferences in different situations. This approach aligns with the contextual integrity framework, recognising that privacy preferences may vary significantly depending on the context, such as time, location, or purpose of data collection.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Multiple choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to providing users with more options to choose from, like the sum of multiple binary choices, for example.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The solutions discussed in this guideline offer users various privacy settings options, allowing for more granular control over their data. These choices enable users to tailor their privacy preferences more precisely, beyond the simple binary options.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Binary choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The solutions discussed in this guideline can provide users with a straightforward binary choice for their privacy settings, such as opting in or opting out of data collection and processing.
+                  </p>
+                
+
+                <!-- Options -->
+                
+                  <ul class="ms-3">
+                    
+                      <li>
+                        <strong>Opt-in/out</strong>
+                        
+                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
+                        
+                      </li>
+                    
+                  </ul>
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Various channels can be used to present privacy options to users and effectively communicate their privacy decisions back to systems; for privacy choices, it is a two-way communication between systems and users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Secondary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Secondary channels are used when there is some limitation with the primary channel. For example, when the primary channel is not available or when has a limited user interface.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    When primary channels are not available or suitable, secondary channels (e.g., mobile apps and websites) can provide personalised privacy recommendations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Personalised recommendations can be integrated directly into the primary channel (e.g., website, app) where the user interacts with the system, ensuring seamless and contextually relevant privacy choices.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Functionality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension intends to capture functionalities to support the exercise of privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Enforcement
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to the enforcement of users&#39; privacy decisions, in the sense that the system must be equipped with the necessary functionalities to enforce privacy decisions that will be submitted by several available privacy choices and potentially several times.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The solutions discussed in this guideline propose or imply using automated systems to enforce privacy choices.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Feedback
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Timely and accurate feedback is vital for the system to support ongoing privacy choices. When users make privacy decisions that can be immediately implemented, the system should promptly notify them of the updated privacy settings.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The discussed solutions also involve providing users with confirmation or updates regarding their privacy settings, enhancing transparency and user confidence in the system's respect for their decisions.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Presentation
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This is an indispensable part of the interface. The interface must present the privacy choices for the user and should be designed in a way that users can easily understand what they are sharing and what they are not sharing.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices always have a presentation that involves a system providing clear and easily understandable information to users about potential data practices, available options, and how to communicate privacy decisions, often incorporating multiple components and integrating with related privacy notices, requiring careful consideration of design dimensions such as timing, channel, and modality <a href="GD14.html#section10"> [10]</a>.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 This guideline focuses on enabling users to manage their privacy settings effectively through personalised recommendations. This aligns with the Control <a href="GD14.html#section23">[23]</a> attribute, which emphasises users' ability to make informed decisions about their data and to influence how it is handled. Providing personalised recommendations aiming to enhance users' control over their privacy settings, ensuring they can opt in or opt out based on their preferences, empowers them to maintain an active role in their data management.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Collection</h6>
+
+				The discussed solutions in this guideline could influence data collection minimisation by recommending settings limiting data sharing.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Security</h6>
+
+				By enabling users to set appropriate privacy settings, the discussed solutions in this guideline indirectly contribute to protecting personal data against unauthorised access.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Transparency</h6>
+
+				Personalised recommendations often involve providing users with clear and accessible information about their privacy settings and how their data is being managed. This helps users make informed decisions, thereby enhancing transparency.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Functionality</h6>
+
+				The solutions discussed in this guideline touch upon the trade-off between functionality and privacy, aiming to offer users the ability to maintain privacy without sacrificing service utility.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Correctness</h6>
+
+				Personalised recommendations can help identify and correct mismatches or inaccuracies in privacy settings. By continuously adapting to user feedback and behaviour, the system ensures that privacy settings accurately reflect the user's preferences, thereby helping to maintain data correctness.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Lijun Chen, Ming Xu, Xue Yang, Ning Zheng, Yiming Wu, Jian Xu, Tong Qiao, and Hongbin Liu. A Privacy Settings Prediction Model for Textual Posts on Social Networks. In: Romdhani, I., Shu, L., Takahiro, H., Zhou, Z., Gordon, T., Zeng, D. (eds) Collaborative Computing: Networking, Applications and Worksharing. CollaborateCom 2017. Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering, vol 252. Springer, Cham.
+                
+                    <a href="https://doi.org/10.1007/978-3-030-00916-8_53" target="_blank">https://doi.org/10.1007/978-3-030-00916-8_53</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Toru Nakamura, Welderufael B. Tesfay, Shinsaku Kiyomoto, and Jetzabel Serna  (2017). Default privacy setting prediction by grouping user’s attributes and settings preferences. In Data Privacy Management, Cryptocurrencies and Blockchain Technology: ESORICS 2017 International Workshops, DPM 2017 and CBT 2017, Oslo, Norway, September 14-15, 2017, Proceedings (pp. 107-123). Springer International Publishing.
+                
+                    <a href="https://doi.org/10.1007/978-3-319-67816-0_7" target="_blank">https://doi.org/10.1007/978-3-319-67816-0_7</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Rosni K V, Manish Shukla, Vijayanand Banahatti, and Sachin Lodha (2019). Consent recommender system: A case study on LinkedIn settings. In Central Europe Workshop Proceedings
+                
+                    <a href="https://ceur-ws.org/Vol-2335/1st_PAL_paper_12.pdf" target="_blank">https://ceur-ws.org/Vol-2335/1st_PAL_paper_12.pdf</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Tribhuvanesh Orekondy, Bernt Schiele, and Mario Fritz (2017). Towards a Visual Privacy Advisor: Understanding and Predicting Privacy Risks in Images. 2017 IEEE International Conference on Computer Vision (ICCV), Venice, Italy, pp. 3706-3715
+                
+                    <a href="https://doi.org/10.1109/ICCV.2017.398" target="_blank">https://doi.org/10.1109/ICCV.2017.398</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Hosub Lee and Alfred Kobsa. (2017). Privacy preference modeling and prediction in a simulated campuswide IoT environment. In IEEE International Conference on Pervasive Computing and Communications (PerCom), Kona, HI, USA, 2017, pp. 276-285
+                
+                    <a href="https://doi.org/10.1109/PERCOM.2017.7917874" target="_blank">https://doi.org/10.1109/PERCOM.2017.7917874</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Anna Cinzia Squicciarini, Dan Lin, Smitha Sundareswaran, and Joshua Wede. (2014). Privacy Policy Inference of User-Uploaded Images on Content Sharing Sites. IEEE transactions on knowledge and data engineering 27, no. 1, 2014, 193-206.
+                
+                    <a href="https://doi.org/10.1109/TKDE.2014.2320729" target="_blank">https://doi.org/10.1109/TKDE.2014.2320729</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section7">
+                [7] Davide Alberto Albertini, Barbara Carminati, and Elena Ferrari (2016). Privacy Settings Recommender for Online Social Network. In 2016 IEEE 2nd international conference on collaboration and internet computing (CIC), 2016, 514-521.
+                
+                    <a href="https://doi.org/10.1109/CIC.2016.079" target="_blank">https://doi.org/10.1109/CIC.2016.079</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section8">
+                [8] Anna Cinzia Squicciarini, Andrea Novelli, Dan Lin, Cornelia Caragea, and Haoti Zhong (2017). From Tag to Protect: A Tag-Driven Policy Recommender System for Image Sharing. In 2017 15th Annual Conference on Privacy, Security and Trust (PST), 2017, 337-33709.
+                
+                    <a href="https://doi.org/10.1109/PST.2017.00047" target="_blank">https://doi.org/10.1109/PST.2017.00047</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section9">
+                [9] Mainack Mondal, Günce Su Yilmaz, Noah Hirsch, Mohammad Taha Khan, Michael Tang, Christopher Tran, Chris Kanich, Blase Ur, and Elena Zheleva. Moving Beyond Set-It-And-Forget-It Privacy Settings on Social Media. In Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security (CCS '19). Association for Computing Machinery, New York, NY, USA, 2019, 991–1008.
+                
+                    <a href="https://doi.org/10.1145/3319535.3354202" target="_blank">https://doi.org/10.1145/3319535.3354202</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section10">
+                [10] Odnan Ref Sanchez, Ilaria Torre, Yangyang He, and Bart P. Knijnenburg (2020). A recommendation approach for user privacy preferences in the fitness domain. User Modeling and User-Adapted Interaction, 30, pp.513-565.
+                
+                    <a href="https://doi.org/10.1007/s11257-019-09246-3" target="_blank">https://doi.org/10.1007/s11257-019-09246-3</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section11">
+                [11] Patrick Gage Kelley, Paul Hankes Drielsma, Norman Sadeh, and Lorrie Faith Cranor (2008). User-controllable learning of security and privacy policies. In Proceedings of the 1st ACM workshop on Workshop on AISec (AISec '08). Association for Computing Machinery, New York, NY, USA, 2008, 11–18.
+                
+                    <a href="https://doi.org/10.1145/1456377.1456380" target="_blank">https://doi.org/10.1145/1456377.1456380</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section12">
+                [12] Gaurav Misra and Jose M. Such (2017). PACMAN: Personal Agent for Access Control in Social Media. In IEEE Internet Computing, vol. 21, no. 6, pp. 18-26, November/December 2017.
+                
+                    <a href="https://doi.org/10.1109/MIC.2017.4180831" target="_blank">https://doi.org/10.1109/MIC.2017.4180831</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section13">
+                [13] Munemasa, Toshikazu, and Mizuho Iwaihara (2011). Trend Analysis and Recommendation of Users’ Privacy Settings on Social Networking Services. In International conference on social informatics, pp. 184-197. Berlin, Heidelberg: Springer Berlin Heidelberg, 2011.
+                
+                    <a href="https://doi.org/10.1007/978-3-642-24704-0_23" target="_blank">https://doi.org/10.1007/978-3-642-24704-0_23</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section14">
+                [14] Carlos Villarán and Marta Beltrán. (2022). User-Centric Privacy for Identity Federations Based on a Recommendation System. Electronics, 11(8), 1238.
+                
+                    <a href="https://doi.org/10.3390/electronics11081238" target="_blank">https://doi.org/10.3390/electronics11081238</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section15">
+                [15] Yashothara Shanmugarasa, Hye-young Paik, Salil S. Kanhere, Liming Zhu (2022). Automated Privacy Preferences for Smart Home Data Sharing Using Personal Data Stores. In IEEE Security &amp; Privacy, vol. 20, no. 1, pp. 12-22, Jan.-Feb. 2022
+                
+                    <a href="https://doi.org/10.1109/MSEC.2021.3106056" target="_blank">https://doi.org/10.1109/MSEC.2021.3106056</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section16">
+                [16] Karin Bernsmed, Inger Anne Tøndel and Åsmund Ahlmann Nyre. Design and Implementation of a CBR-based Privacy Agent. In: Seventh International Conference on Availability, Reliability and Security, Prague, Czech Republic, 2012,  317-326.
+                
+                    <a href="https://doi.org/10.1109/ARES.2012.60" target="_blank">https://doi.org/10.1109/ARES.2012.60</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section17">
+                [17] Igor Bilogrevic, Kévin Huguenin, Berker Agir, Murtuza Jadliwala, Maria Gazaki and Jean-Pierre Hubaux (2016). A machine-learning based approach to privacy-aware information-sharing in mobile social networks. Pervasive and Mobile Computing, 25, 125-142.
+                
+                    <a href="https://doi.org/10.1016/j.pmcj.2015.01.006" target="_blank">https://doi.org/10.1016/j.pmcj.2015.01.006</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section18">
+                [18] Zulfikar Alom, Bikash Chandra Singh, Zeyar Aung, and Mohammad Abdul Azim. Knapsack graph-based privacy checking for smart environments. Computers &amp; Security, vol. 105, 2021, 10224
+                
+                    <a href="https://doi.org/10.1016/j.cose.2021.102240" target="_blank">https://doi.org/10.1016/j.cose.2021.102240</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section19">
+                [19] Fagner Roger Pereira Couto and Sergio Donizetti Zorzo (2018). Privacy Negotiation Mechanism in Internet of Things Environments. In Proceedings of the Twenty-fourth Americas Conference on Information Systems, New Orleans, AMCIS 2018.
+                
+                    <a href="https://aisel.aisnet.org/amcis2018/Security/Presentations/33" target="_blank">https://aisel.aisnet.org/amcis2018/Security/Presentations/33</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section20">
+                [20] Dorota Filipczuk, Tim Baarslag, Enrico H. Gerding, and m. c. schraefel (2022).  Automated privacy negotiations with preference uncertainty. Autonomous Agents and Multi-Agent Systems, 36(2), p.49.
+                
+                    <a href="https://doi.org/10.1007/s10458-022-09579-1" target="_blank">https://doi.org/10.1007/s10458-022-09579-1</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section21">
+                [21] Yang Wang, Liang Gou, Anbang Xu, Michelle X. Zhou, Huahai Yang, and Hernan Badenes (2015). VeilMe: An Interactive Visualization Tool for Privacy Configuration of Using Personality Traits. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI '15). Association for Computing Machinery, New York, NY, USA, 2015, 817–826.
+                
+                    <a href="https://doi.org/10.1145/2702123.2702293" target="_blank">https://doi.org/10.1145/2702123.2702293</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section22">
+                [22] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section23">
+                [23] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD14_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)GD6/ -->
+<html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>User Privacy Communication Guidelines</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./GD6_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./GD6_files/starter-template.css" rel="stylesheet">
+    <link href="./GD6_files/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./GD6_files/custom.css" rel="stylesheet">
+    <script src="./GD6_files/saved_resource"></script>
+
+    <script src="./GD6_files/static_only.js"></script>
+  </head>
+<body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
+  
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"> Guidelines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="designspace.html"> Design Spaces</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="references.html"> References
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="GD6.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD6_files/en.png">&nbsp;<span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                
+                <li>
+                      <a class="dropdown-item" href="GD6.html">
+                      English
+                    </a>
+                </li>
+                
+                <li>
+                     <span class="dropdown-item disabled">
+                        Português Brasileiro (não disponível)
+                      </span>
+                </li>
+                
+            </ul>
+          </li>
+        </ul>
+    <form class="d-flex" action="index.html" method="get">
+      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
+      <button class="btn btn-light" type="submit">Search</button>
+    </form>
+      </div>
+    </div>
+  </nav>
+  
+<main class="container-fluid">
+  <div class="p-0">
+      
+
+  <nav aria-label="breadcrumb">
+	<ol class="breadcrumb">
+	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
+	  <li class="breadcrumb-item active" aria-current="page">Managing App Permissions</li>
+	</ol>
+  </nav>
+  <div class="row pt-5">
+    <div class="container px-3">
+		<div class="col">
+			<header class="d-flex align-items-center">
+				<h3><i class="bi bi-phone"></i> GD6 - Enhance User Privacy Controls in Mobile Applications</h3>
+			</header>
+			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
+				
+			</header>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-8 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Problem Summary</h5>
+            <p class="card-text">
+                Ensuring user privacy and data protection in mobile applications is complex. The challenges stem from various factors, including inadequate control and visibility for users over how apps and services access their data. This complexity arises from several issues not being fully addressed, such as managing access by third-party libraries, controlling detailed permission granting, and offering options for partial consent.
+            </p>
+            <h5 class="card-title">Rationale</h5>
+            <p class="card-text">
+                Mobile applications face significant privacy control gaps, including limited visibility over third-party library access, binary consent options, and a lack of detailed user controls. These challenges necessitate the development of more sophisticated, user-centric mechanisms for managing privacy. By integrating contextual privacy controls, privacy by design principles, and user-friendly interfaces, users can be empowered to adjust their permissions dynamically, make informed decisions, and better protect their personal data.
+            </p>
+            <h5 class="card-title">Solution</h5>
+            <p class="card-text">
+                To develop user-centred mechanisms for managing privacy in mobile applications. These mechanisms provide granular control over app permissions and data sharing, offer partial consent options, and use intuitive, privacy-by-design interfaces. Together, they enhance user autonomy and visibility over how apps and third-party libraries access and use personal data, addressing privacy concerns dynamically and effectively.
+<br><br>
+
+Chitkara et al. <a href="GD6.html#section1">[1]</a> introduced ProtectMyPrivacy (PmP) for Android, focusing on distinguishing between app-native and third-party library data accesses. As a key feature, it provides contextual control over data sharing to minimise the decisions required, thus minimising user decision fatigue.
+PmP leverages Android's permissions system and the Xposed framework for runtime monitoring and control, allowing actions like allowing, denying, or faking data access. PmP's backend collects user decisions and app behaviours, enhancing privacy management through contextual understanding. The app minimises user decision fatigue by managing accesses from common third-party libraries, reducing unnecessary data exposure.
+
+
+<br><br>
+
+Bock, Chowdhury, and Momen <a href="GD6.html#section2">[2]</a> introduced a mobile application that incorporates a "Maybe" button, offering users a novel partial consent feature for data access permissions. This approach allows users to grant temporary access to their data, enhancing privacy controls by enabling users to reassess permissions over time. Implemented on Android, this solution explores user acceptance and the practicality of conditional access, aiming to balance functionality and privacy. By allowing users to navigate the often binary choice of consent, the app provides a nuanced option to manage privacy preferences dynamically, reflecting a more realistic approach to personal data management and control.
+
+<br><br>
+
+Ataei, Degbelo, and Kray <a href="GD6.html#section3">[3]</a> introduced a user interface (UI) designed for managing location privacy settings. This UI is grounded in privacy theory, privacy by design principles, and general UI design principles. It allows users to control when, with whom, and where their location information is shared through intuitive visual controls and icons. The interface emphasises fine-grained privacy management, enabling users to set time-based, distance-based, and relational privacy controls. Integrating these controls directly into a location-based service (LBS) application aims to enhance user autonomy and privacy, making it straightforward for users to manage their location privacy preferences directly from their mobile devices.
+
+<br><br>
+
+Aydin et al. <a href="GD6.html#section4">[4]</a> presented a privacy-enhancing framework for Android applications called VisiDroid, focusing on user control over personal data shared with advertising and analytics libraries. It operates in three phases: offline analysis to track data flows and UI contexts, visual configuration allowing users to set privacy preferences on a per-widget basis, and code instrumentation to enforce these preferences by anonymising data before it's sent out. 
+This last step ensures that the user's privacy preferences are enforced by substituting actual data with anonymised values right before they are sent out in ad or analytics requests. The approach aims to minimise potential side effects on app functionality that might arise from modifying the data used by these requests.
+
+<br><br> 
+
+Quay-de la Vallee, Selby, and Krishnamurthi et al. <a href="GD6.html#section5">[5]</a> proposed a permission management assistant that aids users in managing permissions post-installation. To save users' time and attention, the PerMission Assistant sorts installed apps by their worst-rated permissions, helping users address the most concerning issues first. It guides users to manage app permissions through their device settings, as it cannot directly adjust other apps' settings for security reasons of the operating system.
+
+<br><br>
+Fawaz and Shin <a href="GD6.html#section6">[6]</a> proposed a solution for enhancing location privacy on Android smartphones. The authors introduce a system that leverages cloaking and obfuscation techniques to protect users' location data from unauthorised tracking, profiling, and identification. This system allows users to maintain the functionality of location-based services while significantly reducing the risk of privacy breaches. The proposed solution operates in real-time, dynamically adjusting the level of location privacy based on the context and user preferences. It intelligently decides when and how to cloak or obfuscate location data, ensuring minimal disruption to app functionality. The system is designed to be user-friendly, providing a seamless experience without requiring extensive user intervention.
+            </p>
+            <p class="card-text">
+                <strong>Platforms</strong>:
+                
+                <em>mobile devices</em>
+            
+            </p>
+            
+        </div>
+
+    </div>
+
+</div>
+<div class="col-lg-4 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            
+            <p class="card-text text-center">
+                <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_47"> <img src="./GD6_files/Pmp-all.jpg" class="img-fluid" alt="Overview of PmP app &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Overview of PmP app <a href="GD6.html#section1">[1]</a>.  <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_47">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_49"> <img src="./GD6_files/partial-consent.jpg" class="img-fluid" alt="Interface of the prototype app using partial consent &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Interface of the prototype app using partial consent as in <a href="GD6.html#section2">[2]</a>.  <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_49">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_50"> <img src="./GD6_files/privacy-theory-in-practice.jpg" class="img-fluid" alt="The user interface for managing location privacy settings &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The user interface for managing location privacy settings, from left: (a) Main UI; (b) UI for whom to share; (c) Adjusting time restriction; (d) Visualised feedback on an activated time restriction <a href="GD6.html#section3">[3]</a>.  <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_50">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_51"> <img src="./GD6_files/visidroid-config-interface_TmdVwp3.jpg" class="img-fluid" alt="The VisiDroid configuration interface as in &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The VisiDroid configuration interface <a href="GD6.html#section4">[4]</a>.  <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_51">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_65"> <img src="./GD6_files/permission-assistant.jpg" class="img-fluid" alt="Permission Assistant &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            The Permission Assistant home page <a href="GD6.html#section5">[5]</a>.  <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_65">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_97"> <img src="./GD6_files/LP-Guardian.jpg" class="img-fluid" alt="LP-Guardian prompt &lt;a href=&quot;#section6&quot;&gt;[6]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Left: When the app first accesses the location, LP-Guardian prompts the user to set the app's anonymisation rule with two options: 'Do nothing' or 'Hide Me.' Choosing 'Hide Me' activates the appropriate anonymisation mechanism.
+Right: When an app attempts to access the location from a new place, LP-Guardian prompts the user for a decision <a href="GD6.html#section6">[6]</a>  <a href="GD6.html#" data-bs-toggle="modal" data-bs-target="#modal_97">(See enlarged)</a>
+            </p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_47" tabindex="-1" aria-labelledby="modalLabel_47" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_47">Overview of PmP app <a href="GD6.html#section1">[1]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD6_files/Pmp-all.png" class="img-fluid" alt="Overview of PmP app &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_50" tabindex="-1" aria-labelledby="modalLabel_50" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_50">The user interface for managing location privacy settings <a href="GD6.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD6_files/privacy-theory-in-practice.jpeg" class="img-fluid" alt="The user interface for managing location privacy settings &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_51" tabindex="-1" aria-labelledby="modalLabel_51" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_51">The VisiDroid configuration interface as in <a href="GD6.html#section4">[4]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD6_files/visidroid-config-interface_TmdVwp3.png" class="img-fluid" alt="The VisiDroid configuration interface as in &lt;a href=&quot;#section4&quot;&gt;[4]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_49" tabindex="-1" aria-labelledby="modalLabel_49" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_49">Interface of the prototype app using partial consent <a href="GD6.html#section2">[2]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD6_files/partial-consent.png" class="img-fluid" alt="Interface of the prototype app using partial consent &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_65" tabindex="-1" aria-labelledby="modalLabel_65" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_65">Permission Assistant <a href="GD6.html#section5">[5]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD6_files/permission-assistant.png" class="img-fluid" alt="Permission Assistant &lt;a href=&quot;#section5&quot;&gt;[5]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_97" tabindex="-1" aria-labelledby="modalLabel_97" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_97">LP-Guardian prompt <a href="GD6.html#section6">[6]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD6_files/LP-Guardian.png" class="img-fluid" alt="LP-Guardian prompt &lt;a href=&quot;#section6&quot;&gt;[6]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+		</div>
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+        <div class="card-header text-white bg-primary"><h5 class="card-title">Use cases</h5></div>
+        <div class="card-body">
+            <ul class="card-text">
+                
+                    <li>Facilitating dynamic and flexible permission management. </li>
+                
+                    <li>Allowing users to control and minimise what information is shared based on their comfort levels </li>
+                
+                    <li>Empowering users with customisable permission granting. </li>
+                
+                    <li>Enhancing privacy management and data protection in mobile environments. </li>
+                
+                    <li>Aiding users to better control permission granting in mobile apps. </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-up"></i> Pros</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>Offers users better insights into how their data is accessed and used, potentially increasing privacy awareness. The solution has been deployed and evaluated with real users, demonstrating its practicality and effectiveness in reducing privacy leaks to third-party libraries. Additionally, by focusing on popular third-party libraries common across many apps, PmP reduces the number of privacy decisions users have to make, simplifying the user experience. It provides granular control over privacy-sensitive data, distinguishing between app and library accesses <a href="GD6.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>The "Maybe" button introduces a nuanced approach to permission granting. It allows users more control over their data by providing temporary access to apps and enhancing privacy management. 
+Many participants in a user study expressed interest in using the "Maybe" button on their private devices, indicating a demand for more flexible privacy controls beyond the binary allow/deny options. It was most frequently used for permissions like memory and contacts, highlighting its potential effectiveness for managing access to more sensitive data types. Participants also valued control and privacy protection over user-friendliness, indicating a strong preference for privacy-enhancing features, even if they might complicate the user experience slightly. The study also found that the majority of participants did not perceive recurring requests for partial consent as annoying, suggesting that users are open to more frequent interaction if it means better privacy control <a href="GD6.html#section2">[2]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>In a user study, the UI for fine-grained control of location privacy settings was well-received, meeting users' expectations for managing location privacy. Users expressed a strong desire to control whom they share their location with, especially unknown companies <a href="GD6.html#section3">[3]</a>.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+</div>
+</div>
+<div class="col-lg-6 mb-3 d-flex align-items-stretch">
+    <div class="card w-100">
+    <div class="card-header text-white bg-primary">
+        <h5 class="card-title"><i class="bi bi-hand-thumbs-down"></i> Cons</h5>
+    </div>
+    <div class="card-body">
+        <p class="card-text">
+        </p><ul>
+            
+                
+                    <li>Despite its advantages, 80.6% of participants did not use the "Maybe" button, indicating challenges in adoption and a need for more user education. The default one-day setting might have influenced its use, indicating that customisable duration options could improve its utility <a href="GD6.html#section2">[2]</a>.</li>
+                
+            
+                
+                    <li>Solutions like PmP require devices that have undergone a 'rooting' process (a process that allows administrator permissions to be obtained on the device), limiting their use to technically experienced users and presenting security risks <a href="GD6.html#section1">[1]</a>. Others, like the Permission Assistant, cannot directly edit other apps’ settings due to security restrictions from the operating system, requiring users to adjust permissions through the device settings manually <a href="GD6.html#section5">[5]</a>.</li>
+                
+            
+                
+            
+                
+            
+                
+                    <li>Time- and space-based sharing restrictions were used less frequently than expected, indicating a need to improve their presentation or user understanding. Additionally, the lab setting and hypothetical scenarios may not fully reflect real-world behaviour, limiting the findings' generalisability <a href="GD6.html#section3">[3]</a>.</li>
+                
+            
+                
+            
+        </ul>
+        <p></p>
+    </div>
+    </div>
+</div>
+		</div>
+		<div class="row">
+			
+
+<div class="col mb-3 d-flex align-items-stretch">
+  <div class="card w-100">
+    <!-- Design Space header -->
+    <div class="card-header text-white bg-primary">
+      <h5 class="card-title">
+        Privacy Choices
+      </h5>
+    </div>
+
+    <div class="card-body">
+	Considering the design space for privacy choices <a href="GD6.html#section7">[7]</a>, this guideline can be applied in the following dimensions:
+	<br><br>
+      
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Modality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Modalities are similar to channels and refer to the different modes for the two-way communication of privacy choices between systems and users, considering factors such as the nature of privacy decisions, system capabilities, user engagement and so on."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Visual
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are typically presented visually, using text, images, icons, or a combination of these elements. Visual privacy choices often include clear descriptions of available options, allowing systems to obtain affirmative privacy decisions from users when necessary.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This guideline presents solutions that rely heavily on visual interfaces to communicate privacy options and controls to the user. This includes using text to describe permissions and privacy choices, icons for representing different data types or permissions, and graphical user interfaces to configure privacy settings.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Combined
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category, one can have a combination of modalities, like machine-readable privacy options used by privacy software agents with alerts by haptic or visual notifications for users when they have to make a privacy decision regarding some privacy choice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Users might initially configure their privacy settings using visual interfaces, but underlying these choices could be machine-readable configurations that systems use to enforce privacy preferences automatically. Furthermore, considering future extensions or integrations, these solutions could incorporate auditory or haptic feedback for alerts or reminders related to privacy choices, thereby enhancing user awareness and control.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Timing
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="In this dimension, it is considered the appropriate time to deliver a privacy choice, since it can affect the effectiveness of user engagement in privacy decision-making. This dimension can be also decoupled, integrated or mediated with the dimension Timing of the Privacy Notices since the availability of privacy notices can affect for example the user perception of risk."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                On-demand
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="On-demand privacy choices can be integrated or decoupled from privacy notices, usually presented when users actively seek available privacy choices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Users can actively seek out and modify privacy settings as needed, supported by solutions that provide comprehensive application privacy management interfaces. This allows users to make informed decisions on their schedule rather than being limited to initial setup or just-in-time notifications.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                At Setup
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are commonly presented to users when they initially interact with a system, often accompanied by relevant privacy notices. This timing approach is commonly associated with consent-based privacy choices, such as software license agreements during installation or terms of use during account signup.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    While not the primary focus of these solutions, some aspects of privacy control can be initially configured at setup, such as during the installation of an application or the first time a feature is accessed.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Just in time
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are presented to users when they are about to engage in a data practice. This timing approach is commonly integrated with relevant privacy notices.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Many solutions propose providing privacy choices when a specific data practice is about to occur, such as when an app is about to access location data or other sensitive information. This approach is particularly evident in solutions that offer granular control over app permissions or introduce mechanisms to inform users about the implications of granting access to their data.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Context-aware
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Context-aware privacy choices are also often integrated with privacy notices, and they comprise leveraging the context the user is in (temporal, spatial, social) to present the privacy choice.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Some solutions offer context-aware privacy choices based on the user's current situation or the application's context. For example, privacy settings can be adjusted based on the type of data being accessed or the third-party libraries involved. This approach aligns with delivering privacy choices that are more meaningful and tailored to the specific privacy risks present in a given context.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Channel
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="Various channels can be used to present privacy options to users and effectively communicate their privacy decisions back to systems; for privacy choices, it is a two-way communication between systems and users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Primary
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    As escolhas de privacidade sempre têm uma apresentação que envolve um sistema que fornece informações claras e facilmente compreensíveis aos usuários sobre possíveis práticas de dados, as escolhas de privacidade disponíveis e como comunicar as decisões sobre essas escolhas, muitas vezes incorporando vários componentes e integrando-se com avisos de privacidade relacionados, exigindo consideração cuidadosa de dimensões de design, como tempo, canal e modalidade <a href="GD6.html#section5">[5]</a>.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Functionality
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension intends to capture functionalities to support the exercise of privacy choices."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Enforcement
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to the enforcement of users&#39; privacy decisions, in the sense that the system must be equipped with the necessary functionalities to enforce privacy decisions that will be submitted by several available privacy choices and potentially several times.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Some of the discussed solutions also deal with enforcing users' privacy decisions. In the case of PmP <a href="GD6.html#section1">[1]</a> and VisiDroid <a href="GD6.html#section4">[4]</a>, the systems enforce privacy decisions by blocking or modifying the data accessed by apps and third-party libraries based on user preferences.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Feedback
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Timely and accurate feedback is vital for the system to support ongoing privacy choices. When users make privacy decisions that can be immediately implemented, the system should promptly notify them of the updated privacy settings.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The discussed solutions apply the Feedback subdimension to ensure that users know the status of their privacy choices. In PmP <a href="GD6.html#section1">[1]</a>, users receive immediate feedback on their privacy choices through the app interface. In the partial consent solution <a href="GD6.html#section2">[2]</a>, users choosing the "Maybe" option for data access permissions in this framework are informed about the temporary nature of their consent and how long it will be valid.<br>
+In <a href="GD6.html#section4">[4]</a>, the user interface for managing location privacy settings offers visual feedback on the privacy options selected by the user.<br>
+VisiDroid <a href="GD6.html#section5">[5]</a> provides feedback to users by showing how their privacy settings alter the behaviour of apps in real-time.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Presentation
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This is an indispensable part of the interface. The interface must present the privacy choices for the user and should be designed in a way that users can easily understand what they are sharing and what they are not sharing.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Privacy choices always have a presentation that involves a system providing clear and easily understandable information to users about potential data practices, available options, and how to communicate privacy decisions, often incorporating multiple components and integrating with related privacy notices, requiring careful consideration of design dimensions such as timing, channel, and modality <a href="GD6.html#section5">[5]</a>.
+The solutions discussed in this guideline resort to displaying privacy controls in an understandable manner and with user-friendly interfaces.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Contextualised
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="In this category of privacy choices, they are presented in context-specific privacy situations, for example, when a potential privacy violation may happen, such as asking to allow or deny location sharing when it is about to happen">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    This is particularly relevant to solutions like the one in <a href="GD6.html#section3">[3]</a> that offer granular control over data sharing based on the app's context or the user's situation. For example, allowing location data access only when the app is in use or providing temporary permissions fits this category. These solutions adopt the principle of contextual integrity by enabling users to make privacy decisions that are sensitive to the context, enhancing their ability to align data-sharing practices with their privacy expectations.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Multiple choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to providing users with more options to choose from, like the sum of multiple binary choices, for example.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Solutions like the PmP <a href="GD6.html#section1">[1]</a> and VisiDroid <a href="GD6.html#section4">[4]</a> expand beyond the binary model by offering users multiple choices for managing their data. For instance, allowing users to decide the granularity of location data shared with apps or to manage permissions based on the app usage context introduces a multi-option privacy setting that aligns with this subdimension.
+                  </p>
+                
+
+                <!-- Options -->
+                
+
+              </div>
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Binary choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    Initially, most mobile app permissions follow a binary choice model, where users either grant or deny permission for data access (e.g., access to location and contacts). Some solutions aim to refine this model by offering more nuanced controls but still operate within a framework with some level of binary decision-making, such as opting in or out of specific data processing activities.
+                  </p>
+                
+
+                <!-- Options -->
+                
+                  <ul class="ms-3">
+                    
+                      <li>
+                        <strong>Opt-in/out</strong>
+                        
+                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
+                        
+                      </li>
+                    
+                  </ul>
+                
+
+              </div>
+            
+
+          </div>
+        
+      
+
+    </div>
+
+  </div>
+</div>
+
+			
+<div class="col mb-3 d-flex align-items-stretch">
+	<div class="card w-100">
+	<div class="card-header text-white bg-primary">
+        <h5 class="card-title">Privacy Attribute(s)</h5>
+	</div>
+	<div class="card-body">
+		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
+		<br>
+		<p class="card-text">
+		 This guideline presents solutions that primarily address the Control privacy attribute <a href="GD6.html#section8">[8]</a>. All the discussed solutions aim to enhance users' control over their data by allowing them to manage permissions more granularly and make informed decisions about data sharing.
+		
+		Other related privacy attributes:
+			
+			<br>
+				</p><h6 class="fw-bold text-secondary mb-1">Functionality</h6>
+
+				The discussed solutions often address the trade-off between app functionality and privacy, ensuring that users do not compromise their privacy for functionality.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Transparency</h6>
+
+				All discussed solutions aim to increase transparency regarding how apps access and use personal data, providing users with more information and insights into data processing practices.
+				<br>
+			
+			<br>
+				<h6 class="fw-bold text-secondary mb-1">Pseudonymisation</h6>
+
+				Some solutions like VisiDroid <a href="GD6.html#section4">[4]</a> and ProtectMyPrivacy (PmP) <a href="GD6.html#section1">[1]</a> involve mechanisms for pseudonymising user data to prevent direct identification.
+				<br>
+			
+		
+		<p></p>
+	</div>
+	</div>
+</div>
+		</div>
+		<hr class="col">
+		<div class="row">
+			
+<div class="col mb-3 d-flex align-items-stretch">
+    <div class="card w-100 border-0">
+        <div class="card-body">
+            <h5 class="card-title text-muted">References </h5>
+            
+            <p class="card-text text-muted" id="section1">
+                [1] Saksham Chitkara, Nishad Gothoskar, Suhas Harish, Jason I. Hong, and Yuvraj Agarwal (2017). Does this App Really Need My Location? Context-Aware Privacy Management for Smartphones. Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. 1, 3, Article 42, 2017, 22 pages
+                
+                    <a href="https://doi.org/10.1145/3132029" target="_blank">https://doi.org/10.1145/3132029</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section2">
+                [2] Sven Bock, Ashraf Ferdouse Chowdhury, and Nurul Momen (2021). Partial Consent: A Study on User Preference for Informed Consent. In: Stephanidis, C., et al. HCI International 2021 - Late Breaking Papers: Design and User Experience. HCII 2021. Lecture Notes in Computer Science(), 2021, vol 13094. Springer, Cham.
+                
+                    <a href="https://doi.org/10.1007/978-3-030-90238-4_15" target="_blank">https://doi.org/10.1007/978-3-030-90238-4_15</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section3">
+                [3] Mehrnaz Ataei, Auriol Degbelo, and Christian Kray (2018). Privacy theory in practice: designing a user interface for managing location privacy on mobile devices, Journal of Location Based Services, 2018, 12:3-4, 141-178.
+                
+                    <a href="https://doi.org/10.1080/17489725.2018.1511839" target="_blank">https://doi.org/10.1080/17489725.2018.1511839</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Aydin, Abdulbaki, David Piorkowski, Omer Tripp, Pietro Ferrara, and Marco Pistoia (2017). Visual configuration of mobile privacy policies. In Fundamental Approaches to Software Engineering: 20th International Conference, FASE 2017, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2017, Uppsala, Sweden, April 22-29, 2017, Proceedings 20, 2017, 338-355.Visual Configuration of Mobile Privacy Policies. In: Huisman, M., Rubin, J. (eds) Fundamental Approaches to Software Engineering. FASE 2017. Lecture Notes in Computer Science(), vol 10202. Springer, Berlin, Heidelberg.
+                
+                    <a href="https://doi.org/10.1007/978-3-662-54494-5_19" target="_blank">https://doi.org/10.1007/978-3-662-54494-5_19</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section5">
+                [5] Hannah Quay-de la Vallee, Paige Selby, and Shriram Krishnamurthi (2016). On a (Per)Mission: Building Privacy Into the App Marketplace. In Proceedings of the 6th Workshop on Security and Privacy in Smartphones and Mobile Devices (SPSM '16). Association for Computing Machinery, New York, NY, USA, 63–72.
+                
+                    <a href="https://doi.org/10.1145/2994459.2994466" target="_blank">https://doi.org/10.1145/2994459.2994466</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section6">
+                [6] Kassem Fawaz and Kang G. Shin (2014). Location Privacy Protection for Smartphone Users. In Proceedings of the 2014 ACM SIGSAC Conference on Computer and Communications Security (CCS '14). Association for Computing Machinery, New York, NY, USA, 239–250.
+                
+                    <a href="https://doi.org/10.1145/2660267.2660270" target="_blank">https://doi.org/10.1145/2660267.2660270</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section7">
+                [7] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                
+                    <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section8">
+                [8] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+                
+                    <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
+                
+            </p>
+            
+        </div>
+    </div>
+  </div>
+		</div>
+		<!-- Modal -->
+
+<div class="modal" id="DesignSpacePCModal" tabindex="-1" aria-labelledby="dsModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="dsModalLabel">Design Space for </h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+				<div class="row gx-8 row-cols-1 row-cols-sm-2 row-cols-md-4">
+				
+				</div> <!-- row -->
+			</div> <!-- builder -->
+		</div> <!-- modal-body -->
+    </div> <!-- modal content -->
+</div>
+</div>
+	</div>
+	</div>
+</div>
+
+
+  
+</main>
+
+<script src="./GD6_files/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+</script>
+<footer class="footer mt-auto py-3  text-center">
+  <div class="container">
+    <span class="text-muted">    
+      Created using the <a href="https://getbootstrap.com/docs/5.0/">Bootstrap 5 </a>.
+      <br>
+      Flag icons from <a href="https://www.flaticon.com/packs/flags-40" target="_blank"> IconsBox - Flaticon</a>
+    </span>
+  </div>
+</footer>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
