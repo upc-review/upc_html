@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0047)GD13/ -->
+<!-- saved from url=(0044)GD13.html -->
 <html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
     <link href="./GD13_files/custom.css" rel="stylesheet">
     <script src="./GD13_files/saved_resource"></script>
 
-    <script src="./GD13_files/static_only.js"></script>
+    <script src="./GD13_files/custom.js"></script>
   </head>
 <body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
   
@@ -27,74 +27,120 @@
 
 
 
-<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
 
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    
+
+    <!-- Toggle offcanvas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+      <!-- Offcanvas header -->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          Menu
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas body -->
+      <div class="offcanvas-body">
+
+        <!-- Navigation links -->
+        <ul class="navbar-nav flex-grow-1 pe-3">
+
           <li class="nav-item">
-            <a class="nav-link" href="index.html"> Guidelines</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="designspace.html"> Design Spaces</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="references.html"> References
+            <a class="nav-link" href="index.html">
+              Guidelines
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Publications</a>
+
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="privacyattributes.html">
+              Privacy Attributes
+            </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="GD13.html" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD13_files/en.png">&nbsp;<span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                
-                <li>
-                      <a class="dropdown-item" href="GD13.html">
-                      English
-                    </a>
-                </li>
-                
-                <li>
-                     <span class="dropdown-item disabled">
-                        Português Brasileiro (não disponível)
-                      </span>
-                </li>
-                
+
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="designspace.html">
+              Design Spaces
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="references.html">
+              References
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Publications
+            </a>
+          </li>
+
+          <!-- Language dropdown -->
+          <li class="nav-item dropdown mt-3 mt-md-0">
+            <a class="nav-link dropdown-toggle" href="GD13.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./GD13_files/en.png" width="24">
+              EN
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+              
+              <li>
+                <a class="dropdown-item" href="GD13.html">
+                  English
+                </a>
+              </li>
+              
+              <li>
+                  <span class="dropdown-item disabled">
+                    Português Brasileiro (não disponível)
+                  </span>
+              </li>
+              
             </ul>
           </li>
         </ul>
-    <form class="d-flex" action="index.html" method="get">
-      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
-      <button class="btn btn-light" type="submit">Search</button>
-    </form>
+
+        <!-- Search -->
+        <form class="d-flex mt-3 mt-md-0" action="index.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline">
+          <button class="btn btn-light" type="submit">
+            Search
+          </button>
+        </form>
+
       </div>
     </div>
-  </nav>
-  
+  </div>
+</nav>
+
 <main class="container-fluid">
   <div class="p-0">
       
 
-  <nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
-	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
-	  <li class="breadcrumb-item"> Controlling Information Disclosure </li>
-	  <li class="breadcrumb-item active" aria-current="page">Managing Privacy Settings</li>
-	</ol>
-  </nav>
-  <div class="row pt-5">
+
+<div class="row pt-5">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+		<li class="breadcrumb-item"> Controlling Information Disclosure </li>
+		<li class="breadcrumb-item active" aria-current="page">Managing Privacy Settings</li>
+		</ol>
+	</nav>
     <div class="container px-3">
 		<div class="col">
-			<header class="d-flex align-items-center">
-				<h3><i class="bi bi-chat-left-dots"></i> GD12 - Implement Interactive Consent Forms for Enhanced User Engagement</h3>
+			<header class="d-flex align-items-left">
+				<h3><i class="bi bi-gear"></i> GD13 - Integrate Automated Tools and Custom Options for Privacy Settings</h3>
 			</header>
 			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
 				
@@ -107,26 +153,50 @@
         <div class="card-body">
             <h5 class="card-title">Problem Summary</h5>
             <p class="card-text">
-                Permission or Authorisation Dialogues are commonly used to obtain user consent for collecting and using personal data, allowing users to choose the information they consent to share. These dialogues are typically used during account creation or when accessing a service. According to GDPR <a href="https://gdpr-info.eu/art-4-gdpr/" target="_blank">Art. 4(11)</a>, consent must be <em>freely given</em>, s<em>specific</em>, <em>informed</em> and <em>unambiguous</em>, requiring affirmative action. Traditional static dialogues often fail to ensure users fully understand and consider their data-sharing choices, necessitating more interactive approaches to achieve true informed consent.
+                Users face significant challenges in managing their online privacy due to the complexity and opacity of privacy-related information. Privacy settings are often buried within websites and applications, requiring users to navigate multiple pages and menus. Even when located, adjusting these settings can be cumbersome and unintuitive, with users often unaware of all available options and their consequences.
+The varied layout and functionality of privacy settings across platforms further complicate the process, as users must learn new configurations for each website or application. Additionally, many services have default settings that favour data collection and sharing, leading to unintentional exposure of personal information. These issues result in a lack of awareness and control over personal data, leaving users vulnerable to privacy risks.
             </p>
             <h5 class="card-title">Rationale</h5>
             <p class="card-text">
-                The intention is to engage users more actively in the consent process, ensuring they reflect on the information they are selecting to share. By implementing interactive elements such as drag-and-drop interfaces and knowledge testing, users are encouraged to carefully consider their data-sharing choices, leading to more informed and transparent consent. This approach aims to enhance user engagement and ensure compliance with legal requirements.
+                The aim is to simplify the process for users to manage their privacy preferences within privacy policies and privacy settings pages.
             </p>
             <h5 class="card-title">Solution</h5>
             <p class="card-text">
-                Interactive user interfaces, such as drag-and-drop and question-and-answer formats, are designed and validated to allow users to select personal information they consent to share. These methods have been shown to improve user engagement, understanding, and recall of the data-sharing terms, ensuring more informed and transparent consent.
+                The development and integration of automated tools and customisable options that simplify privacy management and enhance user control.
+By integrating automated tools and customisable options, the solution enhances transparency regarding data collection practices and aids users in making informed decisions. Automated detection and presentation of privacy options reduce the complexity and effort required to locate and adjust settings. 
+
 <br><br>
-Lindegren et al. <a href="GD13.html#section1">[1]</a> conducted a study evaluating three different designs for engaging users when providing their consent on smartphones. The study compared the usability and effectiveness of three interaction designs: checkboxes, drag-and-drop (DAD), and swiping. The results showed that the DAD and swiping methods improved user recall of the information they shared, although they took longer to complete than checkboxes. The study concluded that more interactive methods like DAD and swiping could enhance user engagement and awareness in permission dialogues.
+
+Kumar et al. <a href="GD13.html#section1">[1]</a> presented a method that automates the extraction and presentation of opt-out choices from privacy policies. The method was realised through the Opt-Out Easy, a web browser extension available for <a href="https://chromewebstore.google.com/detail/hikefgklfabiiecechanbafeficfojik" target="_blank">Google Chrome</a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/opt-out-easy/" target="_blank">Firefox</a>,  Such automatic detection enables users to easily identify and exercise their opt-out choices, improving control over their privacy settings.
+
+<br>
+To develop Opt-Out Easy, the researchers collected a corpus of 236 privacy policies from the top 500 websites on the U.S. Alexa list in the fall of 2018. Using <a href="https://www.selenium.dev/" target="_blank">Selenium</a> and <a href="https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html" target="_blank">Geckodriver</a>, they captured the dynamically rendered content of these privacy policies. The Mercury Parser API stripped away irrelevant content, leaving the main text for analysis. This text was structured into a Document Object Model (DOM) tree using BeautifulSoup and the lxml parser, addressing issues with invalid HTML.
+<br>
+A significant challenge was segmenting the policy text, which often lacked conventional punctuation. The researchers developed a recursive function to insert spaces at line breaks, enabling effective segmentation with NLTK’s sentence tokeniser. Hyperlinks within the policies were meticulously annotated to distinguish between opt-out mechanisms and other links. This process involved both automated filtering and manual inspection.
+<br>
+The team trained a logistic regression model to classify these hyperlinks, identifying patterns indicative of opt-out mechanisms. They also explored active learning to reduce manual labelling. This approach significantly advanced the methodology for detecting opt-out options in privacy policies.
+<br>
+The resulting dataset is publicly available at <a href="https://www.usableprivacy.org/data" target="_blank"> https://www.usableprivacy.org/data</a>. Users can install the browser extension and test it on policies available at <a href="https://explore.usableprivacy.org/" target="_blank">The Usable Privacy Explore Website</a> or submit new policies for analysis.
 <br><br>
-Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user interface (UI) designs to enhance informed decision-making in social login contexts, ensuring compliance with GDPR requirements. They introduce 'Drag and Drop' (DAD) and 'Question and Answer' (Q&amp;A) interfaces to engage users in the consent process actively. The DAD interface allows users to select and drag personal information they consent to share, while the Q&amp;A interface involves users in answering questions to confirm their understanding of the data-sharing terms. These methods are designed to improve user awareness and recall of shared information, ultimately leading to more informed and transparent consent.
+
+Mohammadi, Pampus, and Heisel <a href="GD13.html#section2">[2]</a> introduced a Privacy Policy Options (PPO) pattern. The PPO intends to provide a user-friendly and intuitive representation of privacy policies, empowering end-users to specify their privacy preferences. The solution’s core is a structured table pattern that categorises data usage into specific areas: service and support, research and development, marketing, and security, along with categories for data sharing with third parties and data retention periods. The table is designed to clearly show the types of data collected and how it is processed, shared, and stored. Symbols indicate whether data collection is mandatory or optional, allowing users to understand and modify their privacy preferences directly within the table. This pattern is adaptable to mobile and web applications, aiming to make privacy policies more transparent and customisable for the end-user, enhancing their control over personal data usage.
+
+<br><br>
+Khandelwal et al. <a href="GD13.html#section3">[3]</a> proposed PriSEC, a machine learning-based tool to automate the discovery, presentation, and enforcement of web privacy controls. PriSEC simplifies privacy management by providing a centralised interface for users to search, modify, and enforce privacy settings across various websites with minimal intervention.
+
+PriSEC's backend employs a Domain Crawler to systematically navigate websites and identify potential privacy control pages using keywords like "privacy" and "settings." The crawler simulates user interactions to reveal both visible and hidden privacy control elements. A machine learning classifier then distinguishes genuine privacy control pages from irrelevant ones based on textual and visual features.
+
+Once control pages are identified, the Recipe Generator takes over. This dynamic component interacts with each page, uncovering all interactive elements and organizing them into a structured dependency graph. This graph serves as a roadmap, mapping out the sequences of actions required to navigate privacy settings. The generator further classifies these elements into distinct UI types and creates detailed control recipes that encapsulate the necessary steps to adjust privacy settings automatically.
+
+The Client Application operates as a browser extension, providing a user-friendly interface for interacting with privacy settings identified by PriSEC's backend. Users can view a list of privacy options and issue natural language queries to quickly find specific settings. The Enforcer module then automatically applies the selected privacy settings by executing the necessary JavaScript code, requiring no further user interaction.
+
+Unfortunately, no prototype is publicly available for testing, and the dataset of privacy control pages mentioned by the authors is not yet available at <a href="https://github.com/wi-pi/prisec_data" target="_blank">https://github.com/wi-pi/prisec_data</a> (as of May 2024).
+<br><br>
             </p>
             <p class="card-text">
                 <strong>Platforms</strong>:
                 
-                <em>personal computers</em>, 
-            
-                <em>mobile devices</em>
+                <em>personal computers</em>
             
             </p>
             
@@ -141,24 +211,38 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
             <h5 class="card-title">Example</h5>
             
             <p class="card-text text-center">
-                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_1"> <img src="./GD13_files/drag_and_drop_yfnbTtK.jpg" class="img-fluid" alt="Drag-and-drop interface for selecting personal information to share &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
+                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_39"> <img src="./GD13_files/opt-out-easy-policy-not-known.jpg" class="img-fluid" alt="Opt-Out Easy screen for requesting the analysis of a privacy policy &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
             </p>
             <p class="card-text small text-center">
-            Drag-and-drop interface for selecting personal information to share <a href="GD13.html#section1">[1]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_1">(See enlarged)</a>
+            Opt-Out Easy allows users to request that a privacy policy be analysed <a href="GD13.html#section1">[1]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_39">(See enlarged)</a>
             </p>
             
             <p class="card-text text-center">
-                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_103"> <img src="./GD13_files/QA-facebook.jpg" class="img-fluid" alt="Q&amp;A interface &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_38"> <img src="./GD13_files/opt-out-easy-analysed-pp.jpg" class="img-fluid" alt="Opt-Out Easy results &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
             </p>
             <p class="card-text small text-center">
-            Q&amp;A interface <a href="GD13.html#section2">[2]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_103">(See enlarged)</a>
+            Opt-Out Easy results for a website with a privacy policy already analysed (in the example, thewaltdisneycompany.com, available from the <a href="https://explore.usableprivacy.org/" target="_blank">Usable Privacy Explore</a> website <a href="GD13.html#section1">[1]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_38">(See enlarged)</a>
             </p>
             
             <p class="card-text text-center">
-                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_102"> <img src="./GD13_files/DAD-facebook.jpg" class="img-fluid" alt="Drag&amp;Drop interface &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_40"> <img src="./GD13_files/opt-out-easy-help-page.jpg" class="img-fluid" alt="Opt-out Easy help page &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;."></a>
             </p>
             <p class="card-text small text-center">
-            Drag&amp;Drop interface <a href="GD13.html#section2">[2]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_102">(See enlarged)</a>
+            Opt-out Easy help page <a href="GD13.html#section1">[1]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_40">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_44"> <img src="./GD13_files/pattern-based-policy.jpg" class="img-fluid" alt="Overview of an example realisation of the PPO pattern for the web layout &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            Overview of an example realisation of the PPO pattern for the web layout <a href="GD13.html#section2">[2]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_44">(See enlarged)</a>
+            </p>
+            
+            <p class="card-text text-center">
+                <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_42"> <img src="./GD13_files/prisec-enforcement-control.jpg" class="img-fluid" alt="A typical workflow of enforcement in PriSEC &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;."></a>
+            </p>
+            <p class="card-text small text-center">
+            A typical workflow of enforcement in PriSEC <a href="GD13.html#section3">[3]</a>.  <a href="GD13.html#" data-bs-toggle="modal" data-bs-target="#modal_42">(See enlarged)</a>
             </p>
             
         </div>
@@ -166,11 +250,11 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 </div>
 
 <!-- Modal -->
-<div class="modal" id="modal_1" tabindex="-1" aria-labelledby="modalLabel_1" aria-hidden="true">
+<div class="modal" id="modal_38" tabindex="-1" aria-labelledby="modalLabel_38" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="modalLabel_1">Drag-and-drop interface for selecting personal information to share <a href="GD13.html#section1">[1]</a>.</h5>
+				<h5 class="modal-title" id="modalLabel_38">Opt-Out Easy results <a href="GD13.html#section1">[1]</a>.</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 		<div class="modal-body">
@@ -179,7 +263,7 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 				<br>
 			</div>
 			<div class="row">
-				<img src="./GD13_files/drag_and_drop_yfnbTtK.jpeg" class="img-fluid" alt="Drag-and-drop interface for selecting personal information to share &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+				<img src="./GD13_files/opt-out-easy-analysed-pp.png" class="img-fluid" alt="Opt-Out Easy results &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
 			</div>
 			</div>
 			</div>
@@ -188,11 +272,11 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 </div>
 
 <!-- Modal -->
-<div class="modal" id="modal_103" tabindex="-1" aria-labelledby="modalLabel_103" aria-hidden="true">
+<div class="modal" id="modal_40" tabindex="-1" aria-labelledby="modalLabel_40" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="modalLabel_103">Q&amp;A interface <a href="GD13.html#section2">[2]</a>.</h5>
+				<h5 class="modal-title" id="modalLabel_40">Opt-out Easy help page <a href="GD13.html#section1">[1]</a>.</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 		<div class="modal-body">
@@ -201,7 +285,7 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 				<br>
 			</div>
 			<div class="row">
-				<img src="./GD13_files/QA-facebook.png" class="img-fluid" alt="Q&amp;A interface &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+				<img src="./GD13_files/opt-out-easy-help-page.png" class="img-fluid" alt="Opt-out Easy help page &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
 			</div>
 			</div>
 			</div>
@@ -210,11 +294,11 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 </div>
 
 <!-- Modal -->
-<div class="modal" id="modal_102" tabindex="-1" aria-labelledby="modalLabel_102" aria-hidden="true">
+<div class="modal" id="modal_39" tabindex="-1" aria-labelledby="modalLabel_39" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="modalLabel_102">Drag&amp;Drop interface <a href="GD13.html#section2">[2]</a>.</h5>
+				<h5 class="modal-title" id="modalLabel_39">Opt-Out Easy screen for requesting the analysis of a privacy policy <a href="GD13.html#section1">[1]</a>.</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 		<div class="modal-body">
@@ -223,7 +307,51 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 				<br>
 			</div>
 			<div class="row">
-				<img src="./GD13_files/DAD-facebook.png" class="img-fluid" alt="Drag&amp;Drop interface &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
+				<img src="./GD13_files/opt-out-easy-policy-not-known.png" class="img-fluid" alt="Opt-Out Easy screen for requesting the analysis of a privacy policy &lt;a href=&quot;#section1&quot;&gt;[1]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_42" tabindex="-1" aria-labelledby="modalLabel_42" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_42">A typical workflow of enforcement in PriSEC <a href="GD13.html#section3">[3]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD13_files/prisec-enforcement-control.png" class="img-fluid" alt="A typical workflow of enforcement in PriSEC &lt;a href=&quot;#section3&quot;&gt;[3]&lt;/a&gt;.">
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="modal_44" tabindex="-1" aria-labelledby="modalLabel_44" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLabel_44">Overview of an example realisation of the PPO pattern for the web layout <a href="GD13.html#section2">[2]</a>.</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+		<div class="modal-body">
+			<div id="builder" class="panel panel-default">
+			<div class="row">
+				<br>
+			</div>
+			<div class="row">
+				<img src="./GD13_files/pattern-based-policy.png" class="img-fluid" alt="Overview of an example realisation of the PPO pattern for the web layout &lt;a href=&quot;#section2&quot;&gt;[2]&lt;/a&gt;.">
 			</div>
 			</div>
 			</div>
@@ -240,11 +368,9 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
         <div class="card-body">
             <ul class="card-text">
                 
-                    <li>Enhancing user engagement and understanding when creating accounts on websites or mobile apps. </li>
+                    <li>Facilitating the practical exercise of opt-out choices and personalisation of privacy preferences. </li>
                 
-                    <li>Providing users with clear, understandable choices about their privacy preferences, enhancing user satisfaction and compliance with privacy laws like GDPR. </li>
-                
-                    <li>Enabling users to make informed decisions about data sharing, increasing transparency and control over their personal data, and thus helping organisations meet GDPR compliance by ensuring users give specific and informed consent. </li>
+                    <li>Systematic analysis of opt-out practices and advocacy for better opt-out standards. </li>
                 
             </ul>
         </div>
@@ -263,7 +389,19 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
         </p><ul>
             
                 
-                    <li>A between-subject user study found that the new UIs, including 'Drag and Drop' (DAD) and interactive knowledge testing, significantly enhance users' ability to provide informed consent compared to traditional social network authorization dialogues. Users had higher satisfaction and better recall with DAD than with swiping and checkboxes, ensuring they actively engage with and understand their data-sharing choices <a href="GD13.html#section1">[1]</a><a href="GD13.html#section2">[2]</a>.</li>
+            
+                
+                    <li>The Opt-Out Easy extension increases user awareness of available opt-out choices, contributing to better privacy management. It helps users identify and exercise opt-out options more quickly, enhancing user empowerment regarding privacy decisions. The extension also highlights the potential for crowd-sourced efforts to pressure entities to improve opt-out services' availability and response times, advocating for better standards. Additionally, it suggests that systematically collecting opt-out process statistics could inform policymakers and encourage the implementation of minimum standards for opt-out service availability and responsiveness <a href="GD13.html#section1">[1]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>PriSEC significantly reduced users' time to adjust privacy settings, with participants completing tasks 3.75 times faster than with manual methods. It simplifies privacy management to a few clicks, avoiding extensive navigation, and achieves a higher System Usability Scale (SUS) score of 72 compared to 63 for the manual method, indicating a better user interface and overall user experience <a href="GD13.html#section3">[3]</a>.</li>
+                
+            
+                
+                    <li>The pattern was tested and designed to be applicable across mobile and web applications, aiming to improve the practical implementation of privacy policies for service providers and end-users. Additionally, Transparent data handling and the ability for users to intervene in their data processing are expected to increase the trustworthiness of the service, as well as help service providers demonstrate GDPR compliance and potentially increase user trust by showing a commitment to transparent data handling and user empowerment <a href="GD13.html#section2">[2]</a>.</li>
                 
             
                 
@@ -283,7 +421,19 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
         </p><ul>
             
                 
-                    <li>It takes more time for users to complete the sharing/consent activity with the new UIs, and the robustness of the method against habituation needs further testing. Bridging the gap between legally compliant authorization dialogues and user-friendly ones is a work in progress, involving the exploration of various affirmative actions to enhance user attention to disclosed information, improving methods to prevent habituation, and clearly presenting data processing purposes <a href="GD13.html#section1">[1]</a><a href="GD13.html#section2">[2]</a>.</li>
+            
+                
+                    <li>There is no legal obligation for service providers to adopt a standardised format for privacy policies, potentially limiting the widespread adoption of the pattern. Service providers might also restrict the modifiability of the pattern by greying out options, reducing user control over data processing. Additionally, allowing users to disagree with certain data processing activities might restrict the use of the service, deterring both users and providers from fully embracing the pattern. Since service providers often rely on data usage for revenue, there may be resistance to implementing features that allow users to limit data processing <a href="GD13.html#section2">[2]</a>.</li>
+                
+            
+                
+                    <li>PriSEC may struggle to manage privacy settings that require interactions with multiple selectors before enforcement and can fail to generate control recipes for websites using non-standard HTML implementations. Its backend may also face difficulties logging into websites without standard third-party social logins, necessitating manual intervention. Additionally, the diverse implementations of web technologies and changes in website HTML can render stored control recipes obsolete, leading to enforcement failures and impacting the system's long-term effectiveness <a href="GD13.html#section3">[3]</a>.</li>
+                
+            
+                
+            
+                
+                    <li>The Opt-Out Easy extension focused exclusively on opt-out links using anchor tags, overlooking those implemented via non-anchor tags with JavaScript event handlers. Additionally, the study only considered policies written in English and was limited to top-ranked U.S. websites, missing diversity in privacy policies from non-U.S. and lower-ranked sites <a href="GD13.html#section1">[1]</a>.</li>
                 
             
                 
@@ -307,7 +457,7 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
     </div>
 
     <div class="card-body">
-	Privacy choices give people control over certain aspects of data practices. Considering the design space for privacy choices <a href="GD13.html#section3">[3]</a>, this guideline can be applied in the following dimensions:
+	This guideline discusses solutions related to the privacy choices design space <a href="GD13.html#section4">[4]</a>, as they focus on providing diverse and customisable privacy options for users.
 	<br><br>
       
         
@@ -332,7 +482,7 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 				</h6>
                 
                   <p class="mb-1">
-                    The guideline primarily focuses on visual methods (e.g., drag-and-drop interfaces) to present privacy choices.
+                    This guideline presents and discusses solutions designed to be delivered visually in the form of text, images, and icons, ensuring clear and understandable communication of privacy choices to users.
                   </p>
                 
 
@@ -357,15 +507,15 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
             
               <div class="ps-3 mb-3">
                 <h6 class="fw-bold text-secondary mb-1">
-                At Setup
+                On-demand
                 
-                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Privacy choices are commonly presented to users when they initially interact with a system, often accompanied by relevant privacy notices. This timing approach is commonly associated with consent-based privacy choices, such as software license agreements during installation or terms of use during account signup.">
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="On-demand privacy choices can be integrated or decoupled from privacy notices, usually presented when users actively seek available privacy choices.">
 				</i>
               	
 				</h6>
                 
                   <p class="mb-1">
-                    The proposed design presents to the user the privacy choice at set up, when they first interact with the system, specifically during the registration processes for online services.
+                    This guideline discusses solutions that can be applied on demand when users actively seek the tool's input to make informed decisions.
                   </p>
                 
 
@@ -384,94 +534,11 @@ Karegar et al. <a href="GD13.html#section2">[2]</a> proposed innovative user int
 				</h6>
                 
                   <p class="mb-1">
-                    The interactive forms can be presented to users when specific data practices are about to happen, ensuring decisions are made just in time.
+                    This guideline discusses solutions that help users identify and exercise opt-out options or opt out of privacy policies precisely when those choices are relevant: when users are visiting websites and may be subject to data collection practices.
                   </p>
                 
 
                 <!-- Options -->
-                
-
-              </div>
-            
-
-          </div>
-        
-          <div class="mb-4">
-
-            <!-- Dimension -->
-            <h6 class="fw-bold text-primary mb-1">
-              Type
-				
-					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
-				
- 			</h6>
-            <!-- Categories -->
-            
-              <div class="ps-3 mb-3">
-                <h6 class="fw-bold text-secondary mb-1">
-                Privacy rights-based choices
-                
-                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="This case comprises a type of privacy choice that supports privacy rights such as access, erasure, rectification, erasure, portability, etc. These choices are usually beyond the capability of binary or multiple choices and may require additional interactions between the user and the system.">
-				</i>
-              	
-				</h6>
-                
-                  <p class="mb-1">
-                    The guideline can support choices related to access, rectification, erasure, and portability by integrating these options into the interactive consent forms.
-                  </p>
-                
-
-                <!-- Options -->
-                
-
-              </div>
-            
-              <div class="ps-3 mb-3">
-                <h6 class="fw-bold text-secondary mb-1">
-                Multiple choices
-                
-                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Refers to providing users with more options to choose from, like the sum of multiple binary choices, for example.">
-				</i>
-              	
-				</h6>
-                
-                  <p class="mb-1">
-                    The guideline suggests implementing interactive elements such as drag-and-drop, enabling multiple privacy options rather than a single binary choice.
-                  </p>
-                
-
-                <!-- Options -->
-                
-
-              </div>
-            
-              <div class="ps-3 mb-3">
-                <h6 class="fw-bold text-secondary mb-1">
-                Binary choices
-                
-                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
-				</i>
-              	
-				</h6>
-                
-                  <p class="mb-1">
-                    The guideline supports moving beyond simple binary choices (e.g., notice and consent) by offering more interactive and granular options.
-However, it still incorporates elements of binary choice, specifically the opt-in/opt-out model. The proposed design defaults to opt-out (Privacy as the default setting), meaning users must actively opt-in to data practices, thereby ensuring more deliberate and informed consent.
-                  </p>
-                
-
-                <!-- Options -->
-                
-                  <ul class="ms-3">
-                    
-                      <li>
-                        <strong>Opt-in/out</strong>
-                        
-                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
-                        
-                      </li>
-                    
-                  </ul>
                 
 
               </div>
@@ -492,25 +559,6 @@ However, it still incorporates elements of binary choice, specifically the opt-i
             
               <div class="ps-3 mb-3">
                 <h6 class="fw-bold text-secondary mb-1">
-                Secondary
-                
-                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Secondary channels are used when there is some limitation with the primary channel. For example, when the primary channel is not available or when has a limited user interface.">
-				</i>
-              	
-				</h6>
-                
-                  <p class="mb-1">
-                    The guideline could also support secondary channels, like a dedicated privacy settings page accessible via a website or mobile app.
-                  </p>
-                
-
-                <!-- Options -->
-                
-
-              </div>
-            
-              <div class="ps-3 mb-3">
-                <h6 class="fw-bold text-secondary mb-1">
                 Primary
                 
                 	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="A primary channel refers to the platform or device through which the user interacts with the system.">
@@ -519,7 +567,7 @@ However, it still incorporates elements of binary choice, specifically the opt-i
 				</h6>
                 
                   <p class="mb-1">
-                    The guideline supports presenting privacy choices directly within the platform or device where users interact with the system, such as within the app or website.
+                    Discussed solutions exemplify the use of the primary channel to enable direct, immediate interaction with users about their privacy choices, embedded in their current online activities.
                   </p>
                 
 
@@ -552,7 +600,7 @@ However, it still incorporates elements of binary choice, specifically the opt-i
 				</h6>
                 
                   <p class="mb-1">
-                    Feedback can be provided as a confirmation message, a notification, or a change in the interface. For example, in the proposed design by Lindegren et al. <a href="GD13.html#section1">[1]</a>, the feedback is provided in the form of a change in the value of the "Accept" option.
+                    The solutions examined in this guideline are designed to provide users with immediate feedback on privacy-related actions, such as opting out of data collection practices or understanding privacy policies. These tools offer timely notifications about the actions taken, enhancing user awareness and decision-making. However, it is important to note that while these tools provide feedback, they do not guarantee enforcement, as they act as intermediaries between the user and the service's privacy mechanisms. This distinction highlights the tools' role in supporting user empowerment and informed choices rather than directly controlling data practices.
                   </p>
                 
 
@@ -571,11 +619,58 @@ However, it still incorporates elements of binary choice, specifically the opt-i
 				</h6>
                 
                   <p class="mb-1">
-                    The guideline emphasises the need for a clear and engaging presentation of privacy choices, making it easy for users to understand and decide on their preferences.
+                    Privacy choices always involve presenting clear and easily understandable information to users about potential data practices, available options, and how to communicate privacy decisions. This often includes multiple components and integrates with related privacy notices, requiring careful consideration of design dimensions such as timing, channel, and modality <a href="GD13.html#section4">[4]</a>.
+<br>
+
+This guideline presents solutions that align with the definition of the presentation of privacy choices, aiming for clarity, understanding of data practices, and effective communication with users regarding their privacy decisions.
                   </p>
                 
 
                 <!-- Options -->
+                
+
+              </div>
+            
+
+          </div>
+        
+          <div class="mb-4">
+
+            <!-- Dimension -->
+            <h6 class="fw-bold text-primary mb-1">
+              Type
+				
+					<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Dimension description" data-bs-original-title="This dimension refers to the available types of privacy choices available to users."></i>
+				
+ 			</h6>
+            <!-- Categories -->
+            
+              <div class="ps-3 mb-3">
+                <h6 class="fw-bold text-secondary mb-1">
+                Binary choices
+                
+                	<i class="bi bi-question-circle ms-1 text-muted" role="button" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="" aria-label="Category description" data-bs-original-title="Binary choice means users have to choose one out of two options.">
+				</i>
+              	
+				</h6>
+                
+                  <p class="mb-1">
+                    The opt-out-easy fits within the binary opt-in/opt-out framework because it enables users to opt out of data collection practices, which inherently involves binary decisions.
+                  </p>
+                
+
+                <!-- Options -->
+                
+                  <ul class="ms-3">
+                    
+                      <li>
+                        <strong>Opt-in/out</strong>
+                        
+                          – Opt-in/out choices don't necessarily affect system access but may impact data control and functionality. The default value is crucial when designing choices. Setting opt-in as the default assumes certain data practices are allowed unless the user specifies otherwise.
+                        
+                      </li>
+                    
+                  </ul>
                 
 
               </div>
@@ -600,26 +695,26 @@ However, it still incorporates elements of binary choice, specifically the opt-i
 		<h6 class="fw-bold text-primary mb-1"><i class="bi bi-shield-lock"></i> <strong>Control</strong></h6>
 		<br>
 		<p class="card-text">
-		 Control <a href="GD13.html#section4">[4]</a> is the main privacy attribute that is addressed by this guideline. This attribute involves the data subject's ability to provide consent for collecting and processing their data and the extent to which they can opt out of data collection or processing. The guideline aims to enhance user engagement and attention during the consent process, ensuring that users make informed and self-determined decisions about the information they share. Interactive consent forms like drag-and-drop interfaces and knowledge testing methods directly improve user control over their personal data by making the consent process more transparent and user-friendly.
+		 This guideline discusses solutions that provide users with tools and mechanisms to manage and control their privacy settings. This includes obtaining informed consent, opting out of data collection or processing, and allowing users to influence how service providers handle their personal data. The supporting papers emphasise enhancing user empowerment, simplifying the process of managing privacy settings, and making privacy controls more user-friendly.
 		
 		Other related privacy attributes:
 			
 			<br>
-				</p><h6 class="fw-bold text-secondary mb-1">Transparency</h6>
+				</p><h6 class="fw-bold text-secondary mb-1">Security</h6>
 
-				The guideline enhances transparency by making the consent process more interactive and informative, helping users understand the terms of data sharing and processing before they give their consent.
+				Security can be considered as Indirectly related, as the ability to opt out of certain data uses can be a component of securing personal data against unwanted or malicious access or processing.
 				<br>
 			
 			<br>
-				<h6 class="fw-bold text-secondary mb-1">Purpose</h6>
+				<h6 class="fw-bold text-secondary mb-1">Transparency</h6>
 
-				The guideline improves the consent process by ensuring users are better informed about the specific purposes for which their data will be used, contributing to more informed consent.
+				Detecting and highlighting privacy control mechanisms can improve transparency by clarifying how they can prevent their data from being used for certain purposes.
 				<br>
 			
 			<br>
-				<h6 class="fw-bold text-secondary mb-1">Collection</h6>
+				<h6 class="fw-bold text-secondary mb-1">Sharing</h6>
 
-				Interactive consent forms can highlight what data is being collected and allow users to make more granular choices about what they consent to share, aligning with the principle of data minimisation.
+				The discussed solutions leverage the aspect of allowing users to control and limit the sharing of their personal data with third parties to prevent unauthorised data sharing.
 				<br>
 			
 		
@@ -637,28 +732,35 @@ However, it still incorporates elements of binary choice, specifically the opt-i
             <h5 class="card-title text-muted">References </h5>
             
             <p class="card-text text-muted" id="section1">
-                [1] Daniel Lindegren, Farzaneh Karegar, Bridget Kane &amp; John Sören Pettersson (2021). An evaluation of three designs to engage users when providing their consent on smartphones. Behaviour &amp; Information Technology, 40:4, p. 398-414.
+                [1] Vinayshekhar Bannihatti Kumar, Roger Iyengar, Namita Nisal, Yuanyuan Feng, Hana Habib, Peter Story, Sushain Cherivirala, Margaret Hagan, Lorrie Cranor, Shomir Wilson, Florian Schaub, and Norman Sadeh. Finding a Choice in a Haystack: Automatic Extraction of Opt-Out Statements from Privacy Policy Text. In Proceedings of The Web Conference 2020 (WWW '20). Association for Computing Machinery, New York, NY, USA, 2020, 1943–1954
                 
-                    <a href="https://doi.org/10.1080/0144929X.2019.1697898" target="_blank">https://doi.org/10.1080/0144929X.2019.1697898</a>
+                    <a href="https://doi.org/10.1145/3366423.3380262" target="_blank">https://doi.org/10.1145/3366423.3380262</a>
                 
             </p>
             
             <p class="card-text text-muted" id="section2">
-                [2] Farzaneh Karegar, Nina Gerber, Melanie Volkamer, and Simone Fischer-Hübner (2018). Helping john to make informed decisions on using social login. In Proceedings of the 33rd Annual ACM Symposium on Applied Computing (SAC '18). Association for Computing Machinery, New York, NY, USA, 1165–1174.
+                [2] Nazila Gol Mohammadi, Julia Pampus, and Maritta Heisel (2019). Pattern-based incorporation of privacy preferences into privacy policies: negotiating the conflicting needs of service providers and end-users. In Proceedings of the 24th European Conference on Pattern Languages of Programs (EuroPLop '19). Association for Computing Machinery, New York, NY, USA, 2019, Article 5, 1–12
                 
-                    <a href="https://doi.org/10.1145/3167132.3167259" target="_blank">https://doi.org/10.1145/3167132.3167259</a>
+                    <a href="https://doi.org/10.1145/3361149.3361154" target="_blank">https://doi.org/10.1145/3361149.3361154</a>
                 
             </p>
             
             <p class="card-text text-muted" id="section3">
-                [3] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
+                [3] Rishabh Khandelwal, Thomas Linden, Hamza Harkous, and Kassem Fawaz. {PriSEC}: A Privacy Settings Enforcement Controller. In 30th USENIX Security Symposium (USENIX Security 21), 2021, 465-482.
+                
+                    <a href="https://www.usenix.org/conference/usenixsecurity21/presentation/khandelwal" target="_blank">https://www.usenix.org/conference/usenixsecurity21/presentation/khandelwal</a>
+                
+            </p>
+            
+            <p class="card-text text-muted" id="section4">
+                [4] Yuanyuan Feng, Yaxing Yao, and Norman Sadeh (2021). A Design Space for Privacy Choices: Towards Meaningful Privacy Control in the Internet of Things. In CHI Conference on Human Factors in Computing Systems (CHI ’21), May 8–13, 2021, Yokohama, Japan. ACM, New York, NY, USA, 16 pages.
                 
                     <a href="https://doi.org/10.1145/3411764.3445148" target="_blank">https://doi.org/10.1145/3411764.3445148</a>
                 
             </p>
             
-            <p class="card-text text-muted" id="section4">
-                [4] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
+            <p class="card-text text-muted" id="section5">
+                [5] Susanne Barth, Dan Ionita, and Pieter Hartel (2022). Understanding Online Privacy — A Systematic Review of Privacy Visualizations and Privacy by Design Guidelines. ACM Comput. Surv. 55, 3, Article 63 (February 2022), 37 pages.
                 
                     <a href="https://doi.org/10.1145/3502288" target="_blank">https://doi.org/10.1145/3502288</a>
                 

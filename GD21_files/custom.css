@@ -11,14 +11,14 @@
 #builder .form-group {
     margin-bottom: 10px;
 }
-.col-sm-6 {
+/* .col-sm-6 {
     width: 50%;
     float: left;
-}
-.modal-dialog {
+} */
+/* .modal-dialog {
     max-width: 600px;
     margin: 30px auto;
-}
+} */
 #sidebar-nav {
     width: 200px;
 }
@@ -26,8 +26,15 @@
 
 /* navbar fixed top*/
 body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
+    /* min-height: 75rem;
+    padding-top: 4.5rem; */
+    padding-top: 72px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 96px;
+  }
 }
 .card-hover {
     transition: box-shadow .3s;
@@ -38,8 +45,10 @@ body {
 .modal-dialog {
     max-width: max-content !important;
 }
-.modal-body {
-    display: flex;
+@media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+  }
 }
 .modal-body img {
     object-fit: contain;

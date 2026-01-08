@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0047)GD21.html -->
+<!-- saved from url=(0044)GD21.html -->
 <html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
     <link href="./GD21_files/custom.css" rel="stylesheet">
     <script src="./GD21_files/saved_resource"></script>
 
-    <script src="./GD21_files/static_only.js"></script>
+    <script src="./GD21_files/custom.js"></script>
   </head>
 <body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
   
@@ -27,73 +27,119 @@
 
 
 
-<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
 
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    
+
+    <!-- Toggle offcanvas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+      <!-- Offcanvas header -->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          Menu
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas body -->
+      <div class="offcanvas-body">
+
+        <!-- Navigation links -->
+        <ul class="navbar-nav flex-grow-1 pe-3">
+
           <li class="nav-item">
-            <a class="nav-link" href="index.html"> Guidelines</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="designspace.html"> Design Spaces</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="references.html"> References
+            <a class="nav-link" href="index.html">
+              Guidelines
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Publications</a>
+
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="privacyattributes.html">
+              Privacy Attributes
+            </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="GD21.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD21_files/en.png">&nbsp;<span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                
-                <li>
-                      <a class="dropdown-item" href="GD21.html">
-                      English
-                    </a>
-                </li>
-                
-                <li>
-                     <span class="dropdown-item disabled">
-                        Português Brasileiro (não disponível)
-                      </span>
-                </li>
-                
+
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="designspace.html">
+              Design Spaces
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="references.html">
+              References
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Publications
+            </a>
+          </li>
+
+          <!-- Language dropdown -->
+          <li class="nav-item dropdown mt-3 mt-md-0">
+            <a class="nav-link dropdown-toggle" href="GD21.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./GD21_files/en.png" width="24">
+              EN
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+              
+              <li>
+                <a class="dropdown-item" href="GD21.html">
+                  English
+                </a>
+              </li>
+              
+              <li>
+                  <span class="dropdown-item disabled">
+                    Português Brasileiro (não disponível)
+                  </span>
+              </li>
+              
             </ul>
           </li>
         </ul>
-    <form class="d-flex" action="index.html" method="get">
-      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
-      <button class="btn btn-light" type="submit">Search</button>
-    </form>
+
+        <!-- Search -->
+        <form class="d-flex mt-3 mt-md-0" action="#" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline">
+          <button class="btn btn-light" type="submit">
+            Search
+          </button>
+        </form>
+
       </div>
     </div>
-  </nav>
-  
+  </div>
+</nav>
+
 <main class="container-fluid">
   <div class="p-0">
       
 
-  <nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
-	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
-	  <li class="breadcrumb-item"> Raising Privacy Awareness </li>
-	  <li class="breadcrumb-item active" aria-current="page">Assessing Risk and Nudging Privacy Behaviour</li>
-	</ol>
-  </nav>
-  <div class="row pt-5">
+
+<div class="row pt-5">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+		<li class="breadcrumb-item"> Raising Privacy Awareness </li>
+		<li class="breadcrumb-item active" aria-current="page">Assessing Risk and Nudging Privacy Behaviour</li>
+		</ol>
+	</nav>
     <div class="container px-3">
 		<div class="col">
-			<header class="d-flex align-items-center">
+			<header class="d-flex align-items-left">
 				<h3><i class="bi bi-shield-exclamation"></i> GD21 - Enhance Privacy Awareness by Communicating Privacy Risks</h3>
 			</header>
 			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">

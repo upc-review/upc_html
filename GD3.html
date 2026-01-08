@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)GD3.html -->
+<!-- saved from url=(0043)GD3.html -->
 <html lang="en" class="h-100"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
     <link href="./GD3_files/custom.css" rel="stylesheet">
     <script src="./GD3_files/saved_resource"></script>
 
-    <script src="./GD3_files/static_only.js"></script>
+    <script src="./GD3_files/custom.js"></script>
   </head>
 <body class="d-flex flex-column h-100" data-new-gr-c-s-check-loaded="14.1267.0" data-gr-ext-installed="">
   
@@ -27,73 +27,119 @@
 
 
 
-<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-primary">
 
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    
+
+    <!-- Toggle offcanvas -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+      <!-- Offcanvas header -->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          Menu
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Offcanvas body -->
+      <div class="offcanvas-body">
+
+        <!-- Navigation links -->
+        <ul class="navbar-nav flex-grow-1 pe-3">
+
           <li class="nav-item">
-            <a class="nav-link" href="index.html"> Guidelines</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="privacyattributes.html">Privacy Attributes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="designspace.html"> Design Spaces</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="references.html"> References
+            <a class="nav-link" href="index.html">
+              Guidelines
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"> Publications</a>
+
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="privacyattributes.html">
+              Privacy Attributes
+            </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="GD3.html#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><img style="width:32px; padding-left: 10px;" src="./GD3_files/en.png">&nbsp;<span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                
-                <li>
-                      <a class="dropdown-item" href="GD3.html">
-                      English
-                    </a>
-                </li>
-                
-                <li>
-                      <span class="dropdown-item disabled">
-                        Português Brasileiro (não disponível)
-                      </span>
-                </li>
-                
+
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="designspace.html">
+              Design Spaces
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="references.html">
+              References
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Publications
+            </a>
+          </li>
+
+          <!-- Language dropdown -->
+          <li class="nav-item dropdown mt-3 mt-md-0">
+            <a class="nav-link dropdown-toggle" href="GD3.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./GD3_files/en.png" width="24">
+              EN
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark">
+              
+              <li>
+                <a class="dropdown-item" href="GD3.html">
+                  English
+                </a>
+              </li>
+              
+              <li>
+                  <span class="dropdown-item disabled">
+                    Português Brasileiro (não disponível)
+                  </span>
+              </li>
+              
             </ul>
           </li>
         </ul>
-    <form class="d-flex" action="index.html" method="get">
-      <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline" aria-label="Search Guideline">
-      <button class="btn btn-light" type="submit">Search</button>
-    </form>
+
+        <!-- Search -->
+        <form class="d-flex mt-3 mt-md-0" action="index.html" method="get">
+          <input class="form-control me-2" type="search" name="q" placeholder="Search Guideline">
+          <button class="btn btn-light" type="submit">
+            Search
+          </button>
+        </form>
+
       </div>
     </div>
-  </nav>
-  
+  </div>
+</nav>
+
 <main class="container-fluid">
   <div class="p-0">
       
 
-  <nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
-	  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
-	  <li class="breadcrumb-item"> Improving Privacy Policy </li>
-	  <li class="breadcrumb-item active" aria-current="page">Improving Privacy Policy Visual Presentation</li>
-	</ol>
-  </nav>
-  <div class="row pt-5">
+
+<div class="row pt-5">
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="index.html" class="breadcrumb-item">Home</a></li>
+		<li class="breadcrumb-item"> Improving Privacy Policy </li>
+		<li class="breadcrumb-item active" aria-current="page">Improving Privacy Policy Visual Presentation</li>
+		</ol>
+	</nav>
     <div class="container px-3">
 		<div class="col">
-			<header class="d-flex align-items-center">
+			<header class="d-flex align-items-left">
 				<h3><i class="bi bi-file-earmark-richtext"></i> GD3 - Incorporate Icons to Improve Privacy Policy Communication</h3>
 			</header>
 			<header class="d-flex align-items-center pb-1 mb-3 border-bottom">
@@ -120,16 +166,16 @@
 
 Holtz, Nocun and Hansen <a href="GD3.html%E2%80%9D" #section1”="">[1]</a> introduced the concept of using privacy icons to simplify privacy policies and make them more usable to users. Privacy icons were proposed to effectively convey core information about data collection and processing, particularly in contexts such as social networks where user interactions are paramount <br>The research was part of the PrimeLife project, funded by the European Union, which concluded in October 2011. The project's website, <a href="http://www.primelife.eu/" target="_blank">PrimeLife</a>, is archived and accessible at <a href="http://primelife.ercim.eu/" target="_blank">PrimeLife Archive</a>.
 <br><br>
-Rossi and Palmirani <a href="GD3.html#section2">[2]</a> presented the Data Protection Icon Set (DaPIS), which addresses the challenge of designing privacy icons to enhance the usability of privacy policies.
+Rossi and Palmirani <a href="GD3.html%E2%80%9D" #section2”="">[2]</a> presented the Data Protection Icon Set (DaPIS), which addresses the challenge of designing privacy icons to enhance the usability of privacy policies.
 DaPIS was created through a multidisciplinary approach involving technical experts, lawyers, designers, business representatives, and laypeople. The aim was to ensure the icons were clear, legally accurate, and user-friendly. 
 The project employed an ontology-based framework where each icon represents a specific concept (e.g., data processing purposes, rights). This modular and compositional design allows complex ideas to be visually communicated by combining simple, standardised elements. 
 The resulting set of 33 icons is intended to make privacy policies more usable to users. The icons were designed to be machine-readable, supporting integration with semantic technologies for efficient retrieval and navigation of legal information.
 The icons provide visual representations of data protection concepts such as personal data processing, user rights, and legal bases for processing, thereby facilitating better user comprehension and engagement.
 <br>
 
-The icon set (version 3 as of this writing) is maintained and available for free download at <a href="https://zenodo.org/records/7182819" target="_blank">Zenodo</a>.
+The icon set (version 3 as of this writing) is maintained and available for free download at <a href="https://zenodo.org/records/7182819" target="”_blank”">Zenodo</a>.
 <br><br>
-Gerl <a href="GD3.html#section3">[3]</a> presented a practical application with an extended version of <a href="https://doi.org/10.1007/978-3-662-57932-9_2" target="_blank">The Layered Privacy Language (LPL)</a>, called  LPL Personal Privacy Policy User Interface (LPL PPP UI). The LPL PPP UI integrates a set of icons and elements to support the Privacy Icon Overview. This feature provides a visual summary of the privacy policy, enhancing the user's ability to identify and understand data processing purposes quickly.
+Gerl <a href="GD3.html%E2%80%9D" #section3”="">[3]</a> presented a practical application with an extended version of <a href="https://doi.org/10.1007/978-3-662-57932-9_2" target="_blank">The Layered Privacy Language (LPL)</a>, called  LPL Personal Privacy Policy User Interface (LPL PPP UI). The LPL PPP UI integrates a set of icons and elements to support the Privacy Icon Overview. This feature provides a visual summary of the privacy policy, enhancing the user's ability to identify and understand data processing purposes quickly.
 The icons' design considered modularity and compositionality, allowing complex privacy concepts to be broken down into simpler, visually represented elements. The icon set is also intended to be adaptable to officially agreed-upon GDPR icons (See <a href="https://gdpr-info.eu/art-12-gdpr/" target="_blank">GDPR Art. 12 No. 7</a>).
             </p>
             <p class="card-text">

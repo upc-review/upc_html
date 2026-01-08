@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("filter-form");
-  const clearBtn = document.querySelector('a[href="index.html"]');
+  const filterBtn = document.getElementById("filter-btn");
+
+filterBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  showStaticWarning();
+});
 
 const showStaticWarning = function () {
   alert(
